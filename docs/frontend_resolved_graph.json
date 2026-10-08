@@ -415,7 +415,7 @@
             "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.19.tgz",
             "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\tailwindcss@3.4.19\\node_modules\\tailwindcss",
             "deduped": true,
-            "dedupedDependenciesCount": 94
+            "dedupedDependenciesCount": 92
           }
         }
       },
@@ -815,16 +815,10 @@
       },
       "react-router-dom": {
         "from": "react-router-dom",
-        "version": "6.30.6",
-        "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.30.6.tgz",
-        "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\react-router-dom@6.30.6_rea_afc34bd3c9308c43669ce7aa20201424\\node_modules\\react-router-dom",
+        "version": "7.18.4",
+        "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-7.18.4.tgz",
+        "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\react-router-dom@7.18.4_rea_f4926c942dd2712de452b6bf70e89074\\node_modules\\react-router-dom",
         "dependencies": {
-          "@remix-run/router": {
-            "from": "@remix-run/router",
-            "version": "1.23.4",
-            "resolved": "https://registry.npmjs.org/@remix-run/router/-/router-1.23.4.tgz",
-            "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\@remix-run+router@1.23.4\\node_modules\\@remix-run\\router"
-          },
           "react": {
             "from": "react",
             "version": "18.3.1",
@@ -843,15 +837,15 @@
           },
           "react-router": {
             "from": "react-router",
-            "version": "6.30.6",
-            "resolved": "https://registry.npmjs.org/react-router/-/react-router-6.30.6.tgz",
-            "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\react-router@6.30.6_react@18.3.1\\node_modules\\react-router",
+            "version": "7.18.4",
+            "resolved": "https://registry.npmjs.org/react-router/-/react-router-7.18.4.tgz",
+            "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\react-router@7.18.4_react-d_b23148a65a2584a0b0d4dbb6bf53bfd3\\node_modules\\react-router",
             "dependencies": {
-              "@remix-run/router": {
-                "from": "@remix-run/router",
-                "version": "1.23.4",
-                "resolved": "https://registry.npmjs.org/@remix-run/router/-/router-1.23.4.tgz",
-                "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\@remix-run+router@1.23.4\\node_modules\\@remix-run\\router"
+              "cookie": {
+                "from": "cookie",
+                "version": "1.1.1",
+                "resolved": "https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz",
+                "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\cookie@1.1.1\\node_modules\\cookie"
               },
               "react": {
                 "from": "react",
@@ -860,6 +854,20 @@
                 "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\react@18.3.1\\node_modules\\react",
                 "deduped": true,
                 "dedupedDependenciesCount": 2
+              },
+              "react-dom": {
+                "from": "react-dom",
+                "version": "18.3.1",
+                "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz",
+                "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\react-dom@18.3.1_react@18.3.1\\node_modules\\react-dom",
+                "deduped": true,
+                "dedupedDependenciesCount": 4
+              },
+              "set-cookie-parser": {
+                "from": "set-cookie-parser",
+                "version": "2.7.2",
+                "resolved": "https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.7.2.tgz",
+                "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\set-cookie-parser@2.7.2\\node_modules\\set-cookie-parser"
               }
             }
           }
@@ -2267,6 +2275,12 @@
       }
     },
     "devDependencies": {
+      "@eslint/js": {
+        "from": "@eslint/js",
+        "version": "9.39.5",
+        "resolved": "https://registry.npmjs.org/@eslint/js/-/js-9.39.5.tgz",
+        "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\@eslint+js@9.39.5\\node_modules\\@eslint\\js"
+      },
       "@types/react": {
         "from": "@types/react",
         "version": "18.3.31",
@@ -2299,6 +2313,12 @@
         "deduped": true,
         "dedupedDependenciesCount": 104
       },
+      "globals": {
+        "from": "globals",
+        "version": "16.5.0",
+        "resolved": "https://registry.npmjs.org/globals/-/globals-16.5.0.tgz",
+        "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\globals@16.5.0\\node_modules\\globals"
+      },
       "postcss": {
         "from": "postcss",
         "version": "8.5.29",
@@ -2313,7 +2333,7 @@
         "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.19.tgz",
         "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\tailwindcss@3.4.19\\node_modules\\tailwindcss",
         "deduped": true,
-        "dedupedDependenciesCount": 94
+        "dedupedDependenciesCount": 92
       },
       "typescript": {
         "from": "typescript",
@@ -2451,9 +2471,9 @@
         "dependencies": {
           "postcss-selector-parser": {
             "from": "postcss-selector-parser",
-            "version": "6.0.10",
-            "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.10.tgz",
-            "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\postcss-selector-parser@6.0.10\\node_modules\\postcss-selector-parser",
+            "version": "7.1.6",
+            "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-7.1.6.tgz",
+            "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\postcss-selector-parser@7.1.6\\node_modules\\postcss-selector-parser",
             "dependencies": {
               "cssesc": {
                 "from": "cssesc",
@@ -2547,9 +2567,9 @@
               },
               "postcss-selector-parser": {
                 "from": "postcss-selector-parser",
-                "version": "6.1.4",
-                "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.1.4.tgz",
-                "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\postcss-selector-parser@6.1.4\\node_modules\\postcss-selector-parser",
+                "version": "7.1.6",
+                "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-7.1.6.tgz",
+                "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\postcss-selector-parser@7.1.6\\node_modules\\postcss-selector-parser",
                 "deduped": true,
                 "dedupedDependenciesCount": 2
               },
@@ -2669,23 +2689,11 @@
                   },
                   "postcss-selector-parser": {
                     "from": "postcss-selector-parser",
-                    "version": "6.1.4",
-                    "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.1.4.tgz",
-                    "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\postcss-selector-parser@6.1.4\\node_modules\\postcss-selector-parser",
-                    "dependencies": {
-                      "cssesc": {
-                        "from": "cssesc",
-                        "version": "3.0.0",
-                        "resolved": "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz",
-                        "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\cssesc@3.0.0\\node_modules\\cssesc"
-                      },
-                      "util-deprecate": {
-                        "from": "util-deprecate",
-                        "version": "1.0.2",
-                        "resolved": "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz",
-                        "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\util-deprecate@1.0.2\\node_modules\\util-deprecate"
-                      }
-                    }
+                    "version": "7.1.6",
+                    "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-7.1.6.tgz",
+                    "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\postcss-selector-parser@7.1.6\\node_modules\\postcss-selector-parser",
+                    "deduped": true,
+                    "dedupedDependenciesCount": 2
                   }
                 }
               },

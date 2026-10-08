@@ -52,6 +52,8 @@ class BrandUITests(unittest.TestCase):
     def test_csp_and_private_environment_prefix_retained(self):
         html = (FRONTEND / "dist/index.html").read_text(encoding="utf-8")
         self.assertIn("object-src 'none'", html)
+        self.assertNotIn('__LOCAL_INLINE_SCRIPT_HASHES__', html)
+        self.assertNotIn("script-src 'self' 'unsafe-inline'", html)
         self.assertIn("connect-src 'self' ws://127.0.0.1:5173 ws://localhost:5173", html)
         vite = (FRONTEND / "vite.config.ts").read_text(encoding="utf-8")
         self.assertIn("envPrefix: 'LOCAL_PREVIEW_PUBLIC_'", vite)

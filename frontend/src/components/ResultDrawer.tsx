@@ -92,8 +92,8 @@ export function ResultDrawer({ show, onClose, result, loading, streaming }: Resu
             <div className={streaming ? 'streaming-content' : 'animate-in fade-in duration-300'}>
               <div
                 className="prose prose-xs md:prose-sm max-w-none dark:prose-invert prose-headings:text-foreground prose-p:text-foreground/90 prose-strong:text-foreground prose-ul:text-foreground/90 prose-ol:text-foreground/90"
-                dangerouslySetInnerHTML={{ __html: result }}
-              />
+                style={{ whiteSpace: 'pre-wrap' }}
+              >{result}</div>
               {streaming && (
                 <span className="inline-flex w-1.5 h-5 ml-1 bg-primary cursor-blink align-middle rounded-sm shadow-lg"></span>
               )}

@@ -25,7 +25,8 @@ class PreviewAPITests(unittest.TestCase):
     def test_config_has_exact_public_fields(self):
         config = self.client.get("/api/v1/config").json()
         self.assertEqual(set(config), {"mode", "provider_name", "model_name", "real_ai_enabled", "production_connected", "credentials_checked", "history_mode"})
-        self.assertFalse(config["credentials_checked"])
+        self.assertTrue(config["credentials_checked"])
+        self.assertEqual(config["provider_name"], "deepseek")
 
     def test_preview_history_is_empty_and_isolated(self):
         self.assertEqual(self.client.get("/api/v1/history").json(), {"items": [], "total": 0, "mode": "isolated_preview", "production_connected": False})

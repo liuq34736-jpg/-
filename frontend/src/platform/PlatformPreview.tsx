@@ -6,8 +6,9 @@ import { BRAND } from '@/config/brand'
 import { MODULES, type ModuleInfo } from '@/config/modules'
 import './preview.css'
 
-interface PublicConfig { provider_name: string; mode: string; real_ai_enabled: boolean; production_connected: boolean }
+interface PublicConfig { provider_name: string; model_name: string; mode: string; real_ai_enabled: boolean; production_connected: boolean }
 interface HistoryResponse { total: number; mode: string; items: unknown[] }
+interface AIStatus { provider_name: string; model_name: string; configuration_status: string; configured: boolean; reading_enabled: boolean }
 
 function usePreviewData<T>(path: string) {
   const [data, setData] = useState<T | null>(null)
@@ -62,7 +63,7 @@ function Home({ modules }: { modules: readonly ModuleInfo[] }) {
         </Link>
       })}</div>
     </section>
-    <div className="workspace-note"><span className="status-dot" /><p>网页与原系统独立运行。当前只提供界面预览，不执行占筮，也不连接真实 AI。</p></div>
+    <div className="workspace-note"><span className="status-dot" /><p>网页与原系统独立运行。当前只提供界面预览，尚未启用正式起卦与 AI 解读。</p></div>
   </>
 }
 
@@ -85,10 +86,11 @@ function ModulePage({ modules }: { modules: readonly ModuleInfo[] }) {
 
 function SettingsPage() {
   const { data, failed } = usePreviewData<PublicConfig>('/api/v1/config')
-  return <section className="page-panel"><span className="eyebrow">工作台 / 运行设置</span><h1>设置</h1><ServiceNotice failed={failed} />
-    <p>当前使用独立测试后端。真实 AI 与生产系统均未接入。</p>
-    {data && <dl className="settings-list"><div><dt>运行模式</dt><dd>本地预览</dd></div><div><dt>Provider</dt><dd>{data.provider_name}（测试替身）</dd></div><div><dt>真实 AI</dt><dd>{data.real_ai_enabled ? '已启用' : '未启用'}</dd></div><div><dt>生产系统</dt><dd>{data.production_connected ? '已连接' : '未连接'}</dd></div></dl>}
-    <p className="notice">真实服务设置将在后续阶段由服务器管理。本页不提供客户端密钥输入或保存功能。</p>
+  const { data: ai, failed: aiFailed } = usePreviewData<AIStatus>('/api/v1/ai/status')
+  return <section className="page-panel"><span className="eyebrow">工作台 / 运行设置</span><h1>设置</h1><ServiceNotice failed={failed || aiFailed} />
+    <p>DeepSeek 由 Python 后端管理。当前仅完成配置与连通性验证，正式解卦与生产历史尚未接入。</p>
+    {data && <dl className="settings-list"><div><dt>运行模式</dt><dd>本地预览</dd></div><div><dt>Provider</dt><dd>{data.provider_name}</dd></div><div><dt>Model</dt><dd>{data.model_name}</dd></div>{ai && <div><dt>API 配置状态</dt><dd data-testid="api-configuration-status">{ai.configuration_status}</dd></div>}<div><dt>正式 AI 解卦</dt><dd>{data.real_ai_enabled ? '已启用' : '未启用'}</dd></div><div><dt>生产系统</dt><dd>{data.production_connected ? '已连接' : '未连接'}</dd></div></dl>}
+    <p className="notice">“已配置”表示服务器发现有效格式的配置，不代表本次已调用或认证成功。刷新本页不会调用模型。密钥只保存在服务器环境中，本页不提供密钥输入或保存功能。</p>
   </section>
 }
 
@@ -117,6 +119,7 @@ export default function PlatformPreview() {
   useEffect(() => { setMenuOpen(false) }, [location.pathname])
   useEffect(() => {
     if (!mobile || !menuOpen) return
+    const menuButton = menuRef.current
     const previousOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
     sidebarRef.current?.querySelector<HTMLButtonElement>('button')?.focus()
@@ -134,7 +137,7 @@ export default function PlatformPreview() {
     return () => {
       document.body.style.overflow = previousOverflow
       document.removeEventListener('keydown', onKeyDown)
-      menuRef.current?.focus()
+      menuButton?.focus()
     }
   }, [mobile, menuOpen])
 

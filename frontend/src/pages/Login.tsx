@@ -41,16 +41,14 @@ export default function LoginPage() {
       })
 
       if (!response.ok) {
-        const text = await response.text()
-        throw new Error(`${response.status} ${text}`)
+        throw new Error('登录请求失败')
       }
 
       const token = await response.json()
       setJwt(token)
       window.location.href = '/'
-    } catch (err: any) {
-      console.error(err)
-      setError(`登录失败: ${err.message || '未知错误'}`)
+    } catch {
+      setError('登录失败，请稍后再试。')
     } finally {
       setLoading(false)
     }
@@ -68,15 +66,13 @@ export default function LoginPage() {
       )
 
       if (!response.ok) {
-        const text = await response.text()
-        throw new Error(`${response.status} ${text}`)
+        throw new Error('登录请求失败')
       }
 
       const redirectUrl = await response.json()
       window.location.href = redirectUrl
-    } catch (err: any) {
-      console.error(err)
-      setError(err.message || '登录失败')
+    } catch {
+      setError('登录失败，请稍后再试。')
     } finally {
       setLoading(false)
     }

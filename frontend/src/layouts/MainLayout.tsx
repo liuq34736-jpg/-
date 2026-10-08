@@ -28,12 +28,11 @@ export default function MainLayout({ children }: MainLayoutProps) {
     useEffect(() => {
         if (showAd && settings.fetched) {
             try {
-                // @ts-ignore
-                ; (window.adsbygoogle = window.adsbygoogle || []).push({})
-                    // @ts-ignore
-                    ; (window.adsbygoogle = window.adsbygoogle || []).push({})
-            } catch (e) {
-                console.error('AdSense error:', e)
+                const adWindow = window as Window & { adsbygoogle?: Record<string, unknown>[] }
+                ; (adWindow.adsbygoogle = adWindow.adsbygoogle || []).push({})
+                ; (adWindow.adsbygoogle = adWindow.adsbygoogle || []).push({})
+            } catch {
+                // Legacy layout is unmounted; do not log third-party errors.
             }
         }
     }, [showAd, settings.fetched])

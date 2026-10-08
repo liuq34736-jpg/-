@@ -1,0 +1,20 @@
+{
+  "mode": "real",
+  "executed": true,
+  "provider_name": "deepseek",
+  "model_name": "deepseek-flash",
+  "success": true,
+  "http_status": 200,
+  "latency_seconds": 0.642,
+  "attempts": 1,
+  "retried": false,
+  "result_code": "ok",
+  "prompt_tokens": 42,
+  "completion_tokens": 5,
+  "total_tokens": 47,
+  "checked_at": "2026-10-08T10:52:25.090863+00:00",
+  "cost": "unavailable",
+  "raw_response_saved": false,
+  "credentials_saved": false,
+  "formal_reading_generated": false
+}

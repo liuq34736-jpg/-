@@ -1,6 +1,8 @@
-# 问象纪 · Windows 本地启动（Day 1–2）
+# 问象纪 · Windows 本地启动
 
 新项目目录：`D:\算卦工具\divination-web`。只监听本机。不要运行上游根 main.py、Docker、Vercel 或 Tauri 启动方式。
+
+当前阶段：Day 3。后端支持服务器端 `DEEPSEEK_API_KEY`（进程环境优先，Windows 用户环境作为补充），前端设置只显示安全配置状态。`/api/v1/ai/status` 不发起付费请求；正式解卦与生产历史仍未接入。
 
 ## 已验证工具版本
 
@@ -66,7 +68,17 @@ pnpm audit
 pnpm lint
 ```
 
-已知 pnpm lint 失败：上游没有 ESLint 9 的 flat config。本轮保留失败，不伪称静态 lint 全绿。
+Day 3 已增加 ESLint 9 flat config，lint 与构建通过。依赖审计仍有 1 项无已发布补丁的 braces high 告警，详见 `day3_security_dependency_report.md`，未忽略或隐藏。
+
+## Day 3 连通性测试
+
+开发用 Mock 测试不会访问网络：
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 scripts\check_deepseek_connectivity.py --mock
+```
+
+本阶段的一次真实测试已经完成。真实入口仅为本地开发脚本（`--real`），没有网页按钮或 HTTP 调用接口。它使用固定诊断内容，最多一次请求，不重试；`runtime/day3_real_api_attempt.json` 通过排他创建阻止本阶段重复执行。不要删除标记来重复测试。原始响应与认证头不保存。
 
 浏览器 smoke 使用真实本机 Chrome。Playwright 未加入业务运行依赖；本轮只读借用原系统已有测试工具，未向生产目录安装包：
 

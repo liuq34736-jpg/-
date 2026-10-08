@@ -25,7 +25,7 @@ def inspect_git(staged=False):
         path = Path(name)
         cache_source = path.parts[:2] == ("src", "cache") and path.suffix == ".py"
         blocked_dirs = PRIVATE_DIRS.intersection(path.parts) - ({"cache"} if cache_source else set())
-        if path.name in PRIVATE_NAMES or path.name.startswith(".env.") or path.suffix.lower() in PRIVATE_SUFFIXES or blocked_dirs or ".sqlite3-" in path.name or ".db-" in path.name:
+        if path.name in PRIVATE_NAMES or path.name.startswith(".env.") or path.suffix.lower() in PRIVATE_SUFFIXES or blocked_dirs or ".sqlite3-" in path.name or ".sqlite-" in path.name or ".db-" in path.name:
             findings.append({"path": name, "reason": "private_or_runtime_file"})
             continue
         if staged:

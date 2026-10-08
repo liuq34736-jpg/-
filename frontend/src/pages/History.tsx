@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -21,15 +21,15 @@ export default function HistoryPage() {
   // 获取占卜配置
   const divinationConfig = type ? getDivinationOption(type) : null
 
-  useEffect(() => {
-    loadHistory()
-  }, [type])
-
-  const loadHistory = () => {
+  const loadHistory = useCallback(() => {
     if (type) {
       setHistory(getHistoryByType(type))
     }
-  }
+  }, [type])
+
+  useEffect(() => {
+    loadHistory()
+  }, [loadHistory])
 
   const handleDelete = (id: string) => {
     if (type) {

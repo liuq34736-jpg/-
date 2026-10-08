@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 import { readFileSync } from 'node:fs'
+import { createHash } from 'node:crypto'
 
 const brand = JSON.parse(readFileSync(path.resolve(__dirname, 'src/config/brand.json'), 'utf8'))
 const escapeHtml = (value: string) => value.replace(/[&<>"']/g, char => ({
@@ -16,8 +17,9 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     proxy: { '/api': { target: 'http://127.0.0.1:8765' } },
+    headers: { 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'no-referrer', 'X-Frame-Options': 'DENY' },
   },
-  preview: { host: '127.0.0.1', port: 5173, strictPort: true },
+  preview: { host: '127.0.0.1', port: 5173, strictPort: true, headers: { 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'no-referrer', 'X-Frame-Options': 'DENY' } },
   plugins: [
     react(),
     {
@@ -35,6 +37,18 @@ export default defineConfig({
           }
           return html.replace(/__BRAND_(\w+)__/g, (placeholder, key: string) =>
             replacements[key] === undefined ? placeholder : escapeHtml(replacements[key]))
+        },
+      },
+    },
+    {
+      name: 'local-script-csp',
+      transformIndexHtml: {
+        order: 'post',
+        handler(html) {
+          const hashes = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
+            .filter(([, attributes, content]) => !/\bsrc\s*=/i.test(attributes) && content.trim())
+            .map(([, , content]) => `'sha256-${createHash('sha256').update(content).digest('base64')}'`)
+          return html.replace('__LOCAL_INLINE_SCRIPT_HASHES__', hashes.join(' '))
         },
       },
     },
