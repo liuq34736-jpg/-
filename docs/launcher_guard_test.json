@@ -1,0 +1,6 @@
+{
+  "unknown_port_owner_rejected": true,
+  "existing_frontend_still_responding": true,
+  "existing_backend_still_responding": true,
+  "service_state_restored": true
+}

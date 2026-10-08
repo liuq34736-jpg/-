@@ -1,0 +1,16 @@
+{
+  "caller_job_query_available": true,
+  "caller_found_in_job": true,
+  "services": [
+    {
+      "service": "backend",
+      "launcher_in_callers_job": false,
+      "child_in_callers_job": false
+    },
+    {
+      "service": "frontend",
+      "launcher_in_callers_job": false,
+      "child_in_callers_job": false
+    }
+  ]
+}

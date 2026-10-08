@@ -1,0 +1,7 @@
+{
+  "upstream_license_unchanged": true,
+  "credential_pattern_files": [],
+  "scope": "tracked and unignored files; format scan only, not actual credential read",
+  "real_api_calls": 0,
+  "credential_environment_checked": false
+}

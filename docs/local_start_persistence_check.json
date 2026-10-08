@@ -1,0 +1,28 @@
+{
+  "supervisors": [
+    {
+      "service": "backend",
+      "launcher_job_check_available": true,
+      "launcher_in_job": true
+    },
+    {
+      "service": "frontend",
+      "launcher_job_check_available": true,
+      "launcher_in_job": true
+    }
+  ],
+  "http_responses": [
+    {
+      "url": "http://127.0.0.1:8765/api/v1/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/v1/health",
+      "status": 200
+    }
+  ]
+}

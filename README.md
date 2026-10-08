@@ -1,3 +1,19 @@
+# 问象纪 · WEN XIANG JI
+
+**一事一问，观象明理**。现代简约、东方文化与专业工具相结合的中文网页平台。当前为 Day 1–2 独立本地预览，品牌与界面已统一，功能接入范围保持不变。
+
+品牌配置集中于 `frontend/src/config/brand.json`；Logo 与 favicon 位于 `frontend/public/brand/`。桌面使用左侧导航、右侧工作区，手机视口使用导航抽屉。见 [品牌与界面验收](docs/wenxiangji_brand_ui_report.md)。
+
+当前启动入口是 `scripts/start-local.ps1`。请先阅读 [本地启动](docs/LOCAL_START.md)、[交付报告](docs/day1_day2_delivery.md) 和 [架构与迁移风险](docs/architecture_and_migration_risks.md)。
+
+仅监听 `127.0.0.1`。所有占筮执行能力尚未接入；真实 AI 未启用；生产 Streamlit 及历史未接入运行链。不要运行下方上游说明中的旧 main.py、Docker、Vercel 或浏览器密钥配置。
+
+保留上游 MIT License 与 Copyright (c) 2023 dreamhunter2333。
+
+---
+
+## 上游原始说明（留作参照，不是当前平台启动指南）
+
 # AI 占卜 - ChatGPT Tarot Divination
 
 基于 ChatGPT 的 AI 算命、占卜应用，支持多种占卜方式，提供流式输出体验和历史记录管理。

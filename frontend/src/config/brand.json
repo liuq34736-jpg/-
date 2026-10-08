@@ -1,0 +1,15 @@
+{
+  "name": "问象纪",
+  "englishName": "WEN XIANG JI",
+  "tagline": "一事一问，观象明理",
+  "description": "以有据可循的观察，梳理眼前的问题。一个面向日常研习的中文占筮工具平台。",
+  "colors": {
+    "primary": "#253934",
+    "background": "#F5F1E9",
+    "accent": "#A34F41"
+  },
+  "assets": {
+    "logo": "/brand/mark.svg",
+    "favicon": "/brand/favicon.svg"
+  }
+}
