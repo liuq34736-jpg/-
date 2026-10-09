@@ -1,0 +1,72 @@
+{
+  "day3_commit": "c096ccd946ed926cf2161d0a9b6180d22c91bd9c",
+  "day3_tracked_files": 181,
+  "expected_modified_files": [
+    "backend/app/main.py",
+    "backend/requirements.lock.txt",
+    "docs/dependency_licenses.json",
+    "docs/frontend_resolved_graph.json",
+    "frontend/package.json",
+    "frontend/pnpm-lock.yaml",
+    "frontend/src/config/modules.ts",
+    "frontend/src/platform/PlatformPreview.tsx",
+    "scripts/browser_smoke.py",
+    "scripts/day3_security_check.py",
+    "scripts/verify_production.py",
+    "tests/test_deepseek_day3.py",
+    "tests/test_preview_api.py"
+  ],
+  "unexpected_modified_files": [],
+  "protected_files": {
+    "LICENSE": {
+      "unchanged": true,
+      "sha256": "6c93c51ff894c9c1addd0f9f0d38f830d44b2fe3bce1feb33638a4ddf36b5912"
+    },
+    "backend/app/deepseek.py": {
+      "unchanged": true,
+      "sha256": "2a19ba1308ecd1831f6399a7757e77e5ba3187c2a30a8ed1af1e6c94a305e1d6"
+    },
+    "docs/day3_api_connectivity_result.json": {
+      "unchanged": true,
+      "sha256": "b00594dc50ba58802515e432b6e790b2d77bd0c41dba06caa24f896057d2bbef"
+    },
+    "docs/day3_secret_boundary_result.json": {
+      "unchanged": true,
+      "sha256": "e6802c4aa2537c60ec4c0ef7dcb85d456cbda8fd60bcdc72492066a5401e7133"
+    },
+    "docs/production_baseline.json": {
+      "unchanged": true,
+      "sha256": "9b0687faa2f4e31a58765371f2a79f7a3270dff9bd41a49419e31e32e11b9f57"
+    },
+    "frontend/src/config/brand.ts": {
+      "unchanged": true,
+      "sha256": "3951b14da094f14f046263c24314bea6ba5e4a19da03b1b4238876fcde732e5c"
+    },
+    "frontend/vite.config.ts": {
+      "unchanged": true,
+      "sha256": "9cafa8a80c5330427cb6251c0188325440b981b007db3a0d1fb10b299454ce59"
+    },
+    "scripts/check_deepseek_connectivity.py": {
+      "unchanged": true,
+      "sha256": "f1f8ac69664cbf6664fbbf685e83fc458162627206d67d067267644db6f6520a"
+    },
+    "scripts/local-runtime.ps1": {
+      "unchanged": true,
+      "sha256": "9a9b85b9c03b23e71cfc0ae088715148113c8024e9b5ab3ea3992f026b9a88a5"
+    },
+    "scripts/local-service.py": {
+      "unchanged": true,
+      "sha256": "6072643ef62228e9ee62aebdd54918f60b11803fce9e1f4bacf8c788c93c65b4"
+    },
+    "scripts/start-local.ps1": {
+      "unchanged": true,
+      "sha256": "9f6bb3571709914c35437703a426437f2f825109c0b2b166e4efcb5e8d0b2212"
+    },
+    "scripts/stop-local.ps1": {
+      "unchanged": true,
+      "sha256": "935d49bc9ccf4dce31b0bb91aaa7f6c45fd7770f791de73a08558e0017763252"
+    }
+  },
+  "day3_branch_unchanged": true,
+  "passed": true
+}

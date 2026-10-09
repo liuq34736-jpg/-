@@ -248,7 +248,7 @@ class Day3BoundaryTests(unittest.TestCase):
         self.assertEqual(response.headers["x-content-type-options"], "nosniff")
 
     def test_unreviewed_readings_stay_disabled(self):
-        self.assertEqual(self.client.post("/api/v1/readings", json={"question": "生意怎么样"}).status_code, 501)
+        self.assertEqual(self.client.post("/api/v1/readings", json={"question": "生意怎么样"}).status_code, 422)
         self.assertEqual(self.client.get("/openapi.json").status_code, 404)
 
     def test_legacy_html_sink_removed_and_no_production_imports(self):

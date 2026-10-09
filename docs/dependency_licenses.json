@@ -2207,6 +2207,13 @@
       "metadata_path": "frontend\\node_modules\\.pnpm\\yocto-queue@0.1.0\\node_modules\\yocto-queue\\package.json"
     },
     {
+      "name": "zod",
+      "version": "3.25.76",
+      "license": "MIT",
+      "direct": true,
+      "metadata_path": "frontend\\node_modules\\.pnpm\\zod@3.25.76\\node_modules\\zod\\package.json"
+    },
+    {
       "name": "zustand",
       "version": "5.0.15",
       "license": "MIT",
@@ -2291,6 +2298,14 @@
       "license": "BSD-3-Clause",
       "license_files": [
         "LICENSE.md"
+      ]
+    },
+    {
+      "name": "lunar_python",
+      "version": "1.4.8",
+      "license": "MIT",
+      "license_files": [
+        "LICENSE"
       ]
     },
     {

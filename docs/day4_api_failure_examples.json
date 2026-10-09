@@ -1,0 +1,152 @@
+{
+  "mode": "offline_testclient",
+  "paid_calls": 0,
+  "examples": [
+    {
+      "case": "hexagram_out_of_range",
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": "请求格式不正确。"
+      },
+      "passed": true
+    },
+    {
+      "case": "moving_line_out_of_range",
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": "请求格式不正确。"
+      },
+      "passed": true
+    },
+    {
+      "case": "boolean_not_integer",
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": "请求格式不正确。"
+      },
+      "passed": true
+    },
+    {
+      "case": "model_not_allowed",
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": "请求格式不正确。"
+      },
+      "passed": true
+    },
+    {
+      "case": "file_path_not_allowed",
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": "请求格式不正确。"
+      },
+      "passed": true
+    },
+    {
+      "case": "prompt_not_allowed",
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": "请求格式不正确。"
+      },
+      "passed": true
+    },
+    {
+      "case": "question_over_500",
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": "请求格式不正确。"
+      },
+      "passed": true
+    },
+    {
+      "case": "timezone_required",
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": "请求格式不正确。"
+      },
+      "passed": true
+    },
+    {
+      "case": "invalid_date",
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": "请求格式不正确。"
+      },
+      "passed": true
+    },
+    {
+      "case": "time_input_rejects_hexagram",
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": "请求格式不正确。"
+      },
+      "passed": true
+    },
+    {
+      "case": "duplicate_keys",
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": "请求格式不正确。"
+      },
+      "passed": true
+    },
+    {
+      "case": "body_over_8192",
+      "expected_status": 413,
+      "actual_status": 413,
+      "response": {
+        "detail": "提交内容过长，请缩短问题。"
+      },
+      "passed": true
+    },
+    {
+      "case": "json_required",
+      "expected_status": 415,
+      "actual_status": 415,
+      "response": {
+        "detail": "请使用 JSON 格式提交起卦信息。"
+      },
+      "passed": true
+    },
+    {
+      "case": "untrusted_origin",
+      "expected_status": 403,
+      "actual_status": 403,
+      "response": {
+        "detail": "本地服务不接受其他来源。"
+      },
+      "passed": true
+    },
+    {
+      "case": "browser_credentials_rejected",
+      "expected_status": 400,
+      "actual_status": 400,
+      "response": {
+        "detail": "本地服务不接受客户端认证配置。"
+      },
+      "passed": true
+    },
+    {
+      "case": "frozen_service_failure",
+      "expected_status": 503,
+      "actual_status": 503,
+      "response": {
+        "detail": "冻结计算服务暂不可用，请检查本地服务和版本基线。"
+      },
+      "passed": true
+    }
+  ],
+  "passed": 16,
+  "failed": 0
+}

@@ -10,8 +10,8 @@ export interface ModuleInfo {
   icon: LucideIcon
 }
 
-// UI entrance registry. These previews do not activate a service or a reading.
-// Liuyao is a new visual placeholder only; the backend contract is unchanged.
+// Meihua is a deterministic adapter; the other entrances remain placeholders.
+// Liuyao remains a visual placeholder, not a backend feature.
 export const MODULES: readonly ModuleInfo[] = [
   { id: 'meihua', name: '梅花易数', description: '从一件事开始，观察卦象、变化与体用关系。', icon: BookOpen },
   { id: 'bazi', name: '八字', description: '四柱与时序的独立研习空间。', icon: Compass },

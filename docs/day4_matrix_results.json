@@ -1,0 +1,18 @@
+{
+  "combinations": 384,
+  "passed": 384,
+  "failed": 0,
+  "failure_targets": [],
+  "four_approved_roles": 384,
+  "relations_covered": [
+    "body_controls_yong",
+    "body_generates_yong",
+    "same_element",
+    "yong_controls_body",
+    "yong_generates_body"
+  ],
+  "fallback_passed": true,
+  "worker_write_probe_blocked": true,
+  "worker_network_probe_blocked": true,
+  "real_ai_calls": 0
+}

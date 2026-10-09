@@ -14,10 +14,11 @@ class PreviewAPITests(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertFalse(response.json()["real_ai_enabled"])
 
-    def test_modules_are_not_connected(self):
+    def test_only_meihua_is_deterministically_connected(self):
         modules = self.client.get("/api/v1/modules").json()
         self.assertEqual(len(modules), 7)
-        self.assertTrue(all(m["status"] == "not_connected" for m in modules))
+        self.assertEqual(next(m for m in modules if m["id"] == "meihua")["status"], "deterministic_ready")
+        self.assertTrue(all(m["status"] == "not_connected" for m in modules if m["id"] != "meihua"))
 
     def test_meihua_present(self):
         self.assertIn("meihua", {m["id"] for m in self.client.get("/api/v1/modules").json()})
@@ -31,8 +32,8 @@ class PreviewAPITests(unittest.TestCase):
     def test_preview_history_is_empty_and_isolated(self):
         self.assertEqual(self.client.get("/api/v1/history").json(), {"items": [], "total": 0, "mode": "isolated_preview", "production_connected": False})
 
-    def test_readings_are_disabled(self):
-        self.assertEqual(self.client.post("/api/v1/readings", json={"question": "test"}).status_code, 501)
+    def test_arbitrary_ai_reading_request_is_rejected(self):
+        self.assertEqual(self.client.post("/api/v1/readings", json={"question": "test"}).status_code, 422)
 
     def test_upstream_divination_not_exposed(self):
         self.assertEqual(self.client.post("/api/divination").status_code, 404)

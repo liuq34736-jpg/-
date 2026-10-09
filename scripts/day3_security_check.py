@@ -1,5 +1,6 @@
 """Exact in-memory credential comparison; output only counts and safe paths."""
 
+import argparse
 import json
 from pathlib import Path
 import subprocess
@@ -11,6 +12,9 @@ from backend.app.deepseek import load_config
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--day4", action="store_true", help="Keep Day 3 evidence unchanged.")
+    args = parser.parse_args()
     credential = load_config().api_key.encode("utf-8")
     candidates = subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard", "-z"], cwd=ROOT).decode("utf-8").split("\0")
     paths = {ROOT / name for name in candidates if name and (ROOT / name).is_file()}
@@ -25,7 +29,8 @@ def main():
               "credential_match_count": len(leaked), "affected_paths": sorted(leaked),
               "scope": "current Git candidates, new-project runtime logs/receipts and frontend build artifacts",
               "passed": not leaked}
-    (ROOT / "docs/day3_secret_boundary_result.json").write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    report = "day4_secret_boundary_result.json" if args.day4 else "day3_secret_boundary_result.json"
+    (ROOT / "docs" / report).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(result, ensure_ascii=False))
     return 1 if leaked else 0
 

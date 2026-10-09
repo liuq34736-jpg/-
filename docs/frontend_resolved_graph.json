@@ -59,6 +59,12 @@
         "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-2.6.1.tgz",
         "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\tailwind-merge@2.6.1\\node_modules\\tailwind-merge"
       },
+      "zod": {
+        "from": "zod",
+        "version": "3.25.76",
+        "resolved": "https://registry.npmjs.org/zod/-/zod-3.25.76.tgz",
+        "path": "D:\\算卦工具\\divination-web\\frontend\\node_modules\\.pnpm\\zod@3.25.76\\node_modules\\zod"
+      },
       "@radix-ui/react-label": {
         "from": "@radix-ui/react-label",
         "version": "2.1.16",
