@@ -10,6 +10,8 @@ from pydantic import BaseModel, ConfigDict
 from backend.app.deepseek import MODEL, load_config, public_status, strict_json
 from backend.app.meihua_adapter import MeihuaServiceAdapter, MeihuaUnavailable
 from backend.app.meihua_models import CastingInput, CatalogResult, ReadingResponse
+from backend.traditional_preview_v1.models import PreviewResponse
+from backend.traditional_preview_v1.service import TraditionalPreviewService
 
 
 class ModuleInfo(BaseModel):
@@ -32,6 +34,8 @@ MODULES = (
 
 app = FastAPI(title="问象纪 · 本地服务", docs_url=None, redoc_url=None, openapi_url=None)
 meihua_service = MeihuaServiceAdapter()
+traditional_preview_service = TraditionalPreviewService()
+CASTING_ROUTES = {"/api/v1/readings", "/api/v1/meihua/traditional-preview"}
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=["127.0.0.1", "localhost", "testserver"])
 ALLOWED_ORIGINS = {"http://127.0.0.1:5173", "http://localhost:5173"}
 app.add_middleware(CORSMiddleware, allow_origins=sorted(ALLOWED_ORIGINS),
@@ -46,11 +50,11 @@ async def preview_boundary(request: Request, call_next):
         response = JSONResponse(status_code=403, content={"detail": "本地服务不接受其他来源。"})
     elif any(name in request.headers for name in ("authorization", "x-api-key", "x-api-url", "x-api-model")):
         response = JSONResponse(status_code=400, content={"detail": "本地服务不接受客户端认证配置。"})
-    elif request.method == "POST" and request.url.path == "/api/v1/readings" and request.headers.get("content-type", "").split(";")[0].strip().lower() != "application/json":
+    elif request.method == "POST" and request.url.path in CASTING_ROUTES and request.headers.get("content-type", "").split(";")[0].strip().lower() != "application/json":
         response = JSONResponse(status_code=415, content={"detail": "请使用 JSON 格式提交起卦信息。"})
     else:
         try:
-            if request.method == "POST" and request.url.path == "/api/v1/readings":
+            if request.method == "POST" and request.url.path in CASTING_ROUTES:
                 chunks, length = [], 0
                 async for chunk in request.stream():
                     length += len(chunk)
@@ -130,3 +134,8 @@ def meihua_catalog():
 @app.post("/api/v1/readings", response_model=ReadingResponse)
 def calculate_reading(request: CastingInput):
     return meihua_service.calculate(request)
+
+
+@app.post("/api/v1/meihua/traditional-preview", response_model=PreviewResponse)
+def traditional_preview(request: CastingInput):
+    return traditional_preview_service.calculate(request)

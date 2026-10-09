@@ -1,0 +1,17 @@
+{
+  "scope": [
+    "tests.test_algorithm",
+    "tests.test_meihua_analysis",
+    "tests.test_strength",
+    "tests.test_interpretation",
+    "tests.test_daily_reading"
+  ],
+  "collected": 99,
+  "passed": 99,
+  "failed": 0,
+  "skipped": 0,
+  "failed_test_ids": [],
+  "network_allowed": false,
+  "production_writes_allowed": false,
+  "temporary_test_databases_only": true
+}

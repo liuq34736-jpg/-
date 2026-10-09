@@ -1,0 +1,381 @@
+{
+  "browser": "Chrome 154.0.8037.99",
+  "desktop_viewport": "1440x1100",
+  "mobile_viewport": "390x844, Chrome mobile emulation, DPR 2",
+  "passed": 92,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "home_heading",
+      "passed": true
+    },
+    {
+      "name": "brand_header",
+      "passed": true
+    },
+    {
+      "name": "brand_english",
+      "passed": true
+    },
+    {
+      "name": "browser_title",
+      "passed": true
+    },
+    {
+      "name": "eight_module_entrances",
+      "passed": true
+    },
+    {
+      "name": "one_ready_and_seven_development_entrances",
+      "passed": true
+    },
+    {
+      "name": "desktop_left_navigation",
+      "passed": true
+    },
+    {
+      "name": "desktop_no_horizontal_overflow",
+      "passed": true
+    },
+    {
+      "name": "brand_color_palette",
+      "passed": true
+    },
+    {
+      "name": "local_svg_favicon",
+      "passed": true
+    },
+    {
+      "name": "logo_image_loaded",
+      "passed": true
+    },
+    {
+      "name": "upstream_mit_attribution_visible",
+      "passed": true
+    },
+    {
+      "name": "home_no_key_or_raw_json",
+      "passed": true
+    },
+    {
+      "name": "csp_inline_scripts_hash_only",
+      "passed": true
+    },
+    {
+      "name": "csp_excludes_browser_deepseek_requests",
+      "passed": true
+    },
+    {
+      "name": "module_meihua",
+      "passed": true
+    },
+    {
+      "name": "module_meihua_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "module_bazi",
+      "passed": true
+    },
+    {
+      "name": "module_bazi_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "module_liuyao",
+      "passed": true
+    },
+    {
+      "name": "module_liuyao_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "module_tarot",
+      "passed": true
+    },
+    {
+      "name": "module_tarot_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "module_name",
+      "passed": true
+    },
+    {
+      "name": "module_name_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "module_dream",
+      "passed": true
+    },
+    {
+      "name": "module_dream_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "module_new_name",
+      "passed": true
+    },
+    {
+      "name": "module_new_name_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "module_relationship",
+      "passed": true
+    },
+    {
+      "name": "module_relationship_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "manual_mode_default",
+      "passed": true
+    },
+    {
+      "name": "question_before_casting_mode",
+      "passed": true
+    },
+    {
+      "name": "golden_guan_api_success",
+      "passed": true
+    },
+    {
+      "name": "guan_original_and_line",
+      "passed": true
+    },
+    {
+      "name": "guan_mutual_changed",
+      "passed": true
+    },
+    {
+      "name": "six_lines_visual",
+      "passed": true
+    },
+    {
+      "name": "fourth_line_highlight",
+      "passed": true
+    },
+    {
+      "name": "visual_bottom_up_order",
+      "passed": true
+    },
+    {
+      "name": "guan_body_use_and_season",
+      "passed": true
+    },
+    {
+      "name": "four_approved_meaning_sections",
+      "passed": true
+    },
+    {
+      "name": "details_default_collapsed",
+      "passed": true
+    },
+    {
+      "name": "result_no_secret_raw_json_or_manual_approval",
+      "passed": true
+    },
+    {
+      "name": "source_references_expand",
+      "passed": true
+    },
+    {
+      "name": "classical_text_source_visible",
+      "passed": true
+    },
+    {
+      "name": "different_questions_identical_results",
+      "passed": true
+    },
+    {
+      "name": "sui_second_line_name_from_catalog",
+      "passed": true
+    },
+    {
+      "name": "golden_sui_result",
+      "passed": true
+    },
+    {
+      "name": "golden_sui_body_use",
+      "passed": true
+    },
+    {
+      "name": "time_mode_has_no_manual_fields",
+      "passed": true
+    },
+    {
+      "name": "time_mode_golden_and_frozen_version",
+      "passed": true
+    },
+    {
+      "name": "explicit_china_time",
+      "passed": true
+    },
+    {
+      "name": "calculation_failure_chinese_no_raw_exception",
+      "passed": true
+    },
+    {
+      "name": "failed_attempt_clears_stale_result",
+      "passed": true
+    },
+    {
+      "name": "settings_deepseek_and_no_key_input",
+      "passed": true
+    },
+    {
+      "name": "settings_config_status_safe",
+      "passed": true
+    },
+    {
+      "name": "settings_model_from_server",
+      "passed": true
+    },
+    {
+      "name": "settings_does_not_enable_readings",
+      "passed": true
+    },
+    {
+      "name": "settings_deep_link_refresh",
+      "passed": true
+    },
+    {
+      "name": "deep_link_favicon_remains_same_origin",
+      "passed": true
+    },
+    {
+      "name": "history_isolated",
+      "passed": true
+    },
+    {
+      "name": "no_local_storage_credentials",
+      "passed": true
+    },
+    {
+      "name": "history_no_secret_or_raw_response",
+      "passed": true
+    },
+    {
+      "name": "backend_failure_chinese_notice",
+      "passed": true
+    },
+    {
+      "name": "unconfigured_state_displayed",
+      "passed": true
+    },
+    {
+      "name": "unknown_secret_fields_not_displayed",
+      "passed": true
+    },
+    {
+      "name": "status_text_xss_escaped",
+      "passed": true
+    },
+    {
+      "name": "backend_failure_preserves_ui_entrances",
+      "passed": true
+    },
+    {
+      "name": "unknown_route_notice",
+      "passed": true
+    },
+    {
+      "name": "mobile_brand",
+      "passed": true
+    },
+    {
+      "name": "mobile_no_horizontal_overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile_eight_entrances",
+      "passed": true
+    },
+    {
+      "name": "mobile_closed_drawer_not_focusable",
+      "passed": true
+    },
+    {
+      "name": "mobile_no_secret_or_raw_response",
+      "passed": true
+    },
+    {
+      "name": "mobile_drawer_opens",
+      "passed": true
+    },
+    {
+      "name": "drawer_initial_focus",
+      "passed": true
+    },
+    {
+      "name": "drawer_focus_trap",
+      "passed": true
+    },
+    {
+      "name": "mobile_escape_closes_drawer",
+      "passed": true
+    },
+    {
+      "name": "mobile_focus_restored",
+      "passed": true
+    },
+    {
+      "name": "mobile_settings_navigation",
+      "passed": true
+    },
+    {
+      "name": "mobile_history_navigation",
+      "passed": true
+    },
+    {
+      "name": "mobile_liuyao_placeholder",
+      "passed": true
+    },
+    {
+      "name": "narrow_320px_no_overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile_calculation_result",
+      "passed": true
+    },
+    {
+      "name": "question_xss_escaped",
+      "passed": true
+    },
+    {
+      "name": "mobile_result_no_overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile_result_no_secret",
+      "passed": true
+    },
+    {
+      "name": "narrow_result_no_overflow",
+      "passed": true
+    },
+    {
+      "name": "no_page_errors",
+      "passed": true
+    },
+    {
+      "name": "no_unexpected_console_errors",
+      "passed": true
+    },
+    {
+      "name": "no_external_browser_requests",
+      "passed": true
+    },
+    {
+      "name": "no_client_authentication_headers",
+      "passed": true
+    }
+  ],
+  "external_origins": [],
+  "sensitive_request_count": 0,
+  "page_error_count": 0,
+  "console_error_count": 3
+}

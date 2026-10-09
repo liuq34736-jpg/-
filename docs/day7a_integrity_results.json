@@ -1,0 +1,32 @@
+{
+  "day6b_commit": "4d4d19e70c8263e1d26dd71be5b8070e6591b7e0",
+  "day6b_tracked_files": 303,
+  "allowed_modified_files": [
+    "backend/app/main.py",
+    "frontend/src/platform/MeihuaPage.tsx",
+    "frontend/src/platform/meihua.css"
+  ],
+  "modified_baseline_files": [
+    "backend/app/main.py",
+    "frontend/src/platform/MeihuaPage.tsx",
+    "frontend/src/platform/meihua.css"
+  ],
+  "unexpected_modified_files": [],
+  "old_rulebooks_reviews_engines_frames_preserved": true,
+  "production_files": 157,
+  "changed_production_files": [],
+  "signed_cache_files": 509,
+  "changed_signed_cache_files": [],
+  "history_rows": 42,
+  "history_schema_unchanged": true,
+  "history_row_hashes_unchanged": true,
+  "history_database_bytes_unchanged": true,
+  "git_safety": {
+    "mode": "candidate",
+    "files_checked": 356,
+    "findings": [],
+    "passed": true
+  },
+  "real_ai_calls": 0,
+  "passed": true
+}

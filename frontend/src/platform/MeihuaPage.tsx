@@ -2,6 +2,8 @@ import { useEffect, useRef, useState, type FormEvent } from 'react'
 import { BookOpen, ArrowRight, LoaderCircle } from 'lucide-react'
 import { catalogSchema, resultSchema, ROLE_LABELS, type Catalog, type MeihuaResult } from './meihuaContract'
 import './meihua.css'
+import TraditionalJudgementPreview from './TraditionalJudgementPreview'
+import { previewSchema, judgementSchema, type JudgementPreview } from './traditionalPreviewContract'
 
 function chinaNow() {
   const parts = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit',
@@ -27,7 +29,7 @@ const SECTION_LABELS: Record<string, string> = {
 const UNIT_LABELS: Record<string, string> = { current_state: '当前格局', primary_change: '核心变化', change_direction: '变化方向',
   internal_process: '内部过程', body_use: '体用', body_use_relation: '生克关系', seasonal_strength: '时令', overall_structure: '综合结构' }
 
-function ReadingResult({ value }: { value: MeihuaResult }) {
+function ReadingResult({ value, traditional }: { value: MeihuaResult; traditional: JudgementPreview | null }) {
   const { original_hexagram: original, changed_hexagram: changed, mutual_hexagram: mutual, moving_line: moving, body_use: body, strength } = value
   return <section className="meihua-results" aria-live="polite" data-testid="meihua-result">
     {value.question_text && <div className="question-display"><span className="eyebrow">你问的是</span><p>{value.question_text}</p>
@@ -49,6 +51,7 @@ function ReadingResult({ value }: { value: MeihuaResult }) {
       <small>当前节气：{strength.active_solar_term} · 下一个节气：{strength.next_solar_term}</small></div>
       <div><p>体{body.body_element}{strength.body.state_label} · 用{body.yong_element}{strength.yong.state_label}</p>
         <small>旺衰只描述传统月令状态，不推定现实结果。</small></div></div>
+    {traditional && <TraditionalJudgementPreview value={traditional} />}
     <h3>已批准的基础卦义</h3><p className="section-description">沿用现有已核验古籍与已批准解释。本轮未调用 AI，也未将问题套入新的个性化断语。</p>
     <div className="meaning-grid">{value.standard_meanings.map(meaning => <article key={meaning.role} data-testid={`meaning-${meaning.role}`}>
       <span className="eyebrow">{ROLE_LABELS[meaning.role]}</span><p>{meaning.text}</p>
@@ -75,7 +78,7 @@ function ReadingResult({ value }: { value: MeihuaResult }) {
         <p>23:00–00:59 为子时；农历日期在 00:00 换日。除八余零为坤，除六余零为第六爻。</p></div>}
       <dl>{Object.entries(value.versions).map(([name, version]) => <div key={name}><dt>{name}</dt><dd>{version}</dd></div>)}</dl>
     </details>
-    <p className="small-note">本次网页计算未保存历史。原系统历史仍保持原样；AI 问事正文和传统综合断卦尚未接入。</p>
+    <p className="small-note">本次网页计算未保存历史。原系统历史仍保持原样；{traditional ? '传统综合判断仅在本地预览，AI 问事正文尚未接入。' : 'AI 问事正文和传统综合断卦尚未接入。'}</p>
   </section>
 }
 
@@ -90,6 +93,8 @@ export default function MeihuaPage() {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
   const [result, setResult] = useState<MeihuaResult | null>(null)
+  const [preview, setPreview] = useState(false)
+  const [traditional, setTraditional] = useState<JudgementPreview | null>(null)
   const controller = useRef<AbortController | null>(null)
   const locked = useRef(false)
   useEffect(() => {
@@ -105,21 +110,40 @@ export default function MeihuaPage() {
     event.preventDefault()
     if (locked.current) return
     locked.current = true
-    setBusy(true); setError(''); setResult(null)
+    setBusy(true); setError(''); setResult(null); setTraditional(null)
     const abort = new AbortController()
     controller.current = abort
     const timeout = window.setTimeout(() => abort.abort(), 25000)
     try {
       const payload = { input_mode: mode, question_text: question, cast_at: `${castAt.length === 16 ? castAt + ':00' : castAt}+08:00`,
         ...(mode === 'manual_hexagram' ? { hexagram_id: hexagramId, moving_line: position } : {}) }
-      const response = await fetch('/api/v1/readings', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      const response = await fetch(preview ? '/api/v1/meihua/traditional-preview' : '/api/v1/readings', { method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload), signal: abort.signal })
       if (!response.ok) {
         setError(response.status === 422 ? '输入格式不正确，请检查卦象、爻位及中国起卦时间（2000–2099 年）。' :
           response.status === 413 ? '问题过长，请缩短后重新提交。' : '冻结计算服务暂不可用，请稍后重试。')
         return
       }
-      setResult(resultSchema.parse(await response.json()))
+      const raw: unknown = await response.json()
+      if (preview) {
+        const parsed = previewSchema.safeParse(raw)
+        if (parsed.success) { setResult(parsed.data.reading); setTraditional(parsed.data.judgement) }
+        else {
+          // An invalid preview must not discard a separately valid frozen reading,
+          // or display unvalidated judgment/extra fields. No raw error is rendered.
+          const reading = typeof raw === 'object' && raw !== null && 'reading' in raw ? resultSchema.safeParse(raw.reading) : null
+          if (reading?.success) {
+            setResult(reading.data)
+            setTraditional(judgementSchema.parse({ preview_version: 'traditional_judgement_web_preview_v1', policy_version: 'traditional_condition_synthesis_v1',
+              registry_version: 'day6ab_readonly_registry_v1', review_status: 'evidence_unavailable', eligible_for_condition_review: false,
+              finite_synthesis_available: false, direction: null, label: '仅展示已验证结构', summary: '扩展判断响应未通过校验，本次未采用；保留已验证卦象与基础解释。',
+              scope: 'structure_only', body_use_baseline: null, conditions: [], branches: [], branch_relationship: null, scope_limits: [],
+              favorable_factors: [], adverse_factors: [], strength_modifiers: [], auxiliary_analysis: [], conflicts: [], auxiliary_divergences: [],
+              uncertainties: [], rules: [], rule_sources: [], classical_sources: [], review_provenance: null, real_world_conditions: 'unknown',
+              question_used_to_satisfy_conditions: false, is_final_event_outcome: false, ai_used: false, history_written: false }))
+          } else throw new Error('invalid response')
+        }
+      } else setResult(resultSchema.parse(raw))
     } catch {
       if (controller.current === abort) setError('计算未完成，请检查本地服务后重试。')
     } finally {
@@ -150,12 +174,16 @@ export default function MeihuaPage() {
       <label htmlFor="cast-at">起卦时间<span>中国标准时间 · UTC+08:00</span></label>
       <input id="cast-at" type="datetime-local" step="1" min="2000-01-01T00:00:00" max="2099-12-31T23:59:59" required disabled={busy} value={castAt} onChange={event => setCastAt(event.target.value)} />
       <small>{mode === 'manual_hexagram' ? '此时间仅用于时令分析，改变时间不会改变你输入的本卦和动爻。' : '使用农历年月日时法；23 点进入子时，农历日期仍按 00:00 换日。'}</small>
+      <fieldset disabled={busy}><legend>结果内容</legend><div className="preview-control">
+        <label><input type="radio" name="preview" checked={!preview} onChange={() => setPreview(false)} />基础卦象</label>
+        <label><input type="radio" name="preview" data-testid="enable-traditional-preview" checked={preview} onChange={() => setPreview(true)} />传统综合判断预览</label>
+      </div><p className="section-description">独立本地预览。仅已审核爻位参与有限判断，其余保留基础解释；不调用 AI，不保存历史。</p></fieldset>
       {catalogFailed && <p role="alert" className="notice">卦象目录暂不可用，请检查本地服务后刷新页面。</p>}
       {error && <p role="alert" className="notice">{error}</p>}
       <button className="start-casting" type="submit" disabled={busy || (mode === 'manual_hexagram' && !catalog)}>
         {busy ? <><LoaderCircle size={17} />正在计算…</> : <>开始起卦 <ArrowRight size={17} /></>}
       </button>
     </form>
-    {result && <ReadingResult value={result} />}
+    {result && <ReadingResult value={result} traditional={traditional} />}
   </section>
 }

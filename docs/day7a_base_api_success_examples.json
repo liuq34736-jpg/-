@@ -1,0 +1,1808 @@
+{
+  "synthetic_questions_only": true,
+  "guan_manual": {
+    "api_version": "meihua_service_adapter_v1",
+    "input_mode": "manual_hexagram",
+    "cast_at": "2026-09-24T19:45:35+08:00",
+    "timezone": "Asia/Shanghai",
+    "line_order": "bottom_up",
+    "original_hexagram": {
+      "id": 20,
+      "name": "观",
+      "full_name": "风地观",
+      "lines": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "binary": "000011",
+      "upper_trigram": "巽",
+      "lower_trigram": "坤"
+    },
+    "moving_line": {
+      "position": 4,
+      "name": "六四",
+      "polarity": 0
+    },
+    "mutual_hexagram": {
+      "id": 23,
+      "name": "剥",
+      "full_name": "山地剥",
+      "lines": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "binary": "000001",
+      "upper_trigram": "艮",
+      "lower_trigram": "坤"
+    },
+    "changed_hexagram": {
+      "id": 12,
+      "name": "否",
+      "full_name": "天地否",
+      "lines": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "binary": "000111",
+      "upper_trigram": "乾",
+      "lower_trigram": "坤"
+    },
+    "body_use": {
+      "rule_version": "moving_trigram_is_yong_v1",
+      "body_trigram": "坤",
+      "yong_trigram": "巽",
+      "body_element": "土",
+      "yong_element": "木",
+      "relation": "yong_controls_body",
+      "relation_text": "用木克体土"
+    },
+    "strength": {
+      "rule_version": "meihua_strength_v1",
+      "timezone": "Asia/Shanghai",
+      "solar_term_month_branch": "酉",
+      "ruling_element": "金",
+      "active_solar_term": "秋分",
+      "active_solar_term_time": "2026-09-23T08:05:14+08:00",
+      "next_solar_term": "寒露",
+      "next_solar_term_time": "2026-10-08T14:29:17+08:00",
+      "strength_boundary_time": "2026-09-07T22:41:16+08:00",
+      "next_month_boundary_time": "2026-10-08T14:29:17+08:00",
+      "body": {
+        "trigram": "坤",
+        "element": "土",
+        "state": "neutral",
+        "state_label": "平"
+      },
+      "yong": {
+        "trigram": "巽",
+        "element": "木",
+        "state": "shuai",
+        "state_label": "衰"
+      },
+      "mutual": {
+        "upper": {
+          "trigram": "艮",
+          "element": "土",
+          "state": "neutral",
+          "state_label": "平"
+        },
+        "lower": {
+          "trigram": "坤",
+          "element": "土",
+          "state": "neutral",
+          "state_label": "平"
+        }
+      },
+      "changed": {
+        "upper": {
+          "trigram": "乾",
+          "element": "金",
+          "state": "wang",
+          "state_label": "旺"
+        },
+        "lower": {
+          "trigram": "坤",
+          "element": "土",
+          "state": "neutral",
+          "state_label": "平"
+        }
+      },
+      "auxiliary_weight": "auxiliary_strength",
+      "solar_term_source": "lunar-python==1.4.8（节气时刻；2026 年样本与香港天文台分钟值核对）"
+    },
+    "time_calculation": null,
+    "versions": {
+      "production_version": "1.2.0",
+      "casting_version": "manual_hexagram_v1",
+      "analysis_version": "meihua_analysis_v1",
+      "interpretation_version": "meihua_interpretation_v1",
+      "body_use_version": "moving_trigram_is_yong_v1",
+      "strength_version": "meihua_strength_v1",
+      "source_corpus_version": "canonical_meihua_corpus_v1",
+      "semantic_frame_version": "verified_semantic_frame_v1"
+    },
+    "interpretation_units": [
+      {
+        "type": "current_state",
+        "statement": "本卦为观，表示当前整体格局。",
+        "evidence": [
+          {
+            "type": "casting_result",
+            "rule_version": "manual_hexagram_v1"
+          },
+          {
+            "type": "classical_source",
+            "rule_version": "local_book_lookup_v1"
+          }
+        ]
+      },
+      {
+        "type": "primary_change",
+        "statement": "第4爻发动，变化集中在六四。",
+        "evidence": [
+          {
+            "type": "moving_line",
+            "rule_version": "manual_hexagram_v1"
+          },
+          {
+            "type": "classical_source",
+            "rule_version": "local_book_lookup_v1"
+          }
+        ]
+      },
+      {
+        "type": "change_direction",
+        "statement": "六四变化后，本卦由观转为否，仅表示结构变化方向。",
+        "evidence": [
+          {
+            "type": "changed_hexagram",
+            "rule_version": "manual_hexagram_v1"
+          },
+          {
+            "type": "classical_source",
+            "rule_version": "local_book_lookup_v1"
+          }
+        ]
+      },
+      {
+        "type": "internal_process",
+        "statement": "互卦为剥，作为内部过程的辅助信息。",
+        "evidence": [
+          {
+            "type": "mutual_hexagram",
+            "rule_version": "mutual_234_345_v1"
+          }
+        ]
+      },
+      {
+        "type": "body_use",
+        "statement": "体为坤（土），用为巽（木）。",
+        "evidence": [
+          {
+            "type": "body_use",
+            "rule_version": "moving_trigram_is_yong_v1"
+          }
+        ]
+      },
+      {
+        "type": "body_use_relation",
+        "statement": "外部因素对主体形成克制关系。",
+        "evidence": [
+          {
+            "type": "body_use",
+            "rule_version": "moving_trigram_is_yong_v1"
+          },
+          {
+            "type": "five_element",
+            "rule_version": "five_element_relation_v1"
+          }
+        ]
+      },
+      {
+        "type": "seasonal_strength",
+        "statement": "当前酉月，金当令；体土为平，用木为衰。",
+        "evidence": [
+          {
+            "type": "seasonal_strength",
+            "rule_version": "meihua_strength_v1"
+          }
+        ]
+      },
+      {
+        "type": "overall_structure",
+        "statement": "当前存在“用木克体土”的关系，但克制一方木处于衰势。",
+        "evidence": [
+          {
+            "type": "five_element",
+            "rule_version": "five_element_relation_v1"
+          },
+          {
+            "type": "seasonal_strength",
+            "rule_version": "meihua_strength_v1"
+          }
+        ]
+      }
+    ],
+    "standard_meanings": [
+      {
+        "role": "original_hexagram",
+        "text": "居上者以庄重诚信示范感化下民，并巡视各方、观察民情以设教化。这是当前局面的主要观察点。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:20:judgment.classical_text",
+          "runtime_ws_benyi:卷1:20:tuan.classical_text",
+          "runtime_ws_benyi:卷1:20:xiang.classical_text",
+          "runtime_ws_sibu:卷二:20:judgment.classical_text",
+          "runtime_ws_sibu:卷二:20:tuan.classical_text",
+          "runtime_ws_sibu:卷二:20:xiang.classical_text"
+        ]
+      },
+      {
+        "role": "moving_line",
+        "text": "这次真正值得留意的是：看到国家的光彩景象，适合做宾客去辅佐君王。这说明看重的是以宾客身份参与。这是这次变化的重点。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:20:xiang_classical_text:4",
+          "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+          "runtime_ws_sibu:卷二:20:xiang_classical_text:4",
+          "runtime_ws_sibu:卷二:20:yao_classical_text:4"
+        ]
+      },
+      {
+        "role": "mutual_hexagram",
+        "text": "当前形势不利于有所行动，因为不良势力正在增长，应当顺应形势停下来观察。上位者应厚待下位者，以安定大家的居所。把它作为内部过程的辅助观察。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:23:judgment.classical_text",
+          "runtime_ws_benyi:卷1:23:tuan.classical_text",
+          "runtime_ws_benyi:卷1:23:xiang.classical_text"
+        ]
+      },
+      {
+        "role": "changed_hexagram",
+        "text": "当前局面上下不通、彼此隔绝，整体闭塞难行，不利于坚持正道，强势的一方在退去，弱势的一方在进来。此时应节俭收敛、避开祸难，不要把俸禄荣华当作追求。这是变化方向，不代表结果必然发生。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:12:judgment.classical_text",
+          "runtime_ws_benyi:卷1:12:tuan.classical_text",
+          "runtime_ws_benyi:卷1:12:xiang.classical_text"
+        ]
+      }
+    ],
+    "source_references": [
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:20:judgment.classical_text",
+        "role": "original_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "觀盥而不薦有孚顒若",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第20卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:20:tuan.classical_text",
+        "role": "original_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "大觀在上順而巽中正以觀天下觀盥而不薦有孚顒若下觀而化也觀天之神道而四時不忒聖人以神道設教而天下服矣",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第20卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:20:xiang.classical_text",
+        "role": "original_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "風行地上觀先王以省方觀民設教",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第20卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:20:judgment.classical_text",
+        "role": "original_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "觀盥而不薦有孚顒若",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第10卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:20:tuan.classical_text",
+        "role": "original_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "大觀在上順而巽中正以觀天下觀盥而不薦有孚顒若下觀而化也觀天之神道而四時不忒聖人以神道設敎而天下服矣",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第10卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:20:xiang.classical_text",
+        "role": "original_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "風行地上觀先王以省方觀民設敎",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第10卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:20:xiang_classical_text:4",
+        "role": "moving_line",
+        "section_type": "xiang_classical_text",
+        "text": "觀國之光尚賓也",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第20卦块 xiang_classical_text 第4爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+        "role": "moving_line",
+        "section_type": "yao_classical_text",
+        "text": "六四觀國之光利用賔于王",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第20卦块 yao_classical_text 第4爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:20:xiang_classical_text:4",
+        "role": "moving_line",
+        "section_type": "xiang_classical_text",
+        "text": "觀國之光尚賔也",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第10卦块 xiang_classical_text 第4爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:20:yao_classical_text:4",
+        "role": "moving_line",
+        "section_type": "yao_classical_text",
+        "text": "六四觀國之光利用賔于王",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第10卦块 yao_classical_text 第4爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:23:judgment.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "剝不利有攸往",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第23卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:23:tuan.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "剝剝也柔變剛也不利有攸往小人長也順而止之觀象也君子尚消息盈虛天行也",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第23卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:23:xiang.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "山附於地剝上以厚下安宅",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第23卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷三:23:judgment.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "剥不利有攸往",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%89",
+        "volume": "卷三",
+        "location": "卷三 第3卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷三:23:tuan.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "剥剥也柔變剛也不利有攸往小人長也順而止之觀象也君子尚消息盈虚天行也",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%89",
+        "volume": "卷三",
+        "location": "卷三 第3卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷三:23:xiang.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "山附於地剥上以厚下安宅",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%89",
+        "volume": "卷三",
+        "location": "卷三 第3卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:12:judgment.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "否之匪人不利君子貞大往小來",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第12卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:12:tuan.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "否之匪人不利君子貞大往小來則是天地不交而萬物不通也上下不交而天下无邦也内隂而外陽内柔而外剛内小人而外君子小人道長君子道消也",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第12卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:12:xiang.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "天地不交否君子以儉徳辟難不可榮以祿",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第12卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:12:judgment.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "否之匪人不利君子貞大往小來",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第2卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:12:tuan.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "否之匪人不利君子貞大往小來則是天地不交而萬物不通也上下不交而天下无邦也内隂而外陽内柔而外剛内小人而外君子小人道長君子道消也",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第2卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:12:xiang.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "天地不交否君子以儉德辟難不可榮以禄",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第2卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      }
+    ],
+    "ai_used": false,
+    "history_saved": false,
+    "question_text": "测试：工作问题，不参与计算。",
+    "question_applied_to_calculation": false
+  },
+  "sui_manual": {
+    "api_version": "meihua_service_adapter_v1",
+    "input_mode": "manual_hexagram",
+    "cast_at": "2026-09-24T19:45:35+08:00",
+    "timezone": "Asia/Shanghai",
+    "line_order": "bottom_up",
+    "original_hexagram": {
+      "id": 17,
+      "name": "随",
+      "full_name": "泽雷随",
+      "lines": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "binary": "100110",
+      "upper_trigram": "兑",
+      "lower_trigram": "震"
+    },
+    "moving_line": {
+      "position": 2,
+      "name": "六二",
+      "polarity": 0
+    },
+    "mutual_hexagram": {
+      "id": 53,
+      "name": "渐",
+      "full_name": "风山渐",
+      "lines": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "binary": "001011",
+      "upper_trigram": "巽",
+      "lower_trigram": "艮"
+    },
+    "changed_hexagram": {
+      "id": 58,
+      "name": "兑",
+      "full_name": "兑为泽",
+      "lines": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "binary": "110110",
+      "upper_trigram": "兑",
+      "lower_trigram": "兑"
+    },
+    "body_use": {
+      "rule_version": "moving_trigram_is_yong_v1",
+      "body_trigram": "兑",
+      "yong_trigram": "震",
+      "body_element": "金",
+      "yong_element": "木",
+      "relation": "body_controls_yong",
+      "relation_text": "体金克用木"
+    },
+    "strength": {
+      "rule_version": "meihua_strength_v1",
+      "timezone": "Asia/Shanghai",
+      "solar_term_month_branch": "酉",
+      "ruling_element": "金",
+      "active_solar_term": "秋分",
+      "active_solar_term_time": "2026-09-23T08:05:14+08:00",
+      "next_solar_term": "寒露",
+      "next_solar_term_time": "2026-10-08T14:29:17+08:00",
+      "strength_boundary_time": "2026-09-07T22:41:16+08:00",
+      "next_month_boundary_time": "2026-10-08T14:29:17+08:00",
+      "body": {
+        "trigram": "兑",
+        "element": "金",
+        "state": "wang",
+        "state_label": "旺"
+      },
+      "yong": {
+        "trigram": "震",
+        "element": "木",
+        "state": "shuai",
+        "state_label": "衰"
+      },
+      "mutual": {
+        "upper": {
+          "trigram": "巽",
+          "element": "木",
+          "state": "shuai",
+          "state_label": "衰"
+        },
+        "lower": {
+          "trigram": "艮",
+          "element": "土",
+          "state": "neutral",
+          "state_label": "平"
+        }
+      },
+      "changed": {
+        "upper": {
+          "trigram": "兑",
+          "element": "金",
+          "state": "wang",
+          "state_label": "旺"
+        },
+        "lower": {
+          "trigram": "兑",
+          "element": "金",
+          "state": "wang",
+          "state_label": "旺"
+        }
+      },
+      "auxiliary_weight": "auxiliary_strength",
+      "solar_term_source": "lunar-python==1.4.8（节气时刻；2026 年样本与香港天文台分钟值核对）"
+    },
+    "time_calculation": null,
+    "versions": {
+      "production_version": "1.2.0",
+      "casting_version": "manual_hexagram_v1",
+      "analysis_version": "meihua_analysis_v1",
+      "interpretation_version": "meihua_interpretation_v1",
+      "body_use_version": "moving_trigram_is_yong_v1",
+      "strength_version": "meihua_strength_v1",
+      "source_corpus_version": "canonical_meihua_corpus_v1",
+      "semantic_frame_version": "verified_semantic_frame_v1"
+    },
+    "interpretation_units": [
+      {
+        "type": "current_state",
+        "statement": "本卦为随，表示当前整体格局。",
+        "evidence": [
+          {
+            "type": "casting_result",
+            "rule_version": "manual_hexagram_v1"
+          },
+          {
+            "type": "classical_source",
+            "rule_version": "local_book_lookup_v1"
+          }
+        ]
+      },
+      {
+        "type": "primary_change",
+        "statement": "第2爻发动，变化集中在六二。",
+        "evidence": [
+          {
+            "type": "moving_line",
+            "rule_version": "manual_hexagram_v1"
+          },
+          {
+            "type": "classical_source",
+            "rule_version": "local_book_lookup_v1"
+          }
+        ]
+      },
+      {
+        "type": "change_direction",
+        "statement": "六二变化后，本卦由随转为兑，仅表示结构变化方向。",
+        "evidence": [
+          {
+            "type": "changed_hexagram",
+            "rule_version": "manual_hexagram_v1"
+          },
+          {
+            "type": "classical_source",
+            "rule_version": "local_book_lookup_v1"
+          }
+        ]
+      },
+      {
+        "type": "internal_process",
+        "statement": "互卦为渐，作为内部过程的辅助信息。",
+        "evidence": [
+          {
+            "type": "mutual_hexagram",
+            "rule_version": "mutual_234_345_v1"
+          }
+        ]
+      },
+      {
+        "type": "body_use",
+        "statement": "体为兑（金），用为震（木）。",
+        "evidence": [
+          {
+            "type": "body_use",
+            "rule_version": "moving_trigram_is_yong_v1"
+          }
+        ]
+      },
+      {
+        "type": "body_use_relation",
+        "statement": "主体与外部因素之间表现为体克用关系。",
+        "evidence": [
+          {
+            "type": "body_use",
+            "rule_version": "moving_trigram_is_yong_v1"
+          },
+          {
+            "type": "five_element",
+            "rule_version": "five_element_relation_v1"
+          }
+        ]
+      },
+      {
+        "type": "seasonal_strength",
+        "statement": "当前酉月，金当令；体金为旺，用木为衰。",
+        "evidence": [
+          {
+            "type": "seasonal_strength",
+            "rule_version": "meihua_strength_v1"
+          }
+        ]
+      },
+      {
+        "type": "overall_structure",
+        "statement": "当前为体金克用木；作用方的时令状态为旺，体为旺，用为衰。",
+        "evidence": [
+          {
+            "type": "five_element",
+            "rule_version": "five_element_relation_v1"
+          },
+          {
+            "type": "seasonal_strength",
+            "rule_version": "meihua_strength_v1"
+          }
+        ]
+      }
+    ],
+    "standard_meanings": [
+      {
+        "role": "original_hexagram",
+        "text": "这段内容讲的是随顺时势。天下万物都跟着时机变化，所以顺应时机的意义很大。这是当前局面的主要观察点。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:17:judgment.classical_text",
+          "runtime_ws_benyi:卷1:17:tuan.classical_text",
+          "runtime_ws_benyi:卷1:17:xiang.classical_text"
+        ]
+      },
+      {
+        "role": "moving_line",
+        "text": "这次真正值得留意的是：顾着小的，就顾不上大的。亲近这一边，另一边便失去，两者不能同时兼顾。这是这次变化的重点。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:17:xiang_classical_text:2",
+          "runtime_ws_benyi:卷1:17:yao_classical_text:2",
+          "runtime_ws_sibu:卷二:17:xiang_classical_text:2",
+          "runtime_ws_sibu:卷二:17:yao_classical_text:2"
+        ]
+      },
+      {
+        "role": "mutual_hexagram",
+        "text": "事情要一步一步来，像女子出嫁按礼慢慢进行才顺利。前进时位置得当、走正道，就能有成效，也能带动周围变好。把它作为内部过程的辅助观察。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷2:53:judgment.classical_text",
+          "runtime_ws_benyi:卷2:53:tuan.classical_text",
+          "runtime_ws_benyi:卷2:53:xiang.classical_text"
+        ]
+      },
+      {
+        "role": "changed_hexagram",
+        "text": "内心刚正而外表柔和。以使人喜悦的方式行事。这是变化方向，不代表结果必然发生。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷2:58:judgment.classical_text",
+          "runtime_ws_benyi:卷2:58:tuan.classical_text",
+          "runtime_ws_benyi:卷2:58:xiang.classical_text",
+          "runtime_ws_sibu:卷六:58:judgment.classical_text",
+          "runtime_ws_sibu:卷六:58:tuan.classical_text",
+          "runtime_ws_sibu:卷六:58:xiang.classical_text"
+        ]
+      }
+    ],
+    "source_references": [
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:17:judgment.classical_text",
+        "role": "original_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "隨元亨利貞无咎",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第17卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:17:tuan.classical_text",
+        "role": "original_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "隨剛來而下柔動而說隨大亨貞无咎而天下隨時隨時之義大矣哉",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第17卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:17:xiang.classical_text",
+        "role": "original_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "澤中有雷隨君子以嚮晦入宴息",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第17卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:17:judgment.classical_text",
+        "role": "original_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "隨元亨利貞无咎",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第7卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:17:tuan.classical_text",
+        "role": "original_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "隨剛來而下柔動而說隨大亨貞无咎而天下隨時隨時之義大矣哉",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第7卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:17:xiang.classical_text",
+        "role": "original_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "澤中有雷隨君子以嚮晦入宴息",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第7卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:17:xiang_classical_text:2",
+        "role": "moving_line",
+        "section_type": "xiang_classical_text",
+        "text": "係小子弗兼與也",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第17卦块 xiang_classical_text 第2爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:17:yao_classical_text:2",
+        "role": "moving_line",
+        "section_type": "yao_classical_text",
+        "text": "六二係小子失丈夫",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第17卦块 yao_classical_text 第2爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:17:xiang_classical_text:2",
+        "role": "moving_line",
+        "section_type": "xiang_classical_text",
+        "text": "係小子弗兼與也",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第7卦块 xiang_classical_text 第2爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:17:yao_classical_text:2",
+        "role": "moving_line",
+        "section_type": "yao_classical_text",
+        "text": "六二係小子失丈夫",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第7卦块 yao_classical_text 第2爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷2:53:judgment.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "漸女歸吉利貞",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+        "volume": "卷2",
+        "location": "卷2 第23卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷2:53:tuan.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "漸之進也女歸吉也進得位往有功也進以正可以正邦也其位剛得中也止而巽動不窮也",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+        "volume": "卷2",
+        "location": "卷2 第23卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷2:53:xiang.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "山上有木漸君子以居賢德善俗",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+        "volume": "卷2",
+        "location": "卷2 第23卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷五:53:judgment.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "漸女歸吉利貞",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%94",
+        "volume": "卷五",
+        "location": "卷五 第11卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷五:53:tuan.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "漸之進也女歸吉也進得位往有功也進以正可以正邦也其位剛得中也止而巽動不窮也",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%94",
+        "volume": "卷五",
+        "location": "卷五 第11卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷五:53:xiang.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "山上有木漸君子以居賢德善俗",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%94",
+        "volume": "卷五",
+        "location": "卷五 第11卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷2:58:judgment.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "兌亨利貞",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+        "volume": "卷2",
+        "location": "卷2 第28卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷2:58:tuan.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "兌説也剛中而柔外説以利貞是以順乎天而應乎人説以先民民忘其勞説以犯難民忘其死説之大民勸矣哉",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+        "volume": "卷2",
+        "location": "卷2 第28卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷2:58:xiang.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "麗澤兌君子以朋友講習",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+        "volume": "卷2",
+        "location": "卷2 第28卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷六:58:judgment.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "兊亨利貞",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E5%85%AD",
+        "volume": "卷六",
+        "location": "卷六 第4卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷六:58:tuan.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "兊說也剛中而柔外說以利貞是以順乎天而應乎人說以先民民忘其勞說以犯難民忘其死說之大民勸矣哉",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E5%85%AD",
+        "volume": "卷六",
+        "location": "卷六 第4卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷六:58:xiang.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "麗澤兊君子以朋友講習",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E5%85%AD",
+        "volume": "卷六",
+        "location": "卷六 第4卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      }
+    ],
+    "ai_used": false,
+    "history_saved": false,
+    "question_text": "测试：感情问题，不参与计算。",
+    "question_applied_to_calculation": false
+  },
+  "guan_time": {
+    "api_version": "meihua_service_adapter_v1",
+    "input_mode": "time_cast",
+    "cast_at": "2026-09-24T19:45:35+08:00",
+    "timezone": "Asia/Shanghai",
+    "line_order": "bottom_up",
+    "original_hexagram": {
+      "id": 20,
+      "name": "观",
+      "full_name": "风地观",
+      "lines": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "binary": "000011",
+      "upper_trigram": "巽",
+      "lower_trigram": "坤"
+    },
+    "moving_line": {
+      "position": 4,
+      "name": "六四",
+      "polarity": 0
+    },
+    "mutual_hexagram": {
+      "id": 23,
+      "name": "剥",
+      "full_name": "山地剥",
+      "lines": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "binary": "000001",
+      "upper_trigram": "艮",
+      "lower_trigram": "坤"
+    },
+    "changed_hexagram": {
+      "id": 12,
+      "name": "否",
+      "full_name": "天地否",
+      "lines": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "binary": "000111",
+      "upper_trigram": "乾",
+      "lower_trigram": "坤"
+    },
+    "body_use": {
+      "rule_version": "moving_trigram_is_yong_v1",
+      "body_trigram": "坤",
+      "yong_trigram": "巽",
+      "body_element": "土",
+      "yong_element": "木",
+      "relation": "yong_controls_body",
+      "relation_text": "用木克体土"
+    },
+    "strength": {
+      "rule_version": "meihua_strength_v1",
+      "timezone": "Asia/Shanghai",
+      "solar_term_month_branch": "酉",
+      "ruling_element": "金",
+      "active_solar_term": "秋分",
+      "active_solar_term_time": "2026-09-23T08:05:14+08:00",
+      "next_solar_term": "寒露",
+      "next_solar_term_time": "2026-10-08T14:29:17+08:00",
+      "strength_boundary_time": "2026-09-07T22:41:16+08:00",
+      "next_month_boundary_time": "2026-10-08T14:29:17+08:00",
+      "body": {
+        "trigram": "坤",
+        "element": "土",
+        "state": "neutral",
+        "state_label": "平"
+      },
+      "yong": {
+        "trigram": "巽",
+        "element": "木",
+        "state": "shuai",
+        "state_label": "衰"
+      },
+      "mutual": {
+        "upper": {
+          "trigram": "艮",
+          "element": "土",
+          "state": "neutral",
+          "state_label": "平"
+        },
+        "lower": {
+          "trigram": "坤",
+          "element": "土",
+          "state": "neutral",
+          "state_label": "平"
+        }
+      },
+      "changed": {
+        "upper": {
+          "trigram": "乾",
+          "element": "金",
+          "state": "wang",
+          "state_label": "旺"
+        },
+        "lower": {
+          "trigram": "坤",
+          "element": "土",
+          "state": "neutral",
+          "state_label": "平"
+        }
+      },
+      "auxiliary_weight": "auxiliary_strength",
+      "solar_term_source": "lunar-python==1.4.8（节气时刻；2026 年样本与香港天文台分钟值核对）"
+    },
+    "time_calculation": {
+      "lunar_year": 2026,
+      "lunar_month": 8,
+      "lunar_day": 14,
+      "is_leap_month": false,
+      "lunar_datetime": "2026年8月14日",
+      "year_branch": "午",
+      "year_branch_number": 7,
+      "hour_branch": "戌",
+      "hour_branch_number": 11,
+      "upper_total": 29,
+      "upper_remainder": 5,
+      "lower_total": 40,
+      "lower_remainder": 0,
+      "moving_total": 40,
+      "moving_remainder": 4,
+      "day_boundary_mode": "midnight"
+    },
+    "versions": {
+      "production_version": "1.2.0",
+      "casting_version": "traditional_meihua_datetime_v1",
+      "analysis_version": "meihua_analysis_v1",
+      "interpretation_version": "meihua_interpretation_v1",
+      "body_use_version": "moving_trigram_is_yong_v1",
+      "strength_version": "meihua_strength_v1",
+      "source_corpus_version": "canonical_meihua_corpus_v1",
+      "semantic_frame_version": "verified_semantic_frame_v1"
+    },
+    "interpretation_units": [
+      {
+        "type": "current_state",
+        "statement": "本卦为观，表示当前整体格局。",
+        "evidence": [
+          {
+            "type": "casting_result",
+            "rule_version": "traditional_meihua_datetime_v1"
+          },
+          {
+            "type": "classical_source",
+            "rule_version": "local_book_lookup_v1"
+          }
+        ]
+      },
+      {
+        "type": "primary_change",
+        "statement": "第4爻发动，变化集中在六四。",
+        "evidence": [
+          {
+            "type": "moving_line",
+            "rule_version": "traditional_meihua_datetime_v1"
+          },
+          {
+            "type": "classical_source",
+            "rule_version": "local_book_lookup_v1"
+          }
+        ]
+      },
+      {
+        "type": "change_direction",
+        "statement": "六四变化后，本卦由观转为否，仅表示结构变化方向。",
+        "evidence": [
+          {
+            "type": "changed_hexagram",
+            "rule_version": "traditional_meihua_datetime_v1"
+          },
+          {
+            "type": "classical_source",
+            "rule_version": "local_book_lookup_v1"
+          }
+        ]
+      },
+      {
+        "type": "internal_process",
+        "statement": "互卦为剥，作为内部过程的辅助信息。",
+        "evidence": [
+          {
+            "type": "mutual_hexagram",
+            "rule_version": "mutual_234_345_v1"
+          }
+        ]
+      },
+      {
+        "type": "body_use",
+        "statement": "体为坤（土），用为巽（木）。",
+        "evidence": [
+          {
+            "type": "body_use",
+            "rule_version": "moving_trigram_is_yong_v1"
+          }
+        ]
+      },
+      {
+        "type": "body_use_relation",
+        "statement": "外部因素对主体形成克制关系。",
+        "evidence": [
+          {
+            "type": "body_use",
+            "rule_version": "moving_trigram_is_yong_v1"
+          },
+          {
+            "type": "five_element",
+            "rule_version": "five_element_relation_v1"
+          }
+        ]
+      },
+      {
+        "type": "seasonal_strength",
+        "statement": "当前酉月，金当令；体土为平，用木为衰。",
+        "evidence": [
+          {
+            "type": "seasonal_strength",
+            "rule_version": "meihua_strength_v1"
+          }
+        ]
+      },
+      {
+        "type": "overall_structure",
+        "statement": "当前存在“用木克体土”的关系，但克制一方木处于衰势。",
+        "evidence": [
+          {
+            "type": "five_element",
+            "rule_version": "five_element_relation_v1"
+          },
+          {
+            "type": "seasonal_strength",
+            "rule_version": "meihua_strength_v1"
+          }
+        ]
+      }
+    ],
+    "standard_meanings": [
+      {
+        "role": "original_hexagram",
+        "text": "居上者以庄重诚信示范感化下民，并巡视各方、观察民情以设教化。这是当前局面的主要观察点。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:20:judgment.classical_text",
+          "runtime_ws_benyi:卷1:20:tuan.classical_text",
+          "runtime_ws_benyi:卷1:20:xiang.classical_text",
+          "runtime_ws_sibu:卷二:20:judgment.classical_text",
+          "runtime_ws_sibu:卷二:20:tuan.classical_text",
+          "runtime_ws_sibu:卷二:20:xiang.classical_text"
+        ]
+      },
+      {
+        "role": "moving_line",
+        "text": "这次真正值得留意的是：看到国家的光彩景象，适合做宾客去辅佐君王。这说明看重的是以宾客身份参与。这是这次变化的重点。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:20:xiang_classical_text:4",
+          "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+          "runtime_ws_sibu:卷二:20:xiang_classical_text:4",
+          "runtime_ws_sibu:卷二:20:yao_classical_text:4"
+        ]
+      },
+      {
+        "role": "mutual_hexagram",
+        "text": "当前形势不利于有所行动，因为不良势力正在增长，应当顺应形势停下来观察。上位者应厚待下位者，以安定大家的居所。把它作为内部过程的辅助观察。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:23:judgment.classical_text",
+          "runtime_ws_benyi:卷1:23:tuan.classical_text",
+          "runtime_ws_benyi:卷1:23:xiang.classical_text"
+        ]
+      },
+      {
+        "role": "changed_hexagram",
+        "text": "当前局面上下不通、彼此隔绝，整体闭塞难行，不利于坚持正道，强势的一方在退去，弱势的一方在进来。此时应节俭收敛、避开祸难，不要把俸禄荣华当作追求。这是变化方向，不代表结果必然发生。",
+        "status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:12:judgment.classical_text",
+          "runtime_ws_benyi:卷1:12:tuan.classical_text",
+          "runtime_ws_benyi:卷1:12:xiang.classical_text"
+        ]
+      }
+    ],
+    "source_references": [
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:20:judgment.classical_text",
+        "role": "original_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "觀盥而不薦有孚顒若",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第20卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:20:tuan.classical_text",
+        "role": "original_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "大觀在上順而巽中正以觀天下觀盥而不薦有孚顒若下觀而化也觀天之神道而四時不忒聖人以神道設教而天下服矣",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第20卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:20:xiang.classical_text",
+        "role": "original_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "風行地上觀先王以省方觀民設教",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第20卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:20:judgment.classical_text",
+        "role": "original_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "觀盥而不薦有孚顒若",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第10卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:20:tuan.classical_text",
+        "role": "original_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "大觀在上順而巽中正以觀天下觀盥而不薦有孚顒若下觀而化也觀天之神道而四時不忒聖人以神道設敎而天下服矣",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第10卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:20:xiang.classical_text",
+        "role": "original_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "風行地上觀先王以省方觀民設敎",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第10卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:20:xiang_classical_text:4",
+        "role": "moving_line",
+        "section_type": "xiang_classical_text",
+        "text": "觀國之光尚賓也",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第20卦块 xiang_classical_text 第4爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+        "role": "moving_line",
+        "section_type": "yao_classical_text",
+        "text": "六四觀國之光利用賔于王",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第20卦块 yao_classical_text 第4爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:20:xiang_classical_text:4",
+        "role": "moving_line",
+        "section_type": "xiang_classical_text",
+        "text": "觀國之光尚賔也",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第10卦块 xiang_classical_text 第4爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:20:yao_classical_text:4",
+        "role": "moving_line",
+        "section_type": "yao_classical_text",
+        "text": "六四觀國之光利用賔于王",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第10卦块 yao_classical_text 第4爻",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:23:judgment.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "剝不利有攸往",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第23卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:23:tuan.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "剝剝也柔變剛也不利有攸往小人長也順而止之觀象也君子尚消息盈虛天行也",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第23卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:23:xiang.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "山附於地剝上以厚下安宅",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第23卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷三:23:judgment.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "剥不利有攸往",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%89",
+        "volume": "卷三",
+        "location": "卷三 第3卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷三:23:tuan.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "剥剥也柔變剛也不利有攸往小人長也順而止之觀象也君子尚消息盈虚天行也",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%89",
+        "volume": "卷三",
+        "location": "卷三 第3卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷三:23:xiang.classical_text",
+        "role": "mutual_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "山附於地剥上以厚下安宅",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%89",
+        "volume": "卷三",
+        "location": "卷三 第3卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:12:judgment.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "否之匪人不利君子貞大往小來",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第12卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:12:tuan.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "否之匪人不利君子貞大往小來則是天地不交而萬物不通也上下不交而天下无邦也内隂而外陽内柔而外剛内小人而外君子小人道長君子道消也",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第12卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_benyi:卷1:12:xiang.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "天地不交否君子以儉徳辟難不可榮以祿",
+        "source_title": "周易本義（四庫全書本）",
+        "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+        "volume": "卷1",
+        "location": "卷1 第12卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:12:judgment.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "judgment.classical_text",
+        "text": "否之匪人不利君子貞大往小來",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第2卦块 judgment.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:12:tuan.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "tuan.classical_text",
+        "text": "否之匪人不利君子貞大往小來則是天地不交而萬物不通也上下不交而天下无邦也内隂而外陽内柔而外剛内小人而外君子小人道長君子道消也",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第2卦块 tuan.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": false
+      },
+      {
+        "evidence_id": "runtime_ws_sibu:卷二:12:xiang.classical_text",
+        "role": "changed_hexagram",
+        "section_type": "xiang.classical_text",
+        "text": "天地不交否君子以儉德辟難不可榮以禄",
+        "source_title": "周易（四部叢刊本）",
+        "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+        "volume": "卷二",
+        "location": "卷二 第2卦块 xiang.classical_text",
+        "original_pages": null,
+        "verification_status": "machine_verified",
+        "variant_present": true
+      }
+    ],
+    "ai_used": false,
+    "history_saved": false,
+    "question_text": "测试：感情问题，不参与计算。",
+    "question_applied_to_calculation": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collected": 405,
+  "passed": 405,
+  "failed": 0,
+  "skipped": 0,
+  "failed_test_ids": [],
+  "external_network_allowed": false,
+  "live_app_ports_allowed": false,
+  "loopback_event_loop_plumbing_allowed": true,
+  "production_writes_allowed": false,
+  "real_ai_calls": 0
+}
