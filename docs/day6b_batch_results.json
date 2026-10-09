@@ -1,0 +1,1401 @@
+{
+  "batch": [
+    {
+      "target": [
+        1,
+        3
+      ],
+      "hexagram": "乾",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "same_element",
+      "body_state": "wang",
+      "yong_state": "wang",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "82d6d9142530fc4722041b2e7c5e00d59b61740c4e6a9a06054defd1bcb8155e",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        1,
+        4
+      ],
+      "hexagram": "乾",
+      "line": "九四",
+      "state": "insufficient_evidence",
+      "eligible": false,
+      "readiness": "new_adjudication_excluded",
+      "failure_reason": "sufficient_condition_requires_unbound_commentary",
+      "relation": "same_element",
+      "body_state": "wang",
+      "yong_state": "wang",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "5aa0722d7f4d15b8e9972376e08eb5241bec00117822af8eee5440923a660909",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        2,
+        3
+      ],
+      "hexagram": "坤",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "branch_unresolved",
+      "failure_reason": null,
+      "relation": "same_element",
+      "body_state": "neutral",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "b6ea1415a45b05780c5545fe99d8d25b286d6c38bb035ae3345c458f056648b3",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        2,
+        4
+      ],
+      "hexagram": "坤",
+      "line": "六四",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "same_element",
+      "body_state": "neutral",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "ac8c1661b9189e0b66a23921fdc7dcf48ed2d8c7ea243341e162fe737548d126",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        4,
+        1
+      ],
+      "hexagram": "蒙",
+      "line": "初六",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "branch_unresolved",
+      "failure_reason": null,
+      "relation": "body_controls_yong",
+      "body_state": "neutral",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "c164da52881f672e7b26d32a8cc743dd56ee11429cb435126075b83b44229a57",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        4,
+        3
+      ],
+      "hexagram": "蒙",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "body_controls_yong",
+      "body_state": "neutral",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": true,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "6d35317876f38ebfeba476d908e4c86006872965546bf86355f95225cda4cde1",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        5,
+        3
+      ],
+      "hexagram": "需",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "yong_generates_body",
+      "body_state": "neutral",
+      "yong_state": "wang",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "229e94d5a76c6801cd1ed6e7fd01c432fab11236879d60f1515aeab4948e10e9",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        5,
+        6
+      ],
+      "hexagram": "需",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "body_generates_yong",
+      "body_state": "wang",
+      "yong_state": "neutral",
+      "body_use_base": "adverse",
+      "potential_primary_conditional_tension": true,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "929d0ac18bfcc99c1305841c724fb9a1d262870902b113b8014f4ebc3d8b7642",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        6,
+        3
+      ],
+      "hexagram": "讼",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "branch_unresolved",
+      "failure_reason": null,
+      "relation": "body_generates_yong",
+      "body_state": "wang",
+      "yong_state": "neutral",
+      "body_use_base": "adverse",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "841ed823c37ea8ea41f6dd041c289a9def68e2c2017c84be1110daad0a9673d1",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        7,
+        5
+      ],
+      "hexagram": "师",
+      "line": "六五",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "branch_unresolved",
+      "failure_reason": null,
+      "relation": "yong_controls_body",
+      "body_state": "neutral",
+      "yong_state": "neutral",
+      "body_use_base": "adverse",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "db1ee90a20e5020967e030b3b92706e19f2f905e3c805977e342a9ca61793ebe",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        8,
+        6
+      ],
+      "hexagram": "比",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "body_controls_yong",
+      "body_state": "neutral",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": true,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "51e4938096a3da7f3c789348692c9114ab23d8b8dd6be8584376310de672b5fa",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        10,
+        3
+      ],
+      "hexagram": "履",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "same_element",
+      "body_state": "wang",
+      "yong_state": "wang",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": true,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "1c9cfe4de6c763d6200b85f2e1e64f351cf42f5daefcbed003ecfd030bbd9b29",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        11,
+        3
+      ],
+      "hexagram": "泰",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "body_generates_yong",
+      "body_state": "neutral",
+      "yong_state": "wang",
+      "body_use_base": "adverse",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "2a70e48822b8a106eaca68e0aa7f196d108cc2989f037b339082344dbc3265ff",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        11,
+        6
+      ],
+      "hexagram": "泰",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "yong_generates_body",
+      "body_state": "wang",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "8f527cd190a3815a9ebdf7e8da19ba6f2b0c67a9af6535e1011e0335c720247d",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        12,
+        2
+      ],
+      "hexagram": "否",
+      "line": "六二",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "branch_unresolved",
+      "failure_reason": null,
+      "relation": "yong_generates_body",
+      "body_state": "wang",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "dac343a9c679c45d7ebf1092fa553eba319e2472e0dcb00ea77310e24e8ec591",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        13,
+        4
+      ],
+      "hexagram": "同人",
+      "line": "九四",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "body_controls_yong",
+      "body_state": "neutral",
+      "yong_state": "wang",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "331461adfb083ed2f74a3850ff76f11d714764e9b5704e2665e02a1d2eac063f",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        14,
+        3
+      ],
+      "hexagram": "大有",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "branch_unresolved",
+      "failure_reason": null,
+      "relation": "body_controls_yong",
+      "body_state": "neutral",
+      "yong_state": "wang",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "1e4d5ead7bed4610fa373bd789c19f73f121f17164be511f462e05acea693236",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        16,
+        6
+      ],
+      "hexagram": "豫",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "yong_controls_body",
+      "body_state": "neutral",
+      "yong_state": "shuai",
+      "body_use_base": "adverse",
+      "potential_primary_conditional_tension": true,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "c8484973bff9bc142a5865ff2b22162362dcd669ab25e638878deb26380c0254",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        18,
+        2
+      ],
+      "hexagram": "蛊",
+      "line": "九二",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "yong_controls_body",
+      "body_state": "neutral",
+      "yong_state": "shuai",
+      "body_use_base": "adverse",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "f92504c8261e67c8c877e889073aceb93949efe5ab5f2a932089933bd06d1866",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        19,
+        3
+      ],
+      "hexagram": "临",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "branch_unresolved",
+      "failure_reason": null,
+      "relation": "body_generates_yong",
+      "body_state": "neutral",
+      "yong_state": "wang",
+      "body_use_base": "adverse",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "5d0b694a5592235014122099416a3dfb7b4ad15b6ba01e4ee8e6fcdaa7ad8e4c",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        20,
+        1
+      ],
+      "hexagram": "观",
+      "line": "初六",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "branch_unresolved",
+      "failure_reason": null,
+      "relation": "body_controls_yong",
+      "body_state": "shuai",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "f531babfe1454d91dfc3357a9a06d004f3df1f21088ce3df3b625f3ad8072d4b",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        20,
+        5
+      ],
+      "hexagram": "观",
+      "line": "九五",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "yong_controls_body",
+      "body_state": "neutral",
+      "yong_state": "shuai",
+      "body_use_base": "adverse",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "1e7334f4636ea814268294713b4381b6bb3959a4d969b3ea4d52d3a96c59f426",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        23,
+        6
+      ],
+      "hexagram": "剥",
+      "line": "上九",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "branch_unresolved",
+      "failure_reason": null,
+      "relation": "same_element",
+      "body_state": "neutral",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "9dafed0fe206d4a4815d0dcb54e61522ca12bf16891d5f781a556008b9bcbf23",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        27,
+        3
+      ],
+      "hexagram": "颐",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "yong_controls_body",
+      "body_state": "neutral",
+      "yong_state": "shuai",
+      "body_use_base": "adverse",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "4500ed460451cfc5c03b9841a75cece8d55262e0eee80a1ec7ba2f037f12258c",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        30,
+        3
+      ],
+      "hexagram": "离",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "same_element",
+      "body_state": "neutral",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": true,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "094978e7409bac9e20d29c820b894751c63b1c0ba006939d39d935111c6064e8",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        32,
+        3
+      ],
+      "hexagram": "恒",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "same_element",
+      "body_state": "shuai",
+      "yong_state": "shuai",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": true,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "caa1eaa08ecc9c479e6c136b971f0ab4fa1b3c964a409c76b4012456a1ee23cc",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        36,
+        6
+      ],
+      "hexagram": "明夷",
+      "line": "上六",
+      "state": "disputed",
+      "eligible": false,
+      "readiness": "new_adjudication_excluded",
+      "failure_reason": "generalized_causal_scope_not_supported_for_new_encoding",
+      "relation": "body_generates_yong",
+      "body_state": "neutral",
+      "yong_state": "neutral",
+      "body_use_base": "adverse",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "d4716f27647b26f7a980436be1275bef84e1357f521e22063a3c01f5ef9895b1",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        38,
+        3
+      ],
+      "hexagram": "睽",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "body_controls_yong",
+      "body_state": "neutral",
+      "yong_state": "wang",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "d1b29bf2a39eab5a6ff121d4363b05222bca8368be2e61b240d210a3050c7fca",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        40,
+        1
+      ],
+      "hexagram": "解",
+      "line": "初六",
+      "state": "disputed",
+      "eligible": false,
+      "readiness": "new_adjudication_excluded",
+      "failure_reason": "process_meta_atom_not_classical_semantics",
+      "relation": "yong_generates_body",
+      "body_state": "shuai",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "8b8e753156612d42131f1e9f91354a494f10897fe65944f5c0960c54a8dcfe58",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        43,
+        4
+      ],
+      "hexagram": "夬",
+      "line": "九四",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "branch_unresolved",
+      "failure_reason": null,
+      "relation": "same_element",
+      "body_state": "wang",
+      "yong_state": "wang",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "d7444b647a7e89c356622018d228719f1052938b082c630d4227e8f70fec1f50",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        54,
+        6
+      ],
+      "hexagram": "归妹",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "bounded_synthesis_eligible",
+      "failure_reason": null,
+      "relation": "body_controls_yong",
+      "body_state": "wang",
+      "yong_state": "shuai",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": true,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "35410b7f3614681995d13b6ea97c9245aa307cbd1229f6acd0127486a5e7d2d2",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    },
+    {
+      "target": [
+        64,
+        6
+      ],
+      "hexagram": "未济",
+      "line": "上九",
+      "state": "reviewed",
+      "eligible": true,
+      "readiness": "branch_unresolved",
+      "failure_reason": null,
+      "relation": "body_controls_yong",
+      "body_state": "neutral",
+      "yong_state": "neutral",
+      "body_use_base": "favorable",
+      "potential_primary_conditional_tension": false,
+      "new_offline_review_matches_expectation": true,
+      "original_frame_exactly_preserved": true,
+      "request_unchanged": true,
+      "deterministic_lookup": true,
+      "question_condition_inference": false,
+      "whole_event_outcome": null,
+      "calculation_fingerprint": "1fe0053b15212a6115a67ff9222085356bbdffbbb53d09c3c57c5e32e39a3e46",
+      "sampled_condition_audit": {
+        "all_original_atoms_included": true,
+        "exact_quote_offsets_checked": true,
+        "branch_binding_checked": true,
+        "condition_satisfaction": "unknown",
+        "all_32_source_semantic_reviews_recorded": true
+      }
+    }
+  ],
+  "pilot_size": 32,
+  "coverage": {
+    "total_lines": 384,
+    "prior_reviewed": 24,
+    "pilot_reviewed": 32,
+    "prior_eligible": 23,
+    "new_eligible": 29,
+    "total_eligible": 52,
+    "prior_bounded_synthesis_eligible": 20,
+    "new_bounded_synthesis_eligible": 18,
+    "bounded_synthesis_eligible": 38,
+    "branch_unresolved": 14,
+    "unreviewed_lines": 328,
+    "reviewed_but_not_eligible": 4,
+    "active_day6a_engine_eligible": 23,
+    "new_catalog_enabled_in_day6a_engine_or_web": false,
+    "metric_scope": "offline_review_readiness_not_new_production_or_combined_engine_outcomes"
+  },
+  "pilot_state_distribution": {
+    "reviewed": 29,
+    "insufficient_evidence": 1,
+    "disputed": 2
+  },
+  "failure_reasons": {
+    "sufficient_condition_requires_unbound_commentary": 1,
+    "generalized_causal_scope_not_supported_for_new_encoding": 1,
+    "process_meta_atom_not_classical_semantics": 1
+  },
+  "relations": {
+    "same_element": 9,
+    "body_controls_yong": 9,
+    "yong_generates_body": 4,
+    "body_generates_yong": 5,
+    "yong_controls_body": 5
+  },
+  "positions": {
+    "3": 13,
+    "4": 4,
+    "1": 3,
+    "6": 8,
+    "5": 2,
+    "2": 2
+  },
+  "potential_primary_tensions": 8,
+  "old_71_case_regressions": [
+    {
+      "case": 1,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 2,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 3,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 4,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 5,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 6,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 7,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 8,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 9,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 10,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 11,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 12,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 13,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 14,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 15,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 16,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 17,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 18,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 19,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 20,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 21,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 22,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 23,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 24,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 25,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 26,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 27,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 28,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 29,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 30,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 31,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 32,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 33,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 34,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 35,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 36,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 37,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 38,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 39,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 40,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 41,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 42,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 43,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 44,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 45,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 46,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 47,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 48,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 49,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 50,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 51,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 52,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 53,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 54,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 55,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 56,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 57,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 58,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 59,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 60,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 61,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 62,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 63,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 64,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 65,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 66,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 67,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 68,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 69,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 70,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    },
+    {
+      "case": 71,
+      "result_unchanged": true,
+      "calculation_unchanged": true
+    }
+  ],
+  "old_71_exact_results_preserved": 71,
+  "passed": true,
+  "real_ai_calls": 0,
+  "production_writes": false
+}

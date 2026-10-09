@@ -1,0 +1,32 @@
+{
+  "version": "day6b_acceptance_summary_v1",
+  "collected": 357,
+  "passed": 357,
+  "failed": 0,
+  "skipped": 0,
+  "new_tests": 83,
+  "old_tests_preserved": 274,
+  "coverage": {
+    "total_lines": 384,
+    "prior_reviewed": 24,
+    "pilot_reviewed": 32,
+    "prior_eligible": 23,
+    "new_eligible": 29,
+    "total_eligible": 52,
+    "prior_bounded_synthesis_eligible": 20,
+    "new_bounded_synthesis_eligible": 18,
+    "bounded_synthesis_eligible": 38,
+    "branch_unresolved": 14,
+    "unreviewed_lines": 328,
+    "reviewed_but_not_eligible": 4,
+    "active_day6a_engine_eligible": 23,
+    "new_catalog_enabled_in_day6a_engine_or_web": false,
+    "metric_scope": "offline_review_readiness_not_new_production_or_combined_engine_outcomes"
+  },
+  "candidate_atoms": 737,
+  "signature_checks": 384,
+  "matrix_combinations": 384,
+  "integrity_passed": true,
+  "real_ai_calls": 0,
+  "web_integration": false
+}

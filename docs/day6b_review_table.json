@@ -1,0 +1,5388 @@
+{
+  "version": "condition_review_table_v1",
+  "rows": [
+    {
+      "target": [
+        1,
+        1
+      ],
+      "hexagram": "乾",
+      "line": "初九",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L01-1",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        1,
+        2
+      ],
+      "hexagram": "乾",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        1,
+        3
+      ],
+      "hexagram": "乾",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L01-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        1,
+        4
+      ],
+      "hexagram": "乾",
+      "line": "九四",
+      "state": "insufficient_evidence",
+      "eligible": false,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L01-4",
+      "reason": "sufficient_condition_requires_unbound_commentary",
+      "production_approval": false
+    },
+    {
+      "target": [
+        1,
+        5
+      ],
+      "hexagram": "乾",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        1,
+        6
+      ],
+      "hexagram": "乾",
+      "line": "上九",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L01-6",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        2,
+        1
+      ],
+      "hexagram": "坤",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        2,
+        2
+      ],
+      "hexagram": "坤",
+      "line": "六二",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L02-2",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        2,
+        3
+      ],
+      "hexagram": "坤",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L02-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        2,
+        4
+      ],
+      "hexagram": "坤",
+      "line": "六四",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L02-4",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        2,
+        5
+      ],
+      "hexagram": "坤",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        2,
+        6
+      ],
+      "hexagram": "坤",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        3,
+        1
+      ],
+      "hexagram": "屯",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        3,
+        2
+      ],
+      "hexagram": "屯",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        3,
+        3
+      ],
+      "hexagram": "屯",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L03-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        3,
+        4
+      ],
+      "hexagram": "屯",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        3,
+        5
+      ],
+      "hexagram": "屯",
+      "line": "九五",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L03-5",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        3,
+        6
+      ],
+      "hexagram": "屯",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        4,
+        1
+      ],
+      "hexagram": "蒙",
+      "line": "初六",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L04-1",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        4,
+        2
+      ],
+      "hexagram": "蒙",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        4,
+        3
+      ],
+      "hexagram": "蒙",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L04-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        4,
+        4
+      ],
+      "hexagram": "蒙",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        4,
+        5
+      ],
+      "hexagram": "蒙",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        4,
+        6
+      ],
+      "hexagram": "蒙",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        5,
+        1
+      ],
+      "hexagram": "需",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        5,
+        2
+      ],
+      "hexagram": "需",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        5,
+        3
+      ],
+      "hexagram": "需",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L05-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        5,
+        4
+      ],
+      "hexagram": "需",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        5,
+        5
+      ],
+      "hexagram": "需",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        5,
+        6
+      ],
+      "hexagram": "需",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L05-6",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        6,
+        1
+      ],
+      "hexagram": "讼",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        6,
+        2
+      ],
+      "hexagram": "讼",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        6,
+        3
+      ],
+      "hexagram": "讼",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L06-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        6,
+        4
+      ],
+      "hexagram": "讼",
+      "line": "九四",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L06-4",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        6,
+        5
+      ],
+      "hexagram": "讼",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        6,
+        6
+      ],
+      "hexagram": "讼",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        7,
+        1
+      ],
+      "hexagram": "师",
+      "line": "初六",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L07-1",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        7,
+        2
+      ],
+      "hexagram": "师",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        7,
+        3
+      ],
+      "hexagram": "师",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        7,
+        4
+      ],
+      "hexagram": "师",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        7,
+        5
+      ],
+      "hexagram": "师",
+      "line": "六五",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L07-5",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        7,
+        6
+      ],
+      "hexagram": "师",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        8,
+        1
+      ],
+      "hexagram": "比",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        8,
+        2
+      ],
+      "hexagram": "比",
+      "line": "六二",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L08-2",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        8,
+        3
+      ],
+      "hexagram": "比",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        8,
+        4
+      ],
+      "hexagram": "比",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        8,
+        5
+      ],
+      "hexagram": "比",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        8,
+        6
+      ],
+      "hexagram": "比",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L08-6",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        9,
+        1
+      ],
+      "hexagram": "小畜",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        9,
+        2
+      ],
+      "hexagram": "小畜",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        9,
+        3
+      ],
+      "hexagram": "小畜",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L09-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        9,
+        4
+      ],
+      "hexagram": "小畜",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        9,
+        5
+      ],
+      "hexagram": "小畜",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        9,
+        6
+      ],
+      "hexagram": "小畜",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        10,
+        1
+      ],
+      "hexagram": "履",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        10,
+        2
+      ],
+      "hexagram": "履",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        10,
+        3
+      ],
+      "hexagram": "履",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L10-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        10,
+        4
+      ],
+      "hexagram": "履",
+      "line": "九四",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L10-4",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        10,
+        5
+      ],
+      "hexagram": "履",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        10,
+        6
+      ],
+      "hexagram": "履",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        11,
+        1
+      ],
+      "hexagram": "泰",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        11,
+        2
+      ],
+      "hexagram": "泰",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        11,
+        3
+      ],
+      "hexagram": "泰",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L11-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        11,
+        4
+      ],
+      "hexagram": "泰",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        11,
+        5
+      ],
+      "hexagram": "泰",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        11,
+        6
+      ],
+      "hexagram": "泰",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L11-6",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        12,
+        1
+      ],
+      "hexagram": "否",
+      "line": "初六",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L12-1",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        12,
+        2
+      ],
+      "hexagram": "否",
+      "line": "六二",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L12-2",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        12,
+        3
+      ],
+      "hexagram": "否",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        12,
+        4
+      ],
+      "hexagram": "否",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        12,
+        5
+      ],
+      "hexagram": "否",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        12,
+        6
+      ],
+      "hexagram": "否",
+      "line": "上九",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L12-6",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        13,
+        1
+      ],
+      "hexagram": "同人",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        13,
+        2
+      ],
+      "hexagram": "同人",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        13,
+        3
+      ],
+      "hexagram": "同人",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        13,
+        4
+      ],
+      "hexagram": "同人",
+      "line": "九四",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L13-4",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        13,
+        5
+      ],
+      "hexagram": "同人",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        13,
+        6
+      ],
+      "hexagram": "同人",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        14,
+        1
+      ],
+      "hexagram": "大有",
+      "line": "初九",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L14-1",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        14,
+        2
+      ],
+      "hexagram": "大有",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        14,
+        3
+      ],
+      "hexagram": "大有",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L14-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        14,
+        4
+      ],
+      "hexagram": "大有",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        14,
+        5
+      ],
+      "hexagram": "大有",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        14,
+        6
+      ],
+      "hexagram": "大有",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        15,
+        1
+      ],
+      "hexagram": "谦",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        15,
+        2
+      ],
+      "hexagram": "谦",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        15,
+        3
+      ],
+      "hexagram": "谦",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        15,
+        4
+      ],
+      "hexagram": "谦",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        15,
+        5
+      ],
+      "hexagram": "谦",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        15,
+        6
+      ],
+      "hexagram": "谦",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        16,
+        1
+      ],
+      "hexagram": "豫",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        16,
+        2
+      ],
+      "hexagram": "豫",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        16,
+        3
+      ],
+      "hexagram": "豫",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        16,
+        4
+      ],
+      "hexagram": "豫",
+      "line": "九四",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L16-4",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        16,
+        5
+      ],
+      "hexagram": "豫",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        16,
+        6
+      ],
+      "hexagram": "豫",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L16-6",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        17,
+        1
+      ],
+      "hexagram": "随",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        17,
+        2
+      ],
+      "hexagram": "随",
+      "line": "六二",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L17-2",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        17,
+        3
+      ],
+      "hexagram": "随",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        17,
+        4
+      ],
+      "hexagram": "随",
+      "line": "九四",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L17-4",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        17,
+        5
+      ],
+      "hexagram": "随",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        17,
+        6
+      ],
+      "hexagram": "随",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        18,
+        1
+      ],
+      "hexagram": "蛊",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        18,
+        2
+      ],
+      "hexagram": "蛊",
+      "line": "九二",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L18-2",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        18,
+        3
+      ],
+      "hexagram": "蛊",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        18,
+        4
+      ],
+      "hexagram": "蛊",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        18,
+        5
+      ],
+      "hexagram": "蛊",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        18,
+        6
+      ],
+      "hexagram": "蛊",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        19,
+        1
+      ],
+      "hexagram": "临",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        19,
+        2
+      ],
+      "hexagram": "临",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        19,
+        3
+      ],
+      "hexagram": "临",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L19-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        19,
+        4
+      ],
+      "hexagram": "临",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        19,
+        5
+      ],
+      "hexagram": "临",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        19,
+        6
+      ],
+      "hexagram": "临",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        20,
+        1
+      ],
+      "hexagram": "观",
+      "line": "初六",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L20-1",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        20,
+        2
+      ],
+      "hexagram": "观",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        20,
+        3
+      ],
+      "hexagram": "观",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        20,
+        4
+      ],
+      "hexagram": "观",
+      "line": "六四",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L20-4",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        20,
+        5
+      ],
+      "hexagram": "观",
+      "line": "九五",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L20-5",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        20,
+        6
+      ],
+      "hexagram": "观",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        21,
+        1
+      ],
+      "hexagram": "噬嗑",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        21,
+        2
+      ],
+      "hexagram": "噬嗑",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        21,
+        3
+      ],
+      "hexagram": "噬嗑",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        21,
+        4
+      ],
+      "hexagram": "噬嗑",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        21,
+        5
+      ],
+      "hexagram": "噬嗑",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        21,
+        6
+      ],
+      "hexagram": "噬嗑",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        22,
+        1
+      ],
+      "hexagram": "贲",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        22,
+        2
+      ],
+      "hexagram": "贲",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        22,
+        3
+      ],
+      "hexagram": "贲",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L22-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        22,
+        4
+      ],
+      "hexagram": "贲",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        22,
+        5
+      ],
+      "hexagram": "贲",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        22,
+        6
+      ],
+      "hexagram": "贲",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        23,
+        1
+      ],
+      "hexagram": "剥",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        23,
+        2
+      ],
+      "hexagram": "剥",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        23,
+        3
+      ],
+      "hexagram": "剥",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        23,
+        4
+      ],
+      "hexagram": "剥",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        23,
+        5
+      ],
+      "hexagram": "剥",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        23,
+        6
+      ],
+      "hexagram": "剥",
+      "line": "上九",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L23-6",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        24,
+        1
+      ],
+      "hexagram": "复",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        24,
+        2
+      ],
+      "hexagram": "复",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        24,
+        3
+      ],
+      "hexagram": "复",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        24,
+        4
+      ],
+      "hexagram": "复",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        24,
+        5
+      ],
+      "hexagram": "复",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        24,
+        6
+      ],
+      "hexagram": "复",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L24-6",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        25,
+        1
+      ],
+      "hexagram": "无妄",
+      "line": "初九",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L25-1",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        25,
+        2
+      ],
+      "hexagram": "无妄",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        25,
+        3
+      ],
+      "hexagram": "无妄",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        25,
+        4
+      ],
+      "hexagram": "无妄",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        25,
+        5
+      ],
+      "hexagram": "无妄",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        25,
+        6
+      ],
+      "hexagram": "无妄",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        26,
+        1
+      ],
+      "hexagram": "大畜",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        26,
+        2
+      ],
+      "hexagram": "大畜",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        26,
+        3
+      ],
+      "hexagram": "大畜",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        26,
+        4
+      ],
+      "hexagram": "大畜",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        26,
+        5
+      ],
+      "hexagram": "大畜",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        26,
+        6
+      ],
+      "hexagram": "大畜",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        27,
+        1
+      ],
+      "hexagram": "颐",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        27,
+        2
+      ],
+      "hexagram": "颐",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        27,
+        3
+      ],
+      "hexagram": "颐",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L27-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        27,
+        4
+      ],
+      "hexagram": "颐",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        27,
+        5
+      ],
+      "hexagram": "颐",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        27,
+        6
+      ],
+      "hexagram": "颐",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        28,
+        1
+      ],
+      "hexagram": "大过",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        28,
+        2
+      ],
+      "hexagram": "大过",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        28,
+        3
+      ],
+      "hexagram": "大过",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        28,
+        4
+      ],
+      "hexagram": "大过",
+      "line": "九四",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L28-4",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        28,
+        5
+      ],
+      "hexagram": "大过",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        28,
+        6
+      ],
+      "hexagram": "大过",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        29,
+        1
+      ],
+      "hexagram": "坎",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        29,
+        2
+      ],
+      "hexagram": "坎",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        29,
+        3
+      ],
+      "hexagram": "坎",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        29,
+        4
+      ],
+      "hexagram": "坎",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        29,
+        5
+      ],
+      "hexagram": "坎",
+      "line": "九五",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L29-5",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        29,
+        6
+      ],
+      "hexagram": "坎",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        30,
+        1
+      ],
+      "hexagram": "离",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        30,
+        2
+      ],
+      "hexagram": "离",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        30,
+        3
+      ],
+      "hexagram": "离",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L30-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        30,
+        4
+      ],
+      "hexagram": "离",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        30,
+        5
+      ],
+      "hexagram": "离",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        30,
+        6
+      ],
+      "hexagram": "离",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        31,
+        1
+      ],
+      "hexagram": "咸",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        31,
+        2
+      ],
+      "hexagram": "咸",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        31,
+        3
+      ],
+      "hexagram": "咸",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        31,
+        4
+      ],
+      "hexagram": "咸",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        31,
+        5
+      ],
+      "hexagram": "咸",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        31,
+        6
+      ],
+      "hexagram": "咸",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        32,
+        1
+      ],
+      "hexagram": "恒",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        32,
+        2
+      ],
+      "hexagram": "恒",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        32,
+        3
+      ],
+      "hexagram": "恒",
+      "line": "九三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L32-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        32,
+        4
+      ],
+      "hexagram": "恒",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        32,
+        5
+      ],
+      "hexagram": "恒",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        32,
+        6
+      ],
+      "hexagram": "恒",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        33,
+        1
+      ],
+      "hexagram": "遯",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        33,
+        2
+      ],
+      "hexagram": "遯",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        33,
+        3
+      ],
+      "hexagram": "遯",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        33,
+        4
+      ],
+      "hexagram": "遯",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        33,
+        5
+      ],
+      "hexagram": "遯",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        33,
+        6
+      ],
+      "hexagram": "遯",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        34,
+        1
+      ],
+      "hexagram": "大壮",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        34,
+        2
+      ],
+      "hexagram": "大壮",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        34,
+        3
+      ],
+      "hexagram": "大壮",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        34,
+        4
+      ],
+      "hexagram": "大壮",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        34,
+        5
+      ],
+      "hexagram": "大壮",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        34,
+        6
+      ],
+      "hexagram": "大壮",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        35,
+        1
+      ],
+      "hexagram": "晋",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        35,
+        2
+      ],
+      "hexagram": "晋",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        35,
+        3
+      ],
+      "hexagram": "晋",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        35,
+        4
+      ],
+      "hexagram": "晋",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        35,
+        5
+      ],
+      "hexagram": "晋",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        35,
+        6
+      ],
+      "hexagram": "晋",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        36,
+        1
+      ],
+      "hexagram": "明夷",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        36,
+        2
+      ],
+      "hexagram": "明夷",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        36,
+        3
+      ],
+      "hexagram": "明夷",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        36,
+        4
+      ],
+      "hexagram": "明夷",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        36,
+        5
+      ],
+      "hexagram": "明夷",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        36,
+        6
+      ],
+      "hexagram": "明夷",
+      "line": "上六",
+      "state": "disputed",
+      "eligible": false,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L36-6",
+      "reason": "generalized_causal_scope_not_supported_for_new_encoding",
+      "production_approval": false
+    },
+    {
+      "target": [
+        37,
+        1
+      ],
+      "hexagram": "家人",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        37,
+        2
+      ],
+      "hexagram": "家人",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        37,
+        3
+      ],
+      "hexagram": "家人",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        37,
+        4
+      ],
+      "hexagram": "家人",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        37,
+        5
+      ],
+      "hexagram": "家人",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        37,
+        6
+      ],
+      "hexagram": "家人",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        38,
+        1
+      ],
+      "hexagram": "睽",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        38,
+        2
+      ],
+      "hexagram": "睽",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        38,
+        3
+      ],
+      "hexagram": "睽",
+      "line": "六三",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L38-3",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        38,
+        4
+      ],
+      "hexagram": "睽",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        38,
+        5
+      ],
+      "hexagram": "睽",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        38,
+        6
+      ],
+      "hexagram": "睽",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        39,
+        1
+      ],
+      "hexagram": "蹇",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        39,
+        2
+      ],
+      "hexagram": "蹇",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        39,
+        3
+      ],
+      "hexagram": "蹇",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        39,
+        4
+      ],
+      "hexagram": "蹇",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        39,
+        5
+      ],
+      "hexagram": "蹇",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        39,
+        6
+      ],
+      "hexagram": "蹇",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        40,
+        1
+      ],
+      "hexagram": "解",
+      "line": "初六",
+      "state": "disputed",
+      "eligible": false,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L40-1",
+      "reason": "process_meta_atom_not_classical_semantics",
+      "production_approval": false
+    },
+    {
+      "target": [
+        40,
+        2
+      ],
+      "hexagram": "解",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        40,
+        3
+      ],
+      "hexagram": "解",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        40,
+        4
+      ],
+      "hexagram": "解",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        40,
+        5
+      ],
+      "hexagram": "解",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        40,
+        6
+      ],
+      "hexagram": "解",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        41,
+        1
+      ],
+      "hexagram": "损",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        41,
+        2
+      ],
+      "hexagram": "损",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        41,
+        3
+      ],
+      "hexagram": "损",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        41,
+        4
+      ],
+      "hexagram": "损",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        41,
+        5
+      ],
+      "hexagram": "损",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        41,
+        6
+      ],
+      "hexagram": "损",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        42,
+        1
+      ],
+      "hexagram": "益",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        42,
+        2
+      ],
+      "hexagram": "益",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        42,
+        3
+      ],
+      "hexagram": "益",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        42,
+        4
+      ],
+      "hexagram": "益",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        42,
+        5
+      ],
+      "hexagram": "益",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        42,
+        6
+      ],
+      "hexagram": "益",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        43,
+        1
+      ],
+      "hexagram": "夬",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        43,
+        2
+      ],
+      "hexagram": "夬",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        43,
+        3
+      ],
+      "hexagram": "夬",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        43,
+        4
+      ],
+      "hexagram": "夬",
+      "line": "九四",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L43-4",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        43,
+        5
+      ],
+      "hexagram": "夬",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        43,
+        6
+      ],
+      "hexagram": "夬",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        44,
+        1
+      ],
+      "hexagram": "姤",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        44,
+        2
+      ],
+      "hexagram": "姤",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        44,
+        3
+      ],
+      "hexagram": "姤",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        44,
+        4
+      ],
+      "hexagram": "姤",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        44,
+        5
+      ],
+      "hexagram": "姤",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        44,
+        6
+      ],
+      "hexagram": "姤",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        45,
+        1
+      ],
+      "hexagram": "萃",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        45,
+        2
+      ],
+      "hexagram": "萃",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        45,
+        3
+      ],
+      "hexagram": "萃",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        45,
+        4
+      ],
+      "hexagram": "萃",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        45,
+        5
+      ],
+      "hexagram": "萃",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        45,
+        6
+      ],
+      "hexagram": "萃",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        46,
+        1
+      ],
+      "hexagram": "升",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        46,
+        2
+      ],
+      "hexagram": "升",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        46,
+        3
+      ],
+      "hexagram": "升",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        46,
+        4
+      ],
+      "hexagram": "升",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        46,
+        5
+      ],
+      "hexagram": "升",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        46,
+        6
+      ],
+      "hexagram": "升",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        47,
+        1
+      ],
+      "hexagram": "困",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        47,
+        2
+      ],
+      "hexagram": "困",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        47,
+        3
+      ],
+      "hexagram": "困",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        47,
+        4
+      ],
+      "hexagram": "困",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        47,
+        5
+      ],
+      "hexagram": "困",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        47,
+        6
+      ],
+      "hexagram": "困",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6a_preserved",
+      "record_id": "L47-6",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        48,
+        1
+      ],
+      "hexagram": "井",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        48,
+        2
+      ],
+      "hexagram": "井",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        48,
+        3
+      ],
+      "hexagram": "井",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        48,
+        4
+      ],
+      "hexagram": "井",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        48,
+        5
+      ],
+      "hexagram": "井",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        48,
+        6
+      ],
+      "hexagram": "井",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        49,
+        1
+      ],
+      "hexagram": "革",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        49,
+        2
+      ],
+      "hexagram": "革",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        49,
+        3
+      ],
+      "hexagram": "革",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        49,
+        4
+      ],
+      "hexagram": "革",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        49,
+        5
+      ],
+      "hexagram": "革",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        49,
+        6
+      ],
+      "hexagram": "革",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        50,
+        1
+      ],
+      "hexagram": "鼎",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        50,
+        2
+      ],
+      "hexagram": "鼎",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        50,
+        3
+      ],
+      "hexagram": "鼎",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        50,
+        4
+      ],
+      "hexagram": "鼎",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        50,
+        5
+      ],
+      "hexagram": "鼎",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        50,
+        6
+      ],
+      "hexagram": "鼎",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        51,
+        1
+      ],
+      "hexagram": "震",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        51,
+        2
+      ],
+      "hexagram": "震",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        51,
+        3
+      ],
+      "hexagram": "震",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        51,
+        4
+      ],
+      "hexagram": "震",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        51,
+        5
+      ],
+      "hexagram": "震",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        51,
+        6
+      ],
+      "hexagram": "震",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        52,
+        1
+      ],
+      "hexagram": "艮",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        52,
+        2
+      ],
+      "hexagram": "艮",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        52,
+        3
+      ],
+      "hexagram": "艮",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        52,
+        4
+      ],
+      "hexagram": "艮",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        52,
+        5
+      ],
+      "hexagram": "艮",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        52,
+        6
+      ],
+      "hexagram": "艮",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        53,
+        1
+      ],
+      "hexagram": "渐",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        53,
+        2
+      ],
+      "hexagram": "渐",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        53,
+        3
+      ],
+      "hexagram": "渐",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        53,
+        4
+      ],
+      "hexagram": "渐",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        53,
+        5
+      ],
+      "hexagram": "渐",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        53,
+        6
+      ],
+      "hexagram": "渐",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        54,
+        1
+      ],
+      "hexagram": "归妹",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        54,
+        2
+      ],
+      "hexagram": "归妹",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        54,
+        3
+      ],
+      "hexagram": "归妹",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        54,
+        4
+      ],
+      "hexagram": "归妹",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        54,
+        5
+      ],
+      "hexagram": "归妹",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        54,
+        6
+      ],
+      "hexagram": "归妹",
+      "line": "上六",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L54-6",
+      "reason": null,
+      "production_approval": false
+    },
+    {
+      "target": [
+        55,
+        1
+      ],
+      "hexagram": "丰",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        55,
+        2
+      ],
+      "hexagram": "丰",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        55,
+        3
+      ],
+      "hexagram": "丰",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        55,
+        4
+      ],
+      "hexagram": "丰",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        55,
+        5
+      ],
+      "hexagram": "丰",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        55,
+        6
+      ],
+      "hexagram": "丰",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        56,
+        1
+      ],
+      "hexagram": "旅",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        56,
+        2
+      ],
+      "hexagram": "旅",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        56,
+        3
+      ],
+      "hexagram": "旅",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        56,
+        4
+      ],
+      "hexagram": "旅",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        56,
+        5
+      ],
+      "hexagram": "旅",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        56,
+        6
+      ],
+      "hexagram": "旅",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        57,
+        1
+      ],
+      "hexagram": "巽",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        57,
+        2
+      ],
+      "hexagram": "巽",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        57,
+        3
+      ],
+      "hexagram": "巽",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        57,
+        4
+      ],
+      "hexagram": "巽",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        57,
+        5
+      ],
+      "hexagram": "巽",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        57,
+        6
+      ],
+      "hexagram": "巽",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        58,
+        1
+      ],
+      "hexagram": "兑",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        58,
+        2
+      ],
+      "hexagram": "兑",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        58,
+        3
+      ],
+      "hexagram": "兑",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        58,
+        4
+      ],
+      "hexagram": "兑",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        58,
+        5
+      ],
+      "hexagram": "兑",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        58,
+        6
+      ],
+      "hexagram": "兑",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        59,
+        1
+      ],
+      "hexagram": "涣",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        59,
+        2
+      ],
+      "hexagram": "涣",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        59,
+        3
+      ],
+      "hexagram": "涣",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        59,
+        4
+      ],
+      "hexagram": "涣",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        59,
+        5
+      ],
+      "hexagram": "涣",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        59,
+        6
+      ],
+      "hexagram": "涣",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        60,
+        1
+      ],
+      "hexagram": "节",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        60,
+        2
+      ],
+      "hexagram": "节",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        60,
+        3
+      ],
+      "hexagram": "节",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        60,
+        4
+      ],
+      "hexagram": "节",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        60,
+        5
+      ],
+      "hexagram": "节",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        60,
+        6
+      ],
+      "hexagram": "节",
+      "line": "上六",
+      "state": "insufficient_evidence",
+      "eligible": false,
+      "review_phase": "day6a_preserved",
+      "record_id": "L60-6",
+      "reason": "approved_frame_condition_not_explicitly_supported_for_new_directional_encoding",
+      "production_approval": false
+    },
+    {
+      "target": [
+        61,
+        1
+      ],
+      "hexagram": "中孚",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        61,
+        2
+      ],
+      "hexagram": "中孚",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        61,
+        3
+      ],
+      "hexagram": "中孚",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        61,
+        4
+      ],
+      "hexagram": "中孚",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        61,
+        5
+      ],
+      "hexagram": "中孚",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        61,
+        6
+      ],
+      "hexagram": "中孚",
+      "line": "上九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        62,
+        1
+      ],
+      "hexagram": "小过",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        62,
+        2
+      ],
+      "hexagram": "小过",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        62,
+        3
+      ],
+      "hexagram": "小过",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        62,
+        4
+      ],
+      "hexagram": "小过",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        62,
+        5
+      ],
+      "hexagram": "小过",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        62,
+        6
+      ],
+      "hexagram": "小过",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        63,
+        1
+      ],
+      "hexagram": "既济",
+      "line": "初九",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        63,
+        2
+      ],
+      "hexagram": "既济",
+      "line": "六二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        63,
+        3
+      ],
+      "hexagram": "既济",
+      "line": "九三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        63,
+        4
+      ],
+      "hexagram": "既济",
+      "line": "六四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        63,
+        5
+      ],
+      "hexagram": "既济",
+      "line": "九五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        63,
+        6
+      ],
+      "hexagram": "既济",
+      "line": "上六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        64,
+        1
+      ],
+      "hexagram": "未济",
+      "line": "初六",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        64,
+        2
+      ],
+      "hexagram": "未济",
+      "line": "九二",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        64,
+        3
+      ],
+      "hexagram": "未济",
+      "line": "六三",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        64,
+        4
+      ],
+      "hexagram": "未济",
+      "line": "九四",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        64,
+        5
+      ],
+      "hexagram": "未济",
+      "line": "六五",
+      "state": "candidate",
+      "eligible": false,
+      "review_phase": "unreviewed",
+      "record_id": null,
+      "reason": "not_individually_reviewed",
+      "production_approval": false
+    },
+    {
+      "target": [
+        64,
+        6
+      ],
+      "hexagram": "未济",
+      "line": "上九",
+      "state": "reviewed",
+      "eligible": true,
+      "review_phase": "day6b",
+      "record_id": "DAY6B-L64-6",
+      "reason": null,
+      "production_approval": false
+    }
+  ],
+  "state_counts": {
+    "reviewed": 52,
+    "candidate": 328,
+    "insufficient_evidence": 2,
+    "disputed": 2
+  },
+  "web_enabled": false
+}
