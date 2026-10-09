@@ -1,0 +1,4058 @@
+{
+  "version": "moving_line_condition_review_v1",
+  "policy_version": "traditional_condition_synthesis_v1",
+  "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+  "production_approval": false,
+  "frame_audit": {
+    "count": 384,
+    "signed_approved_frames": 384,
+    "nonempty_conditions": 41,
+    "nonempty_cautions": 8,
+    "core_claim_count": 686
+  },
+  "priority_source": {
+    "source_id": "M1-PRIORITY-MODES",
+    "title": "梅花易數",
+    "edition": "文明書局1925年本",
+    "volume": "卷二",
+    "section": "先天後天論",
+    "pdf_page": 57,
+    "original_page": "三",
+    "path": "docs/day6a_source_pages/page-57.png",
+    "sha256": "0d384359b978345cb43a1b591900ebb77a66f9bb7200d48fe7c57c574c97db0c",
+    "review_method": "direct_scan_visual_review",
+    "status": "DISPUTED_PRIORITY_CONTEXT",
+    "excerpt": "先天卦斷吉凶止以卦論不甚用易之爻辭。後天則用爻辭兼用卦辭。",
+    "note": "短摘录作定位；横排句读不代替来源逐字全文，也不执行应期条文。"
+  },
+  "rules": [
+    {
+      "rule_id": "TJ6-ELIGIBILITY",
+      "basis": "PROJECT_CONVENTION",
+      "summary": "只有固定审核目录、原 Frame 签名及对应证据仍有效的爻位可参与条件裁决。",
+      "dependencies": [
+        "TJ-SEMANTIC-BOUNDARY"
+      ]
+    },
+    {
+      "rule_id": "TJ6-CONDITION-UNKNOWN",
+      "basis": "PROJECT_CONVENTION",
+      "summary": "不从问题或卦象推定现实前提已满足，全部条件保持未评估。",
+      "dependencies": [
+        "TJ-SEMANTIC-BOUNDARY"
+      ]
+    },
+    {
+      "rule_id": "TJ6-LINE-SCOPE",
+      "basis": "PROJECT_CONVENTION",
+      "summary": "具体动作的利、免咎与行为提醒不能提升为整件事结果；保留原爻限制。",
+      "dependencies": [
+        "TJ-TRADITIONAL-ROLES",
+        "TJ-SEMANTIC-BOUNDARY"
+      ]
+    },
+    {
+      "rule_id": "TJ6-STRENGTH-QUALIFIER",
+      "basis": "PROJECT_CONVENTION",
+      "summary": "旺衰修饰原生克关系，不作为相反一票；克方衰不等于关系已消除。",
+      "dependencies": [
+        "TJ-STRENGTH",
+        "TJ-QUALIFIER"
+      ]
+    },
+    {
+      "rule_id": "TJ6-AUXILIARY-DIVERGENCE",
+      "basis": "PROJECT_CONVENTION",
+      "summary": "互中变终的不同阶段只作辅助分歧，不自动制造主要冲突。",
+      "dependencies": [
+        "TJ-AUXILIARY",
+        "TJ-TRADITIONAL-ROLES"
+      ]
+    },
+    {
+      "rule_id": "TJ6-PRIMARY-TENSION",
+      "basis": "PROJECT_CONVENTION",
+      "summary": "体用基础与已审核同范围动爻方向相反时保留条件性张力；不用评分选胜者。",
+      "dependencies": [
+        "TJ-PRIORITY",
+        "TJ-SEMANTIC-BOUNDARY"
+      ]
+    },
+    {
+      "rule_id": "TJ6-ALTERNATIVE-SCOPES",
+      "basis": "PROJECT_CONVENTION",
+      "summary": "不同条件分支未能选择时，不把它们当成同时成立的矛盾；总倾向保留不足。",
+      "dependencies": [
+        "TJ-SEMANTIC-BOUNDARY"
+      ]
+    },
+    {
+      "rule_id": "TJ6-PRIORITY-UNRESOLVED",
+      "basis": "DISPUTED",
+      "summary": "先看爻辞、先天后天区分与以体用为主不拘体用并存；本原型采用保守的并列约束而非宣称唯一传统优先级。",
+      "dependencies": [
+        "TJ-PRIORITY",
+        "TJ-TRADITIONAL-ROLES"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "hexagram_id": 1,
+      "position": 1,
+      "effect": "action_restriction",
+      "eligible": true,
+      "summary": "潜伏阶段须保留勿用限制；比和不能自动许可行动。",
+      "conditions": [
+        {
+          "id": "latent_stage",
+          "kind": "prerequisite",
+          "text": "适用的是潜伏、尚不宜施用的阶段。",
+          "field": "yao_classical_text",
+          "quote": "潛龍勿用",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:1:yao_classical_text:1"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:1:yao_classical_text:1",
+              "quote": "潛龍勿用"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "withhold_action",
+          "direction": "undetermined",
+          "kind": "behavioral_reminder",
+          "condition_ids": [
+            "latent_stage"
+          ],
+          "text": "勿用是行动限制，不等同于整件事必败。",
+          "field": "xiang_classical_text",
+          "quote": "潛龍勿用陽在下也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:1:xiang_classical_text:1",
+            "runtime_ws_sibu:卷一:1:xiang_classical_text:1"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:1:xiang_classical_text:1",
+              "quote": "潛龍勿用陽在下也"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷一:1:xiang_classical_text:1",
+              "quote": "潛龍勿用陽在下也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L01-1",
+      "hexagram_name": "乾",
+      "line_name": "初九",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "19c9e64eccb78667749cd8b0359768c3b2914c627b96744ae36a9c7ece3c9791",
+      "source_fingerprint": "410b8c2047a00de4b0e21d30f0dae6e54e35a5a234341913b36f4d5ac0e8fdb2",
+      "original_verification_record_id": "d058c998b7b75ded5c1a176228a341b95cfff0b10ca23f3b02f0405af65d9644",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "ctext_wuyingdian:qian:1:yao_classical_text:1",
+              "runtime_ws_benyi:卷1:1:xiang_classical_text:1",
+              "runtime_ws_benyi:卷1:1:yao_classical_text:1",
+              "runtime_ws_sibu:卷一:1:xiang_classical_text:1"
+            ],
+            "text": "处于潜伏状态时，不要有所行动"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "ctext_wuyingdian:qian:1:yao_classical_text:1",
+          "runtime_ws_benyi:卷1:1:xiang_classical_text:1",
+          "runtime_ws_benyi:卷1:1:yao_classical_text:1",
+          "runtime_ws_sibu:卷一:1:xiang_classical_text:1"
+        ],
+        "source_fingerprint": "410b8c2047a00de4b0e21d30f0dae6e54e35a5a234341913b36f4d5ac0e8fdb2",
+        "target_role": "moving_line",
+        "verification_record_id": "d058c998b7b75ded5c1a176228a341b95cfff0b10ca23f3b02f0405af65d9644",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "ctext_wuyingdian:qian:1:yao_classical_text:1",
+          "reference_sha256": "6c42dbcf7d4ec387e4d2c8d52c054e3a8cd44168b446c8b2e02a1d5f0f4c8e8f",
+          "reference": {
+            "evidence_id": "ctext_wuyingdian:qian:1:yao_classical_text:1",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "初九：潛龍，勿用。",
+            "source_title": "周易（CTP易經整理文本）",
+            "edition": "頁面關聯底本：武英殿十三經注疏《周易正義》；搜尋索引快照，非掃描轉錄",
+            "url": "https://ctext.org/book-of-changes/qian/zh",
+            "volume": "易經",
+            "location": "易經/qian 中文表格第4項 yao_classical_text",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:1:xiang_classical_text:1",
+          "reference_sha256": "0bdc3f11580990c8664014df3847c1ec4ecb382063a20eccb4a2b6ede6dec9b5",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:1:xiang_classical_text:1",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "潛龍勿用陽在下也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第1卦块 xiang_classical_text 第1爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:1:yao_classical_text:1",
+          "reference_sha256": "7e38c7b7eb49f6dc2f1703524c4be1933646a979df83672ee7d3b7060036892d",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:1:yao_classical_text:1",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "初九潛龍勿用",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第1卦块 yao_classical_text 第1爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷一:1:xiang_classical_text:1",
+          "reference_sha256": "40f5a5e7d5d7662b6176a08bba43dff0828fddeac4d9fc3c15208850faf8f0a2",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷一:1:xiang_classical_text:1",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "潛龍勿用陽在下也",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%80",
+            "volume": "卷一",
+            "location": "卷一 第1卦块 xiang_classical_text 第1爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "ad04cb4678d68a7d96b68b8c8013eb8deda5785fd1e777de3f00ff5214568a42",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 1,
+      "position": 6,
+      "effect": "adverse_warning",
+      "eligible": true,
+      "summary": "亢极而有悔、盈不可久，是比和基础之外的明确不利限制。",
+      "conditions": [
+        {
+          "id": "excessive_height",
+          "kind": "prerequisite",
+          "text": "爻辞所述亢极状态；不推定用户现实已处高位。",
+          "field": "yao_classical_text",
+          "quote": "亢龍有悔",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:1:yao_classical_text:6",
+            "runtime_ws_sibu:卷一:1:yao_classical_text:6"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:1:yao_classical_text:6",
+              "quote": "亢龍有悔"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷一:1:yao_classical_text:6",
+              "quote": "亢龍有悔"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "cannot_last",
+          "direction": "adverse",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "excessive_height"
+          ],
+          "text": "盈满不可长久，不能由比和推出长久顺遂。",
+          "field": "xiang_classical_text",
+          "quote": "盈不可久也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:1:xiang_classical_text:6"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:1:xiang_classical_text:6",
+              "quote": "盈不可久也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L01-6",
+      "hexagram_name": "乾",
+      "line_name": "上九",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "3c3c6182dd3279ec25085c41e9f281f6f97766774fed1468f7edeb8c6726f5c0",
+      "source_fingerprint": "a9eef8e89a8ba917f985a0501559edb7ec1eee58749a30567c7c530d325c02a8",
+      "original_verification_record_id": "e1d79dd811dde527522f47d421ed336d7694d3fe8290a32af74660f7366dff42",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:1:xiang_classical_text:6",
+              "runtime_ws_benyi:卷1:1:yao_classical_text:6",
+              "runtime_ws_sibu:卷一:1:xiang_classical_text:6",
+              "runtime_ws_sibu:卷一:1:yao_classical_text:6"
+            ],
+            "text": "升到极高处容易招来悔恨，因为满到极点就无法长久维持，提醒人别把事做绝"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:1:xiang_classical_text:6",
+          "runtime_ws_benyi:卷1:1:yao_classical_text:6",
+          "runtime_ws_sibu:卷一:1:xiang_classical_text:6",
+          "runtime_ws_sibu:卷一:1:yao_classical_text:6"
+        ],
+        "source_fingerprint": "a9eef8e89a8ba917f985a0501559edb7ec1eee58749a30567c7c530d325c02a8",
+        "target_role": "moving_line",
+        "verification_record_id": "e1d79dd811dde527522f47d421ed336d7694d3fe8290a32af74660f7366dff42",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:1:xiang_classical_text:6",
+          "reference_sha256": "0ef33c1681896c6832b022b94986d743b6c437ed0b4f769b78e1cd6531c41be2",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:1:xiang_classical_text:6",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "亢龍有悔盈不可久也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第1卦块 xiang_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:1:yao_classical_text:6",
+          "reference_sha256": "33c939057f7e8e068d952df18d3433b3f83eab14f68b1aeda4eb36869e0a2025",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:1:yao_classical_text:6",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "上九亢龍有悔",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第1卦块 yao_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷一:1:xiang_classical_text:6",
+          "reference_sha256": "405f5b49eec6a71729b662d080f9bd5202d6b30e155cfe130acb75e65b8b4e7a",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷一:1:xiang_classical_text:6",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "亢龍有悔盈不可乆也",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%80",
+            "volume": "卷一",
+            "location": "卷一 第1卦块 xiang_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷一:1:yao_classical_text:6",
+          "reference_sha256": "21d012ad6b21e6366697bdd3f33ead863f8a43d47dc49cabf030fb747c2b871a",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷一:1:yao_classical_text:6",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "上九亢龍有悔",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%80",
+            "volume": "卷一",
+            "location": "卷一 第1卦块 yao_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "590c3373f16daee84c2a5a74c947e91c0a0cf56c88ad20bbb329546631da3d51",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 2,
+      "position": 2,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "直方大的正直端方语境与无不利相连；不得去掉语境保证万事。",
+      "conditions": [
+        {
+          "id": "upright_behavior",
+          "kind": "prerequisite",
+          "text": "直方大的行为语境。",
+          "field": "yao_classical_text",
+          "quote": "直方大",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:2:yao_classical_text:2",
+            "runtime_ws_sibu:卷一:2:yao_classical_text:2"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:2:yao_classical_text:2",
+              "quote": "直方大"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷一:2:yao_classical_text:2",
+              "quote": "直方大"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "upright_scope",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "upright_behavior"
+          ],
+          "text": "在直方大的爻义语境内保留无不利；不是现实成败保证。",
+          "field": "yao_classical_text",
+          "quote": "不習无不利",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:2:yao_classical_text:2",
+            "runtime_ws_sibu:卷一:2:yao_classical_text:2"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:2:yao_classical_text:2",
+              "quote": "不習无不利"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷一:2:yao_classical_text:2",
+              "quote": "不習无不利"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L02-2",
+      "hexagram_name": "坤",
+      "line_name": "六二",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "d25d85f705329e79e339325651fc59d34357c234edb2a42e1357b9fcc3ff28d0",
+      "source_fingerprint": "81c954556f6e77525433ca659d5dcd50336a502e5b1cca674b97978c120898d0",
+      "original_verification_record_id": "1243ecaa9ab0620ae3a97548fd8ca043cb83e2fcb8527f72b0490cd266a5f54c",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:2:xiang_classical_text:2",
+              "runtime_ws_benyi:卷1:2:yao_classical_text:2",
+              "runtime_ws_sibu:卷一:2:xiang_classical_text:2",
+              "runtime_ws_sibu:卷一:2:yao_classical_text:2"
+            ],
+            "text": "行为正直端方"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:2:xiang_classical_text:2",
+              "runtime_ws_benyi:卷1:2:yao_classical_text:2",
+              "runtime_ws_sibu:卷一:2:xiang_classical_text:2",
+              "runtime_ws_sibu:卷一:2:yao_classical_text:2"
+            ],
+            "text": "也没有什么不利"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:2:xiang_classical_text:2",
+          "runtime_ws_benyi:卷1:2:yao_classical_text:2",
+          "runtime_ws_sibu:卷一:2:xiang_classical_text:2",
+          "runtime_ws_sibu:卷一:2:yao_classical_text:2"
+        ],
+        "source_fingerprint": "81c954556f6e77525433ca659d5dcd50336a502e5b1cca674b97978c120898d0",
+        "target_role": "moving_line",
+        "verification_record_id": "1243ecaa9ab0620ae3a97548fd8ca043cb83e2fcb8527f72b0490cd266a5f54c",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:2:xiang_classical_text:2",
+          "reference_sha256": "fc024468b7ac7fdee94825b6eb0ebf8d51bab7f4fbc0f3bdeba8b6bc5ece65f9",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:2:xiang_classical_text:2",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "六二之動直以方也不習无不利地道光也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第2卦块 xiang_classical_text 第2爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:2:yao_classical_text:2",
+          "reference_sha256": "6dea2ac283ce335827d8f9a63e1c1f1f4439b8d4625d6cf6015bea618056cf84",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:2:yao_classical_text:2",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "六二直方大不習无不利",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第2卦块 yao_classical_text 第2爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷一:2:xiang_classical_text:2",
+          "reference_sha256": "37a4544f4077d2ab0c06480193b1cfcd44af31902da646ac838c20a657253ac8",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷一:2:xiang_classical_text:2",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "六二之動直以方也不習无不利地道光也",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%80",
+            "volume": "卷一",
+            "location": "卷一 第2卦块 xiang_classical_text 第2爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷一:2:yao_classical_text:2",
+          "reference_sha256": "111fc8acd4d45d31225d37a0830d0eaff1bb18697a274588dc5d48b6c1960ccf",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷一:2:yao_classical_text:2",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "六二直方大不習无不利",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%80",
+            "volume": "卷一",
+            "location": "卷一 第2卦块 yao_classical_text 第2爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "568f9b95bf0761c21fc7d67f5b47a639702054be2844ceb4ace53f42f16ce344",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 3,
+      "position": 3,
+      "effect": "adverse_warning",
+      "eligible": true,
+      "summary": "无虞而逐鹿、继续前往之吝与见机舍弃必须合读。",
+      "conditions": [
+        {
+          "id": "without_guide",
+          "kind": "prerequisite",
+          "text": "没有虞人引导而追逐的语境。",
+          "field": "yao_classical_text",
+          "quote": "即鹿无虞",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:3:yao_classical_text:3",
+            "runtime_ws_yichuan:卷1:3:yao_classical_text:3"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:3:yao_classical_text:3",
+              "quote": "即鹿无虞"
+            },
+            {
+              "evidence_id": "runtime_ws_yichuan:卷1:3:yao_classical_text:3",
+              "quote": "即鹿无虞"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "persisting_risk",
+          "direction": "adverse",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "without_guide"
+          ],
+          "text": "继续前往的限制是往吝、穷；原文另有舍弃提醒，不能省略。",
+          "field": "xiang_classical_text",
+          "quote": "君子舍之往吝窮也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:3:xiang_classical_text:3",
+            "runtime_ws_yichuan:卷1:3:xiang_classical_text:3"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:3:xiang_classical_text:3",
+              "quote": "君子舍之往吝窮也"
+            },
+            {
+              "evidence_id": "runtime_ws_yichuan:卷1:3:xiang_classical_text:3",
+              "quote": "君子舍之往吝窮也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L03-3",
+      "hexagram_name": "屯",
+      "line_name": "六三",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "0624fa813fbf21a57576e306c959e3e536ccb209d57aa308cc5f38745b25e1cb",
+      "source_fingerprint": "b83cef5b1c7589032c45b133a8c215bbef8576014df61130f1c92730e61ef16a",
+      "original_verification_record_id": "b79dadee7f8658181c1f15a2ade139ad32aa9c85f12eecb89d8e476c2c8643bd",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:3:xiang_classical_text:3",
+              "runtime_ws_benyi:卷1:3:yao_classical_text:3",
+              "runtime_ws_yichuan:卷1:3:xiang_classical_text:3",
+              "runtime_ws_yichuan:卷1:3:yao_classical_text:3"
+            ],
+            "text": "追逐猎物却无向导，只会深入林中而无所获"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:3:xiang_classical_text:3",
+              "runtime_ws_benyi:卷1:3:yao_classical_text:3",
+              "runtime_ws_yichuan:卷1:3:xiang_classical_text:3",
+              "runtime_ws_yichuan:卷1:3:yao_classical_text:3"
+            ],
+            "text": "君子见机不如舍弃，继续前往会陷于困窘"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:3:xiang_classical_text:3",
+          "runtime_ws_benyi:卷1:3:yao_classical_text:3",
+          "runtime_ws_yichuan:卷1:3:xiang_classical_text:3",
+          "runtime_ws_yichuan:卷1:3:yao_classical_text:3"
+        ],
+        "source_fingerprint": "b83cef5b1c7589032c45b133a8c215bbef8576014df61130f1c92730e61ef16a",
+        "target_role": "moving_line",
+        "verification_record_id": "b79dadee7f8658181c1f15a2ade139ad32aa9c85f12eecb89d8e476c2c8643bd",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:3:xiang_classical_text:3",
+          "reference_sha256": "92fe7bf1b923f9e5f3231ed79dcc98690aa99072510cb19056bf622d4bb28188",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:3:xiang_classical_text:3",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "即鹿无虞以從禽也君子舍之往吝窮也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第3卦块 xiang_classical_text 第3爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:3:yao_classical_text:3",
+          "reference_sha256": "f9e7647326d14a7930c19f723d9b196a2bb745713a1077ab6064362d8cf9183f",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:3:yao_classical_text:3",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "六三即鹿无虞惟入于林中君子幾不如舍往吝",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第3卦块 yao_classical_text 第3爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_yichuan:卷1:3:xiang_classical_text:3",
+          "reference_sha256": "b94d1e182b7c38bd6615123cd4266be21e09c70e7f2122516bd80a4ada00209d",
+          "reference": {
+            "evidence_id": "runtime_ws_yichuan:卷1:3:xiang_classical_text:3",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "即鹿无虞以從禽也君子舍之往吝窮也",
+            "source_title": "伊川易傳（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫逐卷電子轉錄，程頤撰",
+            "url": "https://zh.wikisource.org/wiki/%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷01",
+            "location": "卷01 h3.l3.xiang_classical_text；伊川本完整经文段落/明确注解起点定位",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_yichuan:卷1:3:yao_classical_text:3",
+          "reference_sha256": "72547715d136aba4d37480cc50f8aadc820173a25f6aafac4e9c0da96c2f8f5b",
+          "reference": {
+            "evidence_id": "runtime_ws_yichuan:卷1:3:yao_classical_text:3",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "六三即鹿无虞惟入于林中君子幾不如舍往吝",
+            "source_title": "伊川易傳（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫逐卷電子轉錄，程頤撰",
+            "url": "https://zh.wikisource.org/wiki/%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷01",
+            "location": "卷01 h3.l3.yao_classical_text；伊川本完整经文段落/明确注解起点定位",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "292f3db4d86815dcaf0cf40adf6dcd90ffd4e4d77eb0c53ca398284d19b7ebf7",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 3,
+      "position": 5,
+      "effect": "alternative_scopes",
+      "eligible": true,
+      "summary": "小贞与大贞是不同适用范围，不能合成一条整体吉凶。",
+      "conditions": [
+        {
+          "id": "small_scope",
+          "kind": "scope_selector",
+          "text": "适用于小贞范围。",
+          "field": "yao_classical_text",
+          "quote": "小貞吉",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+            "runtime_ws_sibu:卷一:3:yao_classical_text:5"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+              "quote": "小貞吉"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷一:3:yao_classical_text:5",
+              "quote": "小貞吉"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        },
+        {
+          "id": "large_scope",
+          "kind": "scope_selector",
+          "text": "适用于大贞范围。",
+          "field": "yao_classical_text",
+          "quote": "大貞凶",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+            "runtime_ws_sibu:卷一:3:yao_classical_text:5"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+              "quote": "大貞凶"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷一:3:yao_classical_text:5",
+              "quote": "大貞凶"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "small",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "small_scope"
+          ],
+          "text": "小贞范围记为有利；不推定所问事情属于该范围。",
+          "field": "yao_classical_text",
+          "quote": "小貞吉",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+            "runtime_ws_sibu:卷一:3:yao_classical_text:5"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+              "quote": "小貞吉"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷一:3:yao_classical_text:5",
+              "quote": "小貞吉"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        },
+        {
+          "id": "large",
+          "direction": "adverse",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "large_scope"
+          ],
+          "text": "大贞范围记为不利；不按用户金额自动划定古义大小。",
+          "field": "yao_classical_text",
+          "quote": "大貞凶",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+            "runtime_ws_sibu:卷一:3:yao_classical_text:5"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+              "quote": "大貞凶"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷一:3:yao_classical_text:5",
+              "quote": "大貞凶"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L03-5",
+      "hexagram_name": "屯",
+      "line_name": "九五",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "8ba932d99dc1d9d13f9e75a4523d01057941badeca8479887580caa9c3242f6d",
+      "source_fingerprint": "eb9261cb3b5dc83b1b412ff9d90093c7aecf627c99e67714c5572c90a5c29657",
+      "original_verification_record_id": "31adedc7b8a6d2451af0cbd59669a581939bb24bf3783ff5a970639ad0ef2bd0",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:3:xiang_classical_text:5",
+              "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+              "runtime_ws_sibu:卷一:3:xiang_classical_text:5",
+              "runtime_ws_sibu:卷一:3:yao_classical_text:5"
+            ],
+            "text": "九五爻屯积膏泽而不施予，恩施未能光大"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:3:xiang_classical_text:5",
+              "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+              "runtime_ws_sibu:卷一:3:xiang_classical_text:5",
+              "runtime_ws_sibu:卷一:3:yao_classical_text:5"
+            ],
+            "text": "小事守正吉，大事守正凶"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:3:xiang_classical_text:5",
+          "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+          "runtime_ws_sibu:卷一:3:xiang_classical_text:5",
+          "runtime_ws_sibu:卷一:3:yao_classical_text:5"
+        ],
+        "source_fingerprint": "eb9261cb3b5dc83b1b412ff9d90093c7aecf627c99e67714c5572c90a5c29657",
+        "target_role": "moving_line",
+        "verification_record_id": "31adedc7b8a6d2451af0cbd59669a581939bb24bf3783ff5a970639ad0ef2bd0",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:3:xiang_classical_text:5",
+          "reference_sha256": "f35a3e6f44bd243d9abe3b69483c6fe51acb30783c6febea5122810d192fb80d",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:3:xiang_classical_text:5",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "屯其膏施未光也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第3卦块 xiang_classical_text 第5爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+          "reference_sha256": "fcd484eeb55d991f78d1d9d417d71bb96b2e3b9b22a22e2adc2d02a51d1ed97c",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:3:yao_classical_text:5",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九五屯其膏小貞吉大貞凶",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第3卦块 yao_classical_text 第5爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷一:3:xiang_classical_text:5",
+          "reference_sha256": "2001935c42bb36892ad50bf7a3d1e720c94b12638d10924fece958d285c52c38",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷一:3:xiang_classical_text:5",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "屯其膏施未光也",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%80",
+            "volume": "卷一",
+            "location": "卷一 第3卦块 xiang_classical_text 第5爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷一:3:yao_classical_text:5",
+          "reference_sha256": "7399bdbc8520c0fa1844fad7736cd070bfbdf3152a53dabedd487376fac88ce5",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷一:3:yao_classical_text:5",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九五屯其膏小貞吉大貞凶",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%80",
+            "volume": "卷一",
+            "location": "卷一 第3卦块 yao_classical_text 第5爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "1c03ababccf014271b3c56d6a98418873c4ba93782d713cfc6e5bcd537699fa8",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 6,
+      "position": 4,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "不克讼后的复即命、渝安贞是吉的前提，不是用生体便可继续争讼。",
+      "conditions": [
+        {
+          "id": "return_change_settle",
+          "kind": "prerequisite",
+          "text": "复即命、改变心意而安贞。",
+          "field": "yao_classical_text",
+          "quote": "復即命渝安貞吉",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:6:yao_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:6:yao_classical_text:4",
+              "quote": "復即命渝安貞吉"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "return_without_loss",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "return_change_settle"
+          ],
+          "text": "有利表述连同回返、改变与安贞一起保留，不推定这些前提已做到。",
+          "field": "xiang_classical_text",
+          "quote": "復即命渝安貞不失也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:6:xiang_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:6:xiang_classical_text:4",
+              "quote": "復即命渝安貞不失也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L06-4",
+      "hexagram_name": "讼",
+      "line_name": "九四",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "e797334db60003330ce861424598593b451e5a078231b5f3a33e73a61fdda1e6",
+      "source_fingerprint": "e55e08452cce45cb6f59ee6b0712bac8105bdc7c92a8fb27bf156af5aa132314",
+      "original_verification_record_id": "7dfd65d19f2dde864cd9503618c70708e74094cf3b7fe162ea8f44b43a4a9af4",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:6:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:6:yao_classical_text:4"
+            ],
+            "text": "不能胜诉，就回返听从命令，改变心意，安守正固，吉祥"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:6:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:6:yao_classical_text:4"
+            ],
+            "text": "这样做就不会有失"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:6:xiang_classical_text:4",
+          "runtime_ws_benyi:卷1:6:yao_classical_text:4"
+        ],
+        "source_fingerprint": "e55e08452cce45cb6f59ee6b0712bac8105bdc7c92a8fb27bf156af5aa132314",
+        "target_role": "moving_line",
+        "verification_record_id": "7dfd65d19f2dde864cd9503618c70708e74094cf3b7fe162ea8f44b43a4a9af4",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:6:xiang_classical_text:4",
+          "reference_sha256": "89321dc6cfdcdf7743be90f91a087ac647f9759ea94410380f8900e91db3e083",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:6:xiang_classical_text:4",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "復即命渝安貞不失也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第6卦块 xiang_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:6:yao_classical_text:4",
+          "reference_sha256": "d321c432566f24050a7cdfdb545462f6e39140cbbe02af1bc040c5f9c039d732",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:6:yao_classical_text:4",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九四不克訟復即命渝安貞吉",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第6卦块 yao_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "aada93dddadb6bdebf922ed7e4e640f6066581d0eda68de9d8ea43c832d57da2",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 7,
+      "position": 1,
+      "effect": "adverse_warning",
+      "eligible": true,
+      "summary": "出师以律、失律之凶是明确约束，体克用不替代纪律。",
+      "conditions": [
+        {
+          "id": "loss_of_discipline",
+          "kind": "risk_condition",
+          "text": "失律的情形；未推定用户失律。",
+          "field": "xiang_classical_text",
+          "quote": "失律凶也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:7:xiang_classical_text:1"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:7:xiang_classical_text:1",
+              "quote": "失律凶也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "discipline_warning",
+          "direction": "adverse",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "loss_of_discipline"
+          ],
+          "text": "失律带来的不利警示须保留，不能凭结构有利忽略。",
+          "field": "xiang_classical_text",
+          "quote": "師出以律失律凶也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:7:xiang_classical_text:1"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:7:xiang_classical_text:1",
+              "quote": "師出以律失律凶也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L07-1",
+      "hexagram_name": "师",
+      "line_name": "初六",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "b7b9a1eec8eca30c55d3e59eda32d1e9ef41e645ea1871cef8bf718898f6ed83",
+      "source_fingerprint": "04d9f682eb11a5d94c58e114b6d2b63b7f6447868e8fb2bfcfae985b65fbf434",
+      "original_verification_record_id": "dcb1b18bb0708d1de7c0e9836018eea326758c88185d1b3a967788a5563e0a49",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:7:xiang_classical_text:1",
+              "runtime_ws_benyi:卷1:7:yao_classical_text:1"
+            ],
+            "text": "行动必须遵守纪律和规矩"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:7:xiang_classical_text:1",
+              "runtime_ws_benyi:卷1:7:yao_classical_text:1"
+            ],
+            "text": "一旦失去纪律，即使其他方面做得不错，整体结果也会很糟"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:7:xiang_classical_text:1",
+          "runtime_ws_benyi:卷1:7:yao_classical_text:1"
+        ],
+        "source_fingerprint": "04d9f682eb11a5d94c58e114b6d2b63b7f6447868e8fb2bfcfae985b65fbf434",
+        "target_role": "moving_line",
+        "verification_record_id": "dcb1b18bb0708d1de7c0e9836018eea326758c88185d1b3a967788a5563e0a49",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:7:xiang_classical_text:1",
+          "reference_sha256": "a9065bec04989efcb7cb223d1d0bbeb838aa293e2fecd0965b61043d3056a981",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:7:xiang_classical_text:1",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "師出以律失律凶也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第7卦块 xiang_classical_text 第1爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:7:yao_classical_text:1",
+          "reference_sha256": "41aadce9cb664d16b358cf33ea49f7e8869b5f48755a8b501bce9637b0f382d4",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:7:yao_classical_text:1",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "初六師出以律否臧凶",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第7卦块 yao_classical_text 第1爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "5795d5f88e32a6e9796eff05fb61ed277206f65ff69337a7ac8e4c87add3ac12",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 8,
+      "position": 2,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "比之自内、贞吉与不自失相连，是用克体之外的条件性有利线索。",
+      "conditions": [
+        {
+          "id": "inner_steadfastness",
+          "kind": "prerequisite",
+          "text": "比之自内且持守贞、不自失。",
+          "field": "xiang_classical_text",
+          "quote": "比之自内不自失也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:8:xiang_classical_text:2"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:8:xiang_classical_text:2",
+              "quote": "比之自内不自失也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "steadfast_affiliation",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "inner_steadfastness"
+          ],
+          "text": "在自内而贞、不自失的语境下有贞吉；不能无条件翻转用克体。",
+          "field": "yao_classical_text",
+          "quote": "比之自内貞吉",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:8:yao_classical_text:2"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:8:yao_classical_text:2",
+              "quote": "比之自内貞吉"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L08-2",
+      "hexagram_name": "比",
+      "line_name": "六二",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "127eed28768394028d21ff58cadcf94fc58853865f497040b04a7411b15f1b81",
+      "source_fingerprint": "089258a73f8d454155678b4ae6a636f755c8d0cee67119b644f7bc82ade2a289",
+      "original_verification_record_id": "59d68280a11ffa77a623087c1ae6440a026b7b0acfd93c6ac67ae983849da22d",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:8:xiang_classical_text:2",
+              "runtime_ws_benyi:卷1:8:yao_classical_text:2"
+            ],
+            "text": "亲近和归附应当发自内心，同时保持自己的正当立场，不因迎合别人而失去自我，这样坚持正道才会顺利"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:8:xiang_classical_text:2",
+          "runtime_ws_benyi:卷1:8:yao_classical_text:2"
+        ],
+        "source_fingerprint": "089258a73f8d454155678b4ae6a636f755c8d0cee67119b644f7bc82ade2a289",
+        "target_role": "moving_line",
+        "verification_record_id": "59d68280a11ffa77a623087c1ae6440a026b7b0acfd93c6ac67ae983849da22d",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:8:xiang_classical_text:2",
+          "reference_sha256": "918e3f2fb558beb507ff435d2ce5d2ccd356c5018fc5adfa677ec73522e3a6d3",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:8:xiang_classical_text:2",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "比之自内不自失也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第8卦块 xiang_classical_text 第2爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:8:yao_classical_text:2",
+          "reference_sha256": "a68025b97d4a8b93195906c1cd5960c727930c07c7385823ecdae977136b5c82",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:8:yao_classical_text:2",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "六二比之自内貞吉",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第8卦块 yao_classical_text 第2爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "509c4efc3117d9d548b38bac2a5197803be9560a58e2083a36d30d5a1884b4c6",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 9,
+      "position": 3,
+      "effect": "action_restriction",
+      "eligible": true,
+      "summary": "舆说辐、夫妻反目与不能正室是失和、受阻提醒，不按该爻推定用户婚姻事实。",
+      "conditions": [
+        {
+          "id": "discoordination",
+          "kind": "scope_selector",
+          "text": "该爻描述受阻与不协调的语境，不代表现实已发生。",
+          "field": "yao_classical_text",
+          "quote": "輿説輻夫妻反目",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:9:yao_classical_text:3"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:9:yao_classical_text:3",
+              "quote": "輿説輻夫妻反目"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "coordination_limit",
+          "direction": "undetermined",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "discoordination"
+          ],
+          "text": "保留协调与受阻的限制，不扩为具体感情预测。",
+          "field": "xiang_classical_text",
+          "quote": "夫妻反目不能正室也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:9:xiang_classical_text:3"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:9:xiang_classical_text:3",
+              "quote": "夫妻反目不能正室也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L09-3",
+      "hexagram_name": "小畜",
+      "line_name": "九三",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "162dafb12cff95f296ca2dabd05650972f16241388c2fbadfac496f0d2dca442",
+      "source_fingerprint": "3ed6bbe9f20efe0e1665c795954a3478f5fb87691a5a1cfef2311d6e31ea731e",
+      "original_verification_record_id": "14c7fa42cb866f4d66e6fd92d3e92f4179eabe8964a40e6bf50cf6b66a51fb1d",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:9:xiang_classical_text:3",
+              "runtime_ws_benyi:卷1:9:yao_classical_text:3"
+            ],
+            "text": "车轮的辐条脱落，车走不了"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:9:xiang_classical_text:3",
+              "runtime_ws_benyi:卷1:9:yao_classical_text:3"
+            ],
+            "text": "这提醒我们，关系一旦失和、内部不协调，事情就难以维持下去"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:9:xiang_classical_text:3",
+          "runtime_ws_benyi:卷1:9:yao_classical_text:3"
+        ],
+        "source_fingerprint": "3ed6bbe9f20efe0e1665c795954a3478f5fb87691a5a1cfef2311d6e31ea731e",
+        "target_role": "moving_line",
+        "verification_record_id": "14c7fa42cb866f4d66e6fd92d3e92f4179eabe8964a40e6bf50cf6b66a51fb1d",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:9:xiang_classical_text:3",
+          "reference_sha256": "d65126c196f98f6d13d4e6fb804b19aac5d9cc6f0c8f81acc74817c4ddbf8da4",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:9:xiang_classical_text:3",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "夫妻反目不能正室也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第9卦块 xiang_classical_text 第3爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:9:yao_classical_text:3",
+          "reference_sha256": "43ceccb488f3560ed8cb8bb246758259af21b7e7cd63b539d546d2ac9027d27d",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:9:yao_classical_text:3",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九三輿説輻夫妻反目",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第9卦块 yao_classical_text 第3爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "6f64a9da890a80d12d5ed8ab70e4341aea8a4eb4228fed74edce7f676c9fc6b9",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 10,
+      "position": 4,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "终吉不得脱离履虎尾、愬愬的危惧谨慎前提。",
+      "conditions": [
+        {
+          "id": "fearful_caution",
+          "kind": "prerequisite",
+          "text": "履虎尾而愬愬，保持危惧谨慎。",
+          "field": "yao_classical_text",
+          "quote": "履虎尾愬愬終吉",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:10:yao_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:10:yao_classical_text:4",
+              "quote": "履虎尾愬愬終吉"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "caution_supported",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "fearful_caution"
+          ],
+          "text": "终吉只在该爻危惧谨慎的完整语境内保留，不能省去限制。",
+          "field": "xiang_classical_text",
+          "quote": "愬愬終吉志行也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:10:xiang_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:10:xiang_classical_text:4",
+              "quote": "愬愬終吉志行也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L10-4",
+      "hexagram_name": "履",
+      "line_name": "九四",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "c0e1a737afac64ae20bffd744318ff7ead3a00c3986dccfdff6258c0a045fdc3",
+      "source_fingerprint": "875d02dee8c773ab4ea90a019efe88839d6d41fd1cdb3b90d3018e38d356e376",
+      "original_verification_record_id": "6dd0b8e224287412cad13086238c3c7dbc59e148bb630fbae596ebfbcb95f320",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:10:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:10:yao_classical_text:4"
+            ],
+            "text": "身处危险境地，就像踩到老虎尾巴，只有保持恐惧谨慎，最终才能获得吉祥，并使自己的心志得以实现"
+          }
+        ],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:10:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:10:yao_classical_text:4"
+            ],
+            "text": "身处危险境地，就像踩到老虎尾巴，只有保持恐惧谨慎，最终才能获得吉祥，并使自己的心志得以实现"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:10:xiang_classical_text:4",
+          "runtime_ws_benyi:卷1:10:yao_classical_text:4"
+        ],
+        "source_fingerprint": "875d02dee8c773ab4ea90a019efe88839d6d41fd1cdb3b90d3018e38d356e376",
+        "target_role": "moving_line",
+        "verification_record_id": "6dd0b8e224287412cad13086238c3c7dbc59e148bb630fbae596ebfbcb95f320",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:10:xiang_classical_text:4",
+          "reference_sha256": "07a316dd3f8a49a0dc15d07f6d4584b5656bc038c9840bc5b180f520163b3ad2",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:10:xiang_classical_text:4",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "愬愬終吉志行也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第10卦块 xiang_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:10:yao_classical_text:4",
+          "reference_sha256": "aece5a96175c29b9036185d71b2d43320fbc68f2393346ddd3db3362d5a60669",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:10:yao_classical_text:4",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九四履虎尾愬愬終吉",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第10卦块 yao_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "51f6362f85a67a4d3026651a6fd0193625956f6771e45330927f37582f30a1eb",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 12,
+      "position": 1,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "拔茅同类关系与贞、志在君的条件相连，不以用生体代替守正。",
+      "conditions": [
+        {
+          "id": "steadfast_loyal_intent",
+          "kind": "prerequisite",
+          "text": "贞及志在君的语境。",
+          "field": "xiang_classical_text",
+          "quote": "拔茅貞吉志在君也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:12:xiang_classical_text:1"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:12:xiang_classical_text:1",
+              "quote": "拔茅貞吉志在君也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "steadfast_flow",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "steadfast_loyal_intent"
+          ],
+          "text": "原爻贞吉亨的有利表述保留其贞的限定；不改变已确认展示标点。",
+          "field": "yao_classical_text",
+          "quote": "貞吉亨",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:12:yao_classical_text:1"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:12:yao_classical_text:1",
+              "quote": "貞吉亨"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L12-1",
+      "hexagram_name": "否",
+      "line_name": "初六",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "6e5a74b4360df89bd595a0a7adc2d1d5968b7749062a78ba61c39ac896c8c944",
+      "source_fingerprint": "825175af35452707a7bcec7430718ca32129631e6510d0e48090d13df9fd2309",
+      "original_verification_record_id": "bc2648f0a983cfbcebc830f69d1e5684811e28f3ec1797766a8b9644e573c4e8",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:12:xiang_classical_text:1",
+              "runtime_ws_benyi:卷1:12:yao_classical_text:1"
+            ],
+            "text": "就像拔茅草会连根带出同类，人做事也会带动身边的人"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:12:xiang_classical_text:1",
+              "runtime_ws_benyi:卷1:12:yao_classical_text:1"
+            ],
+            "text": "只要守好正道，心里想着该效忠的人，就能顺利"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:12:xiang_classical_text:1",
+          "runtime_ws_benyi:卷1:12:yao_classical_text:1"
+        ],
+        "source_fingerprint": "825175af35452707a7bcec7430718ca32129631e6510d0e48090d13df9fd2309",
+        "target_role": "moving_line",
+        "verification_record_id": "bc2648f0a983cfbcebc830f69d1e5684811e28f3ec1797766a8b9644e573c4e8",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:12:xiang_classical_text:1",
+          "reference_sha256": "5ca808d22add735904405f8e2022205e3504915e0557ab7fb44efbaa2c1411bb",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:12:xiang_classical_text:1",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "拔茅貞吉志在君也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第12卦块 xiang_classical_text 第1爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:12:yao_classical_text:1",
+          "reference_sha256": "578b53f40bdce0b00e3986fab981d9477683e79dac8f8c1e86243a907a457e46",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:12:yao_classical_text:1",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "初六拔茅茹以其彚貞吉亨",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第12卦块 yao_classical_text 第1爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "9b7841f34d0029ccc2e8a9634e962b3354a8cc810c6d8d62d288bea691c8c4e2",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 12,
+      "position": 6,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "否终则倾是终极闭塞转变的来源语境，不推定所有闭塞均已到终点。",
+      "conditions": [
+        {
+          "id": "closure_at_end",
+          "kind": "prerequisite",
+          "text": "否已到终的语境，未确定现实处于此阶段。",
+          "field": "xiang_classical_text",
+          "quote": "否終則傾",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:12:xiang_classical_text:6",
+            "runtime_ws_sibu:卷二:12:xiang_classical_text:6"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:12:xiang_classical_text:6",
+              "quote": "否終則傾"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷二:12:xiang_classical_text:6",
+              "quote": "否終則傾"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "reversal_at_end",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "closure_at_end"
+          ],
+          "text": "先否后喜作为终极转变的有利线索，不称为必然未来。",
+          "field": "yao_classical_text",
+          "quote": "傾否先否後喜",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:12:yao_classical_text:6",
+            "runtime_ws_sibu:卷二:12:yao_classical_text:6"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:12:yao_classical_text:6",
+              "quote": "傾否先否後喜"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷二:12:yao_classical_text:6",
+              "quote": "傾否先否後喜"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L12-6",
+      "hexagram_name": "否",
+      "line_name": "上九",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "825967de5cf045e7f036984ccb4b3d66c26e9d06de300acece2cd05c4e0aa108",
+      "source_fingerprint": "889448ef7182613e96eedd839f4094a8d6788cc519fb5eeac227cd5984418365",
+      "original_verification_record_id": "427113f3a3e91e97abb5ecfdf9dd62e86d8547189b1476ab0f920266e376c816",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:12:xiang_classical_text:6",
+              "runtime_ws_benyi:卷1:12:yao_classical_text:6",
+              "runtime_ws_sibu:卷二:12:xiang_classical_text:6",
+              "runtime_ws_sibu:卷二:12:yao_classical_text:6"
+            ],
+            "text": "闭塞局面到尽头便倾覆，不能长久维持"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:12:xiang_classical_text:6",
+              "runtime_ws_benyi:卷1:12:yao_classical_text:6",
+              "runtime_ws_sibu:卷二:12:xiang_classical_text:6",
+              "runtime_ws_sibu:卷二:12:yao_classical_text:6"
+            ],
+            "text": "先经历闭塞，之后转为欣喜"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:12:xiang_classical_text:6",
+          "runtime_ws_benyi:卷1:12:yao_classical_text:6",
+          "runtime_ws_sibu:卷二:12:xiang_classical_text:6",
+          "runtime_ws_sibu:卷二:12:yao_classical_text:6"
+        ],
+        "source_fingerprint": "889448ef7182613e96eedd839f4094a8d6788cc519fb5eeac227cd5984418365",
+        "target_role": "moving_line",
+        "verification_record_id": "427113f3a3e91e97abb5ecfdf9dd62e86d8547189b1476ab0f920266e376c816",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:12:xiang_classical_text:6",
+          "reference_sha256": "6537235134b129739c6afc2fcab27fa4998571b32b445daf0c1560a25e2923bf",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:12:xiang_classical_text:6",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "否終則傾何可長也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第12卦块 xiang_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:12:yao_classical_text:6",
+          "reference_sha256": "505432a7e1dba09b79b7e0556b7d5c8fc297ba4545cc90f659bec1f8586d14ec",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:12:yao_classical_text:6",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "上九傾否先否後喜",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第12卦块 yao_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷二:12:xiang_classical_text:6",
+          "reference_sha256": "200dbe9b1ce78caffef0a04ce744d1b3bd19f115567ded736ad9c62b818d14d1",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷二:12:xiang_classical_text:6",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "否終則傾何可長也",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+            "volume": "卷二",
+            "location": "卷二 第2卦块 xiang_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷二:12:yao_classical_text:6",
+          "reference_sha256": "db51b11ed9f75b8216613694e1077244747a6ed03c8b4df0cabfebc04aed223c",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷二:12:yao_classical_text:6",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "上九傾否先否後喜",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+            "volume": "卷二",
+            "location": "卷二 第2卦块 yao_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "2df8369644f82cde40e66b8e7f222df3052787bc0b2fa35a623f65c0dd216b09",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 14,
+      "position": 1,
+      "effect": "action_restriction",
+      "eligible": true,
+      "summary": "艰则无咎是谨慎限制；无咎不延伸为额外获利或整件事的成功结果。",
+      "conditions": [
+        {
+          "id": "difficult_caution",
+          "kind": "prerequisite",
+          "text": "艰的限定。",
+          "field": "yao_classical_text",
+          "quote": "艱則无咎",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:14:yao_classical_text:1"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:14:yao_classical_text:1",
+              "quote": "艱則无咎"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "avoid_fault_only",
+          "direction": "undetermined",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "difficult_caution"
+          ],
+          "text": "只有免于咎的有限表述，不提升为整体有利结果。",
+          "field": "yao_classical_text",
+          "quote": "无交害匪咎艱則无咎",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:14:yao_classical_text:1"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:14:yao_classical_text:1",
+              "quote": "无交害匪咎艱則无咎"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L14-1",
+      "hexagram_name": "大有",
+      "line_name": "初九",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "1e7a876bfb0b6a0db488c3dd965b56b597c5eada293d7eec1b57050af2a13655",
+      "source_fingerprint": "65322cca5cb92650c3a942c8c90b7ed989bdda460ee6497c5332824aae01047d",
+      "original_verification_record_id": "36fb002b0239afdc7d94dc601fd715cbb5be2649f8f0f37a0f1de42b6c4acc47",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:14:xiang_classical_text:1",
+              "runtime_ws_benyi:卷1:14:yao_classical_text:1"
+            ],
+            "text": "但处境艰难，只有谨慎自处才能避免过失"
+          }
+        ],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:14:xiang_classical_text:1",
+              "runtime_ws_benyi:卷1:14:yao_classical_text:1"
+            ],
+            "text": "尚未与人交接，所以没有交往带来的伤害，这本身不是过错"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:14:xiang_classical_text:1",
+              "runtime_ws_benyi:卷1:14:yao_classical_text:1"
+            ],
+            "text": "但处境艰难，只有谨慎自处才能避免过失"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:14:xiang_classical_text:1",
+          "runtime_ws_benyi:卷1:14:yao_classical_text:1"
+        ],
+        "source_fingerprint": "65322cca5cb92650c3a942c8c90b7ed989bdda460ee6497c5332824aae01047d",
+        "target_role": "moving_line",
+        "verification_record_id": "36fb002b0239afdc7d94dc601fd715cbb5be2649f8f0f37a0f1de42b6c4acc47",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:14:xiang_classical_text:1",
+          "reference_sha256": "0ef0d87afd37adfc8f8bda1736bdaf03782bc3a0c682d0a91d63c8ff30276f21",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:14:xiang_classical_text:1",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "大有初九无交害也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第14卦块 xiang_classical_text 第1爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:14:yao_classical_text:1",
+          "reference_sha256": "141e7f4c56f7cdc8fad3eab2401359bf32a9cd7fcb94ea690ba191624d069115",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:14:yao_classical_text:1",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "初九无交害匪咎艱則无咎",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第14卦块 yao_classical_text 第1爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "ad93871d7f1e88002d1231fe00fbf94c6da7f6fb11d97adf5cbfd6064b7836a1",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 16,
+      "position": 4,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "由豫、大有得、勿疑与志大行构成有利线索，不能用来取消体用不利。",
+      "conditions": [
+        {
+          "id": "by_yu_scope",
+          "kind": "prerequisite",
+          "text": "由豫而勿疑的爻义语境，不推定用户已有所得。",
+          "field": "yao_classical_text",
+          "quote": "由豫大有得勿疑",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:16:yao_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:16:yao_classical_text:4",
+              "quote": "由豫大有得勿疑"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "intent_proceeds",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "by_yu_scope"
+          ],
+          "text": "大有得、志大行提供有利线索，只与体用关系并列保留。",
+          "field": "xiang_classical_text",
+          "quote": "由豫大有得志大行也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:16:xiang_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:16:xiang_classical_text:4",
+              "quote": "由豫大有得志大行也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L16-4",
+      "hexagram_name": "豫",
+      "line_name": "九四",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "c59a1a794ebd28f0a5f54905b89c68784d3bfc12257e3b45da071f394790fbc0",
+      "source_fingerprint": "73ec3e03b1ef946f02ee647caf505309a34c151bf5ad0a3ed01e524c9b2356bd",
+      "original_verification_record_id": "b45a48668507f8be5184e1a4f5ee549e223b30c510f3622b6fdb3ee7b0f779d6",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:16:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:16:yao_classical_text:4"
+            ],
+            "text": "因和乐而收获很大"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:16:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:16:yao_classical_text:4"
+            ],
+            "text": "心志得以充分施行"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:16:xiang_classical_text:4",
+          "runtime_ws_benyi:卷1:16:yao_classical_text:4"
+        ],
+        "source_fingerprint": "73ec3e03b1ef946f02ee647caf505309a34c151bf5ad0a3ed01e524c9b2356bd",
+        "target_role": "moving_line",
+        "verification_record_id": "b45a48668507f8be5184e1a4f5ee549e223b30c510f3622b6fdb3ee7b0f779d6",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:16:xiang_classical_text:4",
+          "reference_sha256": "a23319c406d7d5bc6f3f36bf61fdb65eb4ee31ecfea67cfd4c921fb6c76ef6e8",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:16:xiang_classical_text:4",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "由豫大有得志大行也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第16卦块 xiang_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:16:yao_classical_text:4",
+          "reference_sha256": "a7967a5989023059b68346ab0aed8cf6035d8882b18440faface3b8a1ac89e55",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:16:yao_classical_text:4",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九四由豫大有得勿疑朋盍簪",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第16卦块 yao_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "27435d543757ba5ef7e94166af188c9bad4acbbd56db5c82710d9f6da593aa0f",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 17,
+      "position": 2,
+      "effect": "tradeoff",
+      "eligible": true,
+      "summary": "系小子、失丈夫与弗兼与明确提示不能兼顾；没有整爻吉凶许可。",
+      "conditions": [
+        {
+          "id": "attachment_choice",
+          "kind": "scope_selector",
+          "text": "选择系小子的语境，不把小子、丈夫指定为现实人物。",
+          "field": "yao_classical_text",
+          "quote": "係小子失丈夫",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:17:yao_classical_text:2",
+            "runtime_ws_sibu:卷二:17:yao_classical_text:2"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:17:yao_classical_text:2",
+              "quote": "係小子失丈夫"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷二:17:yao_classical_text:2",
+              "quote": "係小子失丈夫"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "cannot_keep_both",
+          "direction": "undetermined",
+          "kind": "behavioral_reminder",
+          "condition_ids": [
+            "attachment_choice"
+          ],
+          "text": "取舍是必须保留的限制；体旺、体克用不支持两边同时保全。",
+          "field": "xiang_classical_text",
+          "quote": "係小子弗兼與也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:17:xiang_classical_text:2",
+            "runtime_ws_sibu:卷二:17:xiang_classical_text:2"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:17:xiang_classical_text:2",
+              "quote": "係小子弗兼與也"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷二:17:xiang_classical_text:2",
+              "quote": "係小子弗兼與也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L17-2",
+      "hexagram_name": "随",
+      "line_name": "六二",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "d649c7f98a2aa36212e36f5d2d7987509791063592d1030f2559256a8a834d51",
+      "source_fingerprint": "ad2b4cc972ef48167a5b5e1b8286cf6e09f5579d21ac35cd66f67694ddba0cba",
+      "original_verification_record_id": "020585aa60183d272caf0a77209345e41eb4916b61832a951374d802ea447cea",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:17:xiang_classical_text:2",
+              "runtime_ws_benyi:卷1:17:yao_classical_text:2",
+              "runtime_ws_sibu:卷二:17:xiang_classical_text:2",
+              "runtime_ws_sibu:卷二:17:yao_classical_text:2"
+            ],
+            "text": "顾着小的，就顾不上大的"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:17:xiang_classical_text:2",
+              "runtime_ws_benyi:卷1:17:yao_classical_text:2",
+              "runtime_ws_sibu:卷二:17:xiang_classical_text:2",
+              "runtime_ws_sibu:卷二:17:yao_classical_text:2"
+            ],
+            "text": "亲近这一边，另一边便失去，两者不能同时兼顾"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:17:xiang_classical_text:2",
+          "runtime_ws_benyi:卷1:17:yao_classical_text:2",
+          "runtime_ws_sibu:卷二:17:xiang_classical_text:2",
+          "runtime_ws_sibu:卷二:17:yao_classical_text:2"
+        ],
+        "source_fingerprint": "ad2b4cc972ef48167a5b5e1b8286cf6e09f5579d21ac35cd66f67694ddba0cba",
+        "target_role": "moving_line",
+        "verification_record_id": "020585aa60183d272caf0a77209345e41eb4916b61832a951374d802ea447cea",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:17:xiang_classical_text:2",
+          "reference_sha256": "070b445accc5059af8029c6350acc838d67acb108279cb8fbeedb9cd9a1117be",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:17:xiang_classical_text:2",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "係小子弗兼與也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第17卦块 xiang_classical_text 第2爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:17:yao_classical_text:2",
+          "reference_sha256": "014a92dd255173cc1a965a6c46febdf36fbc1e5e599dfcdc9f1628691b6c288e",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:17:yao_classical_text:2",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "六二係小子失丈夫",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第17卦块 yao_classical_text 第2爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷二:17:xiang_classical_text:2",
+          "reference_sha256": "c2849399a16fde775b61b3c70dcd5793943969ac4261aa0107a5f7849cff11c5",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷二:17:xiang_classical_text:2",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "係小子弗兼與也",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+            "volume": "卷二",
+            "location": "卷二 第7卦块 xiang_classical_text 第2爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷二:17:yao_classical_text:2",
+          "reference_sha256": "7f493f8ae3ad3b2c1612a90ff350fb92c483f001e0556af3c6826652866c8d18",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷二:17:yao_classical_text:2",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "六二係小子失丈夫",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+            "volume": "卷二",
+            "location": "卷二 第7卦块 yao_classical_text 第2爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "7ef158d751c2757df9ca1cf6133f39b212e719078f266a97264d0962c47d6ca6",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 17,
+      "position": 4,
+      "effect": "alternative_scopes",
+      "eligible": true,
+      "summary": "固守随之所得的风险与有孚在道以明的免咎条件分支必须分开。",
+      "conditions": [
+        {
+          "id": "cling_to_gains",
+          "kind": "scope_selector",
+          "text": "随有获而贞的风险分支。",
+          "field": "yao_classical_text",
+          "quote": "隨有獲貞凶",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:17:yao_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:17:yao_classical_text:4",
+              "quote": "隨有獲貞凶"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        },
+        {
+          "id": "faith_path_clarity",
+          "kind": "scope_selector",
+          "text": "有孚在道以明的免咎分支。",
+          "field": "yao_classical_text",
+          "quote": "有孚在道以明何咎",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:17:yao_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:17:yao_classical_text:4",
+              "quote": "有孚在道以明何咎"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "cling_risk",
+          "direction": "adverse",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "cling_to_gains"
+          ],
+          "text": "在随有获而固守的语境内保留风险，不能据有获直接断有利。",
+          "field": "xiang_classical_text",
+          "quote": "隨有獲其義凶也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:17:xiang_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:17:xiang_classical_text:4",
+              "quote": "隨有獲其義凶也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        },
+        {
+          "id": "qualified_no_fault",
+          "direction": "undetermined",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "faith_path_clarity"
+          ],
+          "text": "何咎只表免咎的有限结果，不自动等于整体成功。",
+          "field": "yao_classical_text",
+          "quote": "有孚在道以明何咎",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:17:yao_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:17:yao_classical_text:4",
+              "quote": "有孚在道以明何咎"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L17-4",
+      "hexagram_name": "随",
+      "line_name": "九四",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "ee96de5cdf7916345219ed267c7a14bd9c91522199ecc92f75fee733eeeb7eac",
+      "source_fingerprint": "f39a84073279674b26527b6a7771ce068b491cd79bc3381c2a2e924fe9675109",
+      "original_verification_record_id": "bb6822b1dd1a1ca579a3a17d2c6843986eaa2ac8ef82d3a4db3fd0dbee4a5595",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:17:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:17:yao_classical_text:4"
+            ],
+            "text": "跟随他人而有所收获，但若固守这种收获会有凶险"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:17:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:17:yao_classical_text:4"
+            ],
+            "text": "只有心怀诚信、行事合乎正道，并且明智处事，才能避免过错"
+          }
+        ],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:17:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:17:yao_classical_text:4"
+            ],
+            "text": "跟随他人而有所收获，但若固守这种收获会有凶险"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:17:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:17:yao_classical_text:4"
+            ],
+            "text": "只有心怀诚信、行事合乎正道，并且明智处事，才能避免过错"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:17:xiang_classical_text:4",
+          "runtime_ws_benyi:卷1:17:yao_classical_text:4"
+        ],
+        "source_fingerprint": "f39a84073279674b26527b6a7771ce068b491cd79bc3381c2a2e924fe9675109",
+        "target_role": "moving_line",
+        "verification_record_id": "bb6822b1dd1a1ca579a3a17d2c6843986eaa2ac8ef82d3a4db3fd0dbee4a5595",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:17:xiang_classical_text:4",
+          "reference_sha256": "9343c821da4d82f8bf1d651a5d64e0fc0f0451a3f9735372d52ef52109680025",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:17:xiang_classical_text:4",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "隨有獲其義凶也有孚在道明功也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第17卦块 xiang_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:17:yao_classical_text:4",
+          "reference_sha256": "a24821159a03c5fe78354fe635edec08bcd1e1830b027f112ca8d89715d61528",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:17:yao_classical_text:4",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九四隨有獲貞凶有孚在道以明何咎",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第17卦块 yao_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "e830862a17c757b6490c13a48074c25f9c1ec916f430e1594843174d16c70b82",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 20,
+      "position": 4,
+      "effect": "bounded_opportunity",
+      "eligible": true,
+      "summary": "利用宾于王仅在观国之光、尚宾的参与角色中有利；不越界推断所问事情整体成功。",
+      "conditions": [
+        {
+          "id": "guest_participation_scope",
+          "kind": "scope_selector",
+          "text": "观国之光、以宾参与的限定角色，不推定用户身份。",
+          "field": "xiang_classical_text",
+          "quote": "觀國之光尚賓也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:20:xiang_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:20:xiang_classical_text:4",
+              "quote": "觀國之光尚賓也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "guest_role_opportunity",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "guest_participation_scope"
+          ],
+          "text": "以宾参与这一特定动作有利，不能与用克体视为同一范围的直接矛盾。",
+          "field": "yao_classical_text",
+          "quote": "利用賔于王",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+            "runtime_ws_sibu:卷二:20:yao_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+              "quote": "利用賔于王"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷二:20:yao_classical_text:4",
+              "quote": "利用賔于王"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L20-4",
+      "hexagram_name": "观",
+      "line_name": "六四",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "cddf110a973e4f69b79d6ee1661724394fb29c298fa2d0b685d060320fb7d068",
+      "source_fingerprint": "e95f8e284138d99e7cd38e1774c804ddb36833d80afbc30046e8def40d8c7a07",
+      "original_verification_record_id": "763d22fffbcf92da66e7c29458d12ced93ce18d36298897e111a90a934e1a87c",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:20:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+              "runtime_ws_sibu:卷二:20:xiang_classical_text:4",
+              "runtime_ws_sibu:卷二:20:yao_classical_text:4"
+            ],
+            "text": "看到国家的光彩景象，适合做宾客去辅佐君王"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:20:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+              "runtime_ws_sibu:卷二:20:xiang_classical_text:4",
+              "runtime_ws_sibu:卷二:20:yao_classical_text:4"
+            ],
+            "text": "这说明看重的是以宾客身份参与"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:20:xiang_classical_text:4",
+          "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+          "runtime_ws_sibu:卷二:20:xiang_classical_text:4",
+          "runtime_ws_sibu:卷二:20:yao_classical_text:4"
+        ],
+        "source_fingerprint": "e95f8e284138d99e7cd38e1774c804ddb36833d80afbc30046e8def40d8c7a07",
+        "target_role": "moving_line",
+        "verification_record_id": "763d22fffbcf92da66e7c29458d12ced93ce18d36298897e111a90a934e1a87c",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:20:xiang_classical_text:4",
+          "reference_sha256": "07b6e219ca531a993416671a157122cb49edf52edd6c2fdf0cec696b165fd546",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:20:xiang_classical_text:4",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "觀國之光尚賓也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第20卦块 xiang_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+          "reference_sha256": "2b8d103c96eabe42d19b37696fa34ce779c7f0b329ebf65afdd1696e3e3609da",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "六四觀國之光利用賔于王",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第20卦块 yao_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷二:20:xiang_classical_text:4",
+          "reference_sha256": "c74f3e58c0b2b93bc023c017705e54ecbe650c36d130af4999b6de64f441f945",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷二:20:xiang_classical_text:4",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "觀國之光尚賔也",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+            "volume": "卷二",
+            "location": "卷二 第10卦块 xiang_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷二:20:yao_classical_text:4",
+          "reference_sha256": "2e445595676109522599d5cce252f72965dcf5c1792f880e45a061a2c531ef3a",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷二:20:yao_classical_text:4",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "六四觀國之光利用賔于王",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%BA%8C",
+            "volume": "卷二",
+            "location": "卷二 第10卦块 yao_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "615e4503d7694959d077f44ba825d0dab165699fa56b58dca7f6ebf56926c3db",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 22,
+      "position": 3,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "永贞之吉须连同长期持守的前提保留。",
+      "conditions": [
+        {
+          "id": "lasting_steadfastness",
+          "kind": "prerequisite",
+          "text": "永贞，不能只凭外表润泽。",
+          "field": "yao_classical_text",
+          "quote": "賁如濡如永貞吉",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:22:yao_classical_text:3"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:22:yao_classical_text:3",
+              "quote": "賁如濡如永貞吉"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "lasting_support",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "lasting_steadfastness"
+          ],
+          "text": "永贞范围内有利，不能确认现实已经满足长期持守。",
+          "field": "xiang_classical_text",
+          "quote": "永貞之吉終莫之陵也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:22:xiang_classical_text:3"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:22:xiang_classical_text:3",
+              "quote": "永貞之吉終莫之陵也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L22-3",
+      "hexagram_name": "贲",
+      "line_name": "九三",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "888d10399531c851ee4e7b834ca9b1743a7d5baa26e1bb49d01e2823e1f34a43",
+      "source_fingerprint": "1ddf5b924bb42bbae066241aff3b663dbacb4d48b4336aeaeb0747391b292f4c",
+      "original_verification_record_id": "e86709a8ed8eefb34251fdc51d9172b1a214431e7c2eeebcecdabe6c7ec690c6",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:22:xiang_classical_text:3",
+              "runtime_ws_benyi:卷1:22:yao_classical_text:3"
+            ],
+            "text": "外表光鲜润泽，若能长久守持正固就吉祥，最终没有什么能欺凌它"
+          }
+        ],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:22:xiang_classical_text:3",
+              "runtime_ws_benyi:卷1:22:yao_classical_text:3"
+            ],
+            "text": "外表光鲜润泽，若能长久守持正固就吉祥，最终没有什么能欺凌它"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:22:xiang_classical_text:3",
+          "runtime_ws_benyi:卷1:22:yao_classical_text:3"
+        ],
+        "source_fingerprint": "1ddf5b924bb42bbae066241aff3b663dbacb4d48b4336aeaeb0747391b292f4c",
+        "target_role": "moving_line",
+        "verification_record_id": "e86709a8ed8eefb34251fdc51d9172b1a214431e7c2eeebcecdabe6c7ec690c6",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:22:xiang_classical_text:3",
+          "reference_sha256": "a7c5a4e73c5c9516fd04e07dbdc190459a87e974946f7d55392d5e6b21157cc9",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:22:xiang_classical_text:3",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "永貞之吉終莫之陵也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第22卦块 xiang_classical_text 第3爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:22:yao_classical_text:3",
+          "reference_sha256": "e3b0c270b5d2d0725693cb146e8b447e96933c2d47d989507aef1c83d73e258f",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:22:yao_classical_text:3",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九三賁如濡如永貞吉",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第22卦块 yao_classical_text 第3爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "3ea80bae3e0fb94af2e4c0af46468837496a4d654b69c1196628cae2e2564180",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 24,
+      "position": 6,
+      "effect": "adverse_warning",
+      "eligible": true,
+      "summary": "迷复、反君道的风险是明确动爻限制，不把行师、十年扩成现代时间预测。",
+      "conditions": [
+        {
+          "id": "lost_return",
+          "kind": "risk_condition",
+          "text": "迷复而反君道的语境，未推定用户已迷失。",
+          "field": "xiang_classical_text",
+          "quote": "迷復之凶反君道也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:24:xiang_classical_text:6",
+            "runtime_ws_sibu:卷三:24:xiang_classical_text:6"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:24:xiang_classical_text:6",
+              "quote": "迷復之凶反君道也"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷三:24:xiang_classical_text:6",
+              "quote": "迷復之凶反君道也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "lost_return_risk",
+          "direction": "adverse",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "lost_return"
+          ],
+          "text": "迷复的明确风险与体克用基础有利形成条件性张力；不代替现实成败。",
+          "field": "yao_classical_text",
+          "quote": "迷復凶有災眚",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:24:yao_classical_text:6",
+            "runtime_ws_sibu:卷三:24:yao_classical_text:6"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:24:yao_classical_text:6",
+              "quote": "迷復凶有災眚"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷三:24:yao_classical_text:6",
+              "quote": "迷復凶有災眚"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L24-6",
+      "hexagram_name": "复",
+      "line_name": "上六",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "81886810416e25f04f9229653d40ea9c24a1fa783094052ea862a9bc92d3e719",
+      "source_fingerprint": "f6b0056327f713d48c6119762985b18ec254362e782c779c58f074282b78cc11",
+      "original_verification_record_id": "170aeef62fb652b237debbe35b9f2cbc8ec897437e4d5db3b2c4974a1e074f07",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:24:xiang_classical_text:6",
+              "runtime_ws_benyi:卷1:24:yao_classical_text:6",
+              "runtime_ws_sibu:卷三:24:xiang_classical_text:6",
+              "runtime_ws_sibu:卷三:24:yao_classical_text:6"
+            ],
+            "text": "迷失方向而不知返回"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:24:xiang_classical_text:6",
+              "runtime_ws_benyi:卷1:24:yao_classical_text:6",
+              "runtime_ws_sibu:卷三:24:xiang_classical_text:6",
+              "runtime_ws_sibu:卷三:24:yao_classical_text:6"
+            ],
+            "text": "背离了应有的行事之道"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:24:xiang_classical_text:6",
+          "runtime_ws_benyi:卷1:24:yao_classical_text:6",
+          "runtime_ws_sibu:卷三:24:xiang_classical_text:6",
+          "runtime_ws_sibu:卷三:24:yao_classical_text:6"
+        ],
+        "source_fingerprint": "f6b0056327f713d48c6119762985b18ec254362e782c779c58f074282b78cc11",
+        "target_role": "moving_line",
+        "verification_record_id": "170aeef62fb652b237debbe35b9f2cbc8ec897437e4d5db3b2c4974a1e074f07",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:24:xiang_classical_text:6",
+          "reference_sha256": "fdd1ef03f4b6f317e9368489fca2fb484f2e75d4ce6453d837584092728fc61f",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:24:xiang_classical_text:6",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "迷復之凶反君道也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第24卦块 xiang_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:24:yao_classical_text:6",
+          "reference_sha256": "63aea96cd7dc47df66bdf29b1ca476b0c399b3b9f4b40c62c9e2411cb5f35954",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:24:yao_classical_text:6",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "上六迷復凶有災眚用行師終有大敗以其國君凶至于十年不克征",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第24卦块 yao_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷三:24:xiang_classical_text:6",
+          "reference_sha256": "e1faaa9b4da28be2c6c87abcaaa04a31f0dbc3a11da9f4b9860b6e2f186aff76",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷三:24:xiang_classical_text:6",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "迷復之凶反君道也",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%89",
+            "volume": "卷三",
+            "location": "卷三 第4卦块 xiang_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷三:24:yao_classical_text:6",
+          "reference_sha256": "3378a82cda16dcb35cb9e893849e70db447ca6fa980196d75828254a8f5a0724",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷三:24:yao_classical_text:6",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "上六迷復凶有災眚用行師終有大敗以其國君凶至于十年不克征",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%89",
+            "volume": "卷三",
+            "location": "卷三 第4卦块 yao_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "f304a699ddb5d1e2ea03e54f4554d47291c73b1ce35a11bd028317db0cd69a22",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 25,
+      "position": 1,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "无妄之往的有利表述以不虚妄为语境，不自动评价用户动机。",
+      "conditions": [
+        {
+          "id": "without_falsehood",
+          "kind": "prerequisite",
+          "text": "无妄的行事语境。",
+          "field": "yao_classical_text",
+          "quote": "无妄往吉",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:25:yao_classical_text:1"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:25:yao_classical_text:1",
+              "quote": "无妄往吉"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "uncontrived_progress",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "without_falsehood"
+          ],
+          "text": "无妄而往的有利线索保留，不能推定所有行动都属无妄。",
+          "field": "xiang_classical_text",
+          "quote": "无妄之往得志也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:25:xiang_classical_text:1"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:25:xiang_classical_text:1",
+              "quote": "无妄之往得志也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L25-1",
+      "hexagram_name": "无妄",
+      "line_name": "初九",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "b565325207b4a780a8f2d3d8ddbc828ba4c0f629d484b0a78d0ed41568614c56",
+      "source_fingerprint": "b18f31141f9b892ed03791ebf76447b1003fdeecde1dd7d742913c9f2c45fd5d",
+      "original_verification_record_id": "79798b06f24ca59cda52e6417138e19ea8a40c21dfd253f168c0bdb95e6de78f",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:25:xiang_classical_text:1",
+              "runtime_ws_benyi:卷1:25:yao_classical_text:1"
+            ],
+            "text": "不虚妄地前往，吉利"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:25:xiang_classical_text:1",
+              "runtime_ws_benyi:卷1:25:yao_classical_text:1"
+            ],
+            "text": "以不虚妄的态度前行，能够实现心志"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:25:xiang_classical_text:1",
+          "runtime_ws_benyi:卷1:25:yao_classical_text:1"
+        ],
+        "source_fingerprint": "b18f31141f9b892ed03791ebf76447b1003fdeecde1dd7d742913c9f2c45fd5d",
+        "target_role": "moving_line",
+        "verification_record_id": "79798b06f24ca59cda52e6417138e19ea8a40c21dfd253f168c0bdb95e6de78f",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:25:xiang_classical_text:1",
+          "reference_sha256": "2cc9a8b9bf736440f34ce7e1a56c1e9abf106a89f2323b660a8b4c481aaae368",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:25:xiang_classical_text:1",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "无妄之往得志也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第25卦块 xiang_classical_text 第1爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:25:yao_classical_text:1",
+          "reference_sha256": "b52f8be633cbae3af68fd91b107959c22c3931d76823defb4a330f0b43190b4b",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:25:yao_classical_text:1",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "初九无妄往吉",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第25卦块 yao_classical_text 第1爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "ba00295177abd9f86e4598dcb30e29c3aa910b072590486b46f309421086ad43",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 28,
+      "position": 4,
+      "effect": "alternative_scopes",
+      "eligible": true,
+      "summary": "栋隆之吉与有它之吝是有无牵累的不同分支，不作加权抵消。",
+      "conditions": [
+        {
+          "id": "support_without_bending",
+          "kind": "scope_selector",
+          "text": "栋隆、不桡乎下的范围。",
+          "field": "xiang_classical_text",
+          "quote": "棟隆之吉不橈乎下也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:28:xiang_classical_text:4",
+            "runtime_ws_sibu:卷三:28:xiang_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:28:xiang_classical_text:4",
+              "quote": "棟隆之吉不橈乎下也"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷三:28:xiang_classical_text:4",
+              "quote": "棟隆之吉不橈乎下也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        },
+        {
+          "id": "other_entanglement",
+          "kind": "scope_selector",
+          "text": "另有牵累的范围。",
+          "field": "yao_classical_text",
+          "quote": "有它吝",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:28:yao_classical_text:4",
+            "runtime_ws_sibu:卷三:28:yao_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:28:yao_classical_text:4",
+              "quote": "有它吝"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷三:28:yao_classical_text:4",
+              "quote": "有它吝"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "support",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "support_without_bending"
+          ],
+          "text": "栋隆范围内有利，但不知道实际是否属于这一范围。",
+          "field": "yao_classical_text",
+          "quote": "棟隆吉",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:28:yao_classical_text:4",
+            "runtime_ws_sibu:卷三:28:yao_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:28:yao_classical_text:4",
+              "quote": "棟隆吉"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷三:28:yao_classical_text:4",
+              "quote": "棟隆吉"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        },
+        {
+          "id": "entanglement_limit",
+          "direction": "adverse",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "other_entanglement"
+          ],
+          "text": "有它时保留憾惜限制，不能推定用户已有牵累。",
+          "field": "yao_classical_text",
+          "quote": "有它吝",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:28:yao_classical_text:4",
+            "runtime_ws_sibu:卷三:28:yao_classical_text:4"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:28:yao_classical_text:4",
+              "quote": "有它吝"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷三:28:yao_classical_text:4",
+              "quote": "有它吝"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L28-4",
+      "hexagram_name": "大过",
+      "line_name": "九四",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "5bf2242364e0b22cb950942cff10cff45d925f0890662b220090e8477e6c2405",
+      "source_fingerprint": "1064578e62fa6675a6f54c672b3ff31ab184c3cc6615a9c0514e3eb3480b7516",
+      "original_verification_record_id": "cd758474abde6b169ed2044af202f7c8f6e0266348dba570c0c8f7effd7bcddc",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:28:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:28:yao_classical_text:4",
+              "runtime_ws_sibu:卷三:28:xiang_classical_text:4",
+              "runtime_ws_sibu:卷三:28:yao_classical_text:4"
+            ],
+            "text": "支撑的构件向上隆起而不因下方牵拉弯曲，若另有牵累则会有憾惜"
+          }
+        ],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:28:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:28:yao_classical_text:4",
+              "runtime_ws_sibu:卷三:28:xiang_classical_text:4",
+              "runtime_ws_sibu:卷三:28:yao_classical_text:4"
+            ],
+            "text": "支撑的构件向上隆起而不因下方牵拉弯曲，若另有牵累则会有憾惜"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:28:xiang_classical_text:4",
+          "runtime_ws_benyi:卷1:28:yao_classical_text:4",
+          "runtime_ws_sibu:卷三:28:xiang_classical_text:4",
+          "runtime_ws_sibu:卷三:28:yao_classical_text:4"
+        ],
+        "source_fingerprint": "1064578e62fa6675a6f54c672b3ff31ab184c3cc6615a9c0514e3eb3480b7516",
+        "target_role": "moving_line",
+        "verification_record_id": "cd758474abde6b169ed2044af202f7c8f6e0266348dba570c0c8f7effd7bcddc",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:28:xiang_classical_text:4",
+          "reference_sha256": "13c5e03a12e1569a4d16581c214d2fa6df1b75e5c484463c3701f638ff30206d",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:28:xiang_classical_text:4",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "棟隆之吉不橈乎下也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第28卦块 xiang_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:28:yao_classical_text:4",
+          "reference_sha256": "a691ec73040c09e3441fadefbf107ad84ba6e6dc6b5904de8b4c8f9c205ce51b",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:28:yao_classical_text:4",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九四棟隆吉有它吝",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第28卦块 yao_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷三:28:xiang_classical_text:4",
+          "reference_sha256": "30ba3c2502e7b97c46785d8e3cc2d78f6820372b6d7dfeef8d10fbdf11602ccb",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷三:28:xiang_classical_text:4",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "棟隆之吉不橈乎下也",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%89",
+            "volume": "卷三",
+            "location": "卷三 第8卦块 xiang_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷三:28:yao_classical_text:4",
+          "reference_sha256": "756a374b79ff34e090269bfeb8dedeff96277c2978fe3e6c06497b710dc75ee5",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷三:28:yao_classical_text:4",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九四棟隆吉有它吝",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%89",
+            "volume": "卷三",
+            "location": "卷三 第8卦块 yao_classical_text 第4爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "0fb2eaefd3a605e2cec62941398c4797b435947ac31d5f69ad6afd209fdff6b6",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 29,
+      "position": 5,
+      "effect": "action_restriction",
+      "eligible": true,
+      "summary": "坎不盈、中未大与既平无咎仅支持有限缓解，不推出危难全面结束。",
+      "conditions": [
+        {
+          "id": "not_full",
+          "kind": "prerequisite",
+          "text": "坎不盈、中未大的语境。",
+          "field": "xiang_classical_text",
+          "quote": "坎不盈中未大也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:29:xiang_classical_text:5",
+            "runtime_ws_sibu:卷三:29:xiang_classical_text:5"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:29:xiang_classical_text:5",
+              "quote": "坎不盈中未大也"
+            },
+            {
+              "evidence_id": "runtime_ws_sibu:卷三:29:xiang_classical_text:5",
+              "quote": "坎不盈中未大也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "limited_relief",
+          "direction": "undetermined",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "not_full"
+          ],
+          "text": "既平无咎限制在免咎范围，不等于完全脱险或胜利。",
+          "field": "yao_classical_text",
+          "quote": "祗既平无咎",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:29:yao_classical_text:5",
+            "runtime_ws_zhengyi:卷05:29:yao_classical_text:5"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷1:29:yao_classical_text:5",
+              "quote": "祗既平无咎"
+            },
+            {
+              "evidence_id": "runtime_ws_zhengyi:卷05:29:yao_classical_text:5",
+              "quote": "祗既平无咎"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L29-5",
+      "hexagram_name": "坎",
+      "line_name": "九五",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "efb5d2f8f368b41646b277abeb9d8becfc9e749ce69113f2606ae60cf2f684f7",
+      "source_fingerprint": "673987b55da5f556fffb18b49169b53f18912e0b9e2ecf466ef26e0c5e3a1072",
+      "original_verification_record_id": "386d6ba5bd142a91bb418c627e6a011f11716c14d46af1e0c156b15aae5f81f4",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:29:xiang_classical_text:5",
+              "runtime_ws_benyi:卷1:29:yao_classical_text:5",
+              "runtime_ws_sibu:卷三:29:xiang_classical_text:5",
+              "runtime_ws_zhengyi:卷05:29:yao_classical_text:5"
+            ],
+            "text": "坎陷尚未盈满，居中而未壮大"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷1:29:xiang_classical_text:5",
+              "runtime_ws_benyi:卷1:29:yao_classical_text:5",
+              "runtime_ws_sibu:卷三:29:xiang_classical_text:5",
+              "runtime_ws_zhengyi:卷05:29:yao_classical_text:5"
+            ],
+            "text": "既已趋于平复，则无所咎害"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷1:29:xiang_classical_text:5",
+          "runtime_ws_benyi:卷1:29:yao_classical_text:5",
+          "runtime_ws_sibu:卷三:29:xiang_classical_text:5",
+          "runtime_ws_zhengyi:卷05:29:yao_classical_text:5"
+        ],
+        "source_fingerprint": "673987b55da5f556fffb18b49169b53f18912e0b9e2ecf466ef26e0c5e3a1072",
+        "target_role": "moving_line",
+        "verification_record_id": "386d6ba5bd142a91bb418c627e6a011f11716c14d46af1e0c156b15aae5f81f4",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:29:xiang_classical_text:5",
+          "reference_sha256": "2d8a41b946e6dcada3a2fb7e344e796a350900732c96a15a0202b49596ed8934",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:29:xiang_classical_text:5",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "坎不盈中未大也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第29卦块 xiang_classical_text 第5爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷1:29:yao_classical_text:5",
+          "reference_sha256": "15f8805e889a429ac4e26b029a57f5938ad861972a22529a1dfead9c3b7f4377",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷1:29:yao_classical_text:5",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九五坎不盈祗既平无咎",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+            "volume": "卷1",
+            "location": "卷1 第29卦块 yao_classical_text 第5爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_sibu:卷三:29:xiang_classical_text:5",
+          "reference_sha256": "c7444d9bedfa346a41ac814a6daa97538bb38a3bff4fb46ea0a698381c455f1e",
+          "reference": {
+            "evidence_id": "runtime_ws_sibu:卷三:29:xiang_classical_text:5",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "坎不盈中未大也",
+            "source_title": "周易（四部叢刊本）",
+            "edition": "上海涵芬樓景宋刊本；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%89",
+            "volume": "卷三",
+            "location": "卷三 第9卦块 xiang_classical_text 第5爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_zhengyi:卷05:29:yao_classical_text:5",
+          "reference_sha256": "e1c9b690d0ce938f7a76f843f1833a95f1134a72cc796023bb64a654687c303e",
+          "reference": {
+            "evidence_id": "runtime_ws_zhengyi:卷05:29:yao_classical_text:5",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "九五坎不盈祗既平无咎",
+            "source_title": "周易注疏（四庫全書本）",
+            "edition": "景印文淵閣四庫全書第七冊；維基文庫逐卷電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%B3%A8%E7%96%8F_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B705",
+            "volume": "卷05",
+            "location": "卷05 h29.l5.yao_classical_text；全文唯一定位且末端有明确经注/章节边界",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": true
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "62f208fbf8573bdb93d39a82cffbf946ef87492deb29f7bb4f41b8572145acf8",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 47,
+      "position": 6,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "困于葛藟、臲卼背景下的动悔、有悔、征吉，必须保留悔的前提与适用范围。",
+      "conditions": [
+        {
+          "id": "recognize_regret",
+          "kind": "prerequisite",
+          "text": "动悔而有悔的语境；不确认用户已经反省。",
+          "field": "yao_classical_text",
+          "quote": "動悔有悔征吉",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷2:47:yao_classical_text:6"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷2:47:yao_classical_text:6",
+              "quote": "動悔有悔征吉"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "branches": [
+        {
+          "id": "regret_progress",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "recognize_regret"
+          ],
+          "text": "原典有条件性前行线索，不用征吉保证现实结果。",
+          "field": "xiang_classical_text",
+          "quote": "動悔有悔吉行也",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷2:47:xiang_classical_text:6"
+          ],
+          "source_quotes": [
+            {
+              "evidence_id": "runtime_ws_benyi:卷2:47:xiang_classical_text:6",
+              "quote": "動悔有悔吉行也"
+            }
+          ],
+          "basis": "SOURCE_BOUNDED_PROJECT_ENCODING"
+        }
+      ],
+      "record_id": "L47-6",
+      "hexagram_name": "困",
+      "line_name": "上六",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "d15a46d0d85b1d1f1a013ef21ca5d053bc1532411a7eee88ae857da61e1b8b3a",
+      "source_fingerprint": "2488c156032c0a7e23ecc37ae82894fb12a15eb1e84bb23d70c338d783fe6093",
+      "original_verification_record_id": "b38a059ef8b732e0bee28c646564d53fb81663f6b9ad52a8a54a8989ff93f0d0",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷2:47:xiang_classical_text:6",
+              "runtime_ws_benyi:卷2:47:yao_classical_text:6"
+            ],
+            "text": "被缠绕困住、处境不稳时，若意识到行动可能带来懊悔，并确实为此懊悔，那么继续前行反而有利"
+          }
+        ],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷2:47:xiang_classical_text:6",
+              "runtime_ws_benyi:卷2:47:yao_classical_text:6"
+            ],
+            "text": "被缠绕困住、处境不稳时，若意识到行动可能带来懊悔，并确实为此懊悔，那么继续前行反而有利"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷2:47:xiang_classical_text:6",
+          "runtime_ws_benyi:卷2:47:yao_classical_text:6"
+        ],
+        "source_fingerprint": "2488c156032c0a7e23ecc37ae82894fb12a15eb1e84bb23d70c338d783fe6093",
+        "target_role": "moving_line",
+        "verification_record_id": "b38a059ef8b732e0bee28c646564d53fb81663f6b9ad52a8a54a8989ff93f0d0",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷2:47:xiang_classical_text:6",
+          "reference_sha256": "1507553b6c1e9bda656bbd7c3cf2f6d67be5bca8832ce37708348b83b00704db",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷2:47:xiang_classical_text:6",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "困于葛藟未當也動悔有悔吉行也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+            "volume": "卷2",
+            "location": "卷2 第17卦块 xiang_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷2:47:yao_classical_text:6",
+          "reference_sha256": "39e57aef4af28c5ffd76b37362afec3707c7f6adb0717cbaaebbba1dcbd4d165",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷2:47:yao_classical_text:6",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "上六困于葛藟于臲卼曰動悔有悔征吉",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+            "volume": "卷2",
+            "location": "卷2 第17卦块 yao_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "d6e5ec4fcd580f1424b876a4f1eb55676862eb394149ce2d71b145dc9c318fe1",
+        "is_production_signature": false
+      }
+    },
+    {
+      "hexagram_id": 60,
+      "position": 6,
+      "effect": "unresolved_encoding",
+      "eligible": false,
+      "summary": "Frame 的若能因此悔悟是一种条件解释；本轮原文仅明示苦节贞凶、悔亡，悔亡是否以悔悟为条件尚未取得足够支持。",
+      "conditions": [],
+      "branches": [],
+      "unresolved_reason": "approved_frame_condition_not_explicitly_supported_for_new_directional_encoding",
+      "record_id": "L60-6",
+      "hexagram_name": "节",
+      "line_name": "上六",
+      "rule_version": "moving_line_condition_review_v1",
+      "frame_id": "204bd593fd52b28fc396dd061f61b831cc724b129273f3d4f9d2c06196e73a32",
+      "source_fingerprint": "33276801ab84c49b79c33da546a614688be6f7c1d97666ebe7c13c0e5019aa13",
+      "original_verification_record_id": "afbde527966e7cf52ec4c98ca240c9e91697cfd0f3dc9293f5e2243be2cd78e2",
+      "original_frame_snapshot": {
+        "cautions": [],
+        "conditions": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷2:60:xiang_classical_text:6",
+              "runtime_ws_benyi:卷2:60:yao_classical_text:6"
+            ],
+            "text": "节制过度而至于苦，若固守这种苦节，占问结果凶险"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷2:60:xiang_classical_text:6",
+              "runtime_ws_benyi:卷2:60:yao_classical_text:6"
+            ],
+            "text": "但若能因此悔悟，则悔恨可以消亡"
+          }
+        ],
+        "core_claims": [
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷2:60:xiang_classical_text:6",
+              "runtime_ws_benyi:卷2:60:yao_classical_text:6"
+            ],
+            "text": "节制过度而至于苦，若固守这种苦节，占问结果凶险"
+          },
+          {
+            "supported_by": [
+              "runtime_ws_benyi:卷2:60:xiang_classical_text:6",
+              "runtime_ws_benyi:卷2:60:yao_classical_text:6"
+            ],
+            "text": "但若能因此悔悟，则悔恨可以消亡"
+          }
+        ],
+        "semantic_status": "SEMANTIC_APPROVED",
+        "source_evidence_ids": [
+          "runtime_ws_benyi:卷2:60:xiang_classical_text:6",
+          "runtime_ws_benyi:卷2:60:yao_classical_text:6"
+        ],
+        "source_fingerprint": "33276801ab84c49b79c33da546a614688be6f7c1d97666ebe7c13c0e5019aa13",
+        "target_role": "moving_line",
+        "verification_record_id": "afbde527966e7cf52ec4c98ca240c9e91697cfd0f3dc9293f5e2243be2cd78e2",
+        "version": "verified_semantic_frame_v1"
+      },
+      "source_requirements": [
+        {
+          "evidence_id": "runtime_ws_benyi:卷2:60:xiang_classical_text:6",
+          "reference_sha256": "777bef488f212b46b6ddac502718d9f5767530c8d036c2500fb85fed37d75a9b",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷2:60:xiang_classical_text:6",
+            "role": "moving_line",
+            "section_type": "xiang_classical_text",
+            "text": "苦節貞凶其道窮也",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+            "volume": "卷2",
+            "location": "卷2 第30卦块 xiang_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        },
+        {
+          "evidence_id": "runtime_ws_benyi:卷2:60:yao_classical_text:6",
+          "reference_sha256": "d90b645e847162968e3b11445aa964e86f9462420714562450ffb5011a62e6ac",
+          "reference": {
+            "evidence_id": "runtime_ws_benyi:卷2:60:yao_classical_text:6",
+            "role": "moving_line",
+            "section_type": "yao_classical_text",
+            "text": "上六苦節貞凶悔亡",
+            "source_title": "周易本義（四庫全書本）",
+            "edition": "景印文淵閣四庫全書本；維基文庫電子轉錄",
+            "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+            "volume": "卷2",
+            "location": "卷2 第30卦块 yao_classical_text 第6爻",
+            "original_pages": null,
+            "verification_status": "machine_verified",
+            "variant_present": false
+          }
+        }
+      ],
+      "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+      "review_method": "explicit_source_and_signed_frame_condition_review",
+      "condition_satisfaction": "not_assessed_from_question",
+      "production_approval": false,
+      "review_limits": [
+        "仅供本次离线原型验收，不代表人工确认原文或重新批准 Frame。",
+        "条件语义来自本条证据核对，不推广到未审核爻位。",
+        "未使用新的古注、模型生成或现实事实推断。"
+      ],
+      "review_receipt": {
+        "version": "offline_condition_review_receipt_v1",
+        "record_sha256": "f8abc77aa1c1a9f3226d938cafead3697747f0aa557cd6ae46586ad328cadccc",
+        "is_production_signature": false
+      }
+    }
+  ]
+}

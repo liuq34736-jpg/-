@@ -1,0 +1,739 @@
+{
+  "version": "moving_line_condition_review_v1",
+  "review_status": "REVIEWED_FOR_OFFLINE_PROTOTYPE",
+  "review_method": "explicit_source_and_signed_frame_condition_review",
+  "production_approval": false,
+  "records": [
+    {
+      "hexagram_id": 1,
+      "position": 1,
+      "effect": "action_restriction",
+      "eligible": true,
+      "summary": "潜伏阶段须保留勿用限制；比和不能自动许可行动。",
+      "conditions": [
+        {
+          "id": "latent_stage",
+          "kind": "prerequisite",
+          "text": "适用的是潜伏、尚不宜施用的阶段。",
+          "field": "yao_classical_text",
+          "quote": "潛龍勿用"
+        }
+      ],
+      "branches": [
+        {
+          "id": "withhold_action",
+          "direction": "undetermined",
+          "kind": "behavioral_reminder",
+          "condition_ids": [
+            "latent_stage"
+          ],
+          "text": "勿用是行动限制，不等同于整件事必败。",
+          "field": "xiang_classical_text",
+          "quote": "潛龍勿用陽在下也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 1,
+      "position": 6,
+      "effect": "adverse_warning",
+      "eligible": true,
+      "summary": "亢极而有悔、盈不可久，是比和基础之外的明确不利限制。",
+      "conditions": [
+        {
+          "id": "excessive_height",
+          "kind": "prerequisite",
+          "text": "爻辞所述亢极状态；不推定用户现实已处高位。",
+          "field": "yao_classical_text",
+          "quote": "亢龍有悔"
+        }
+      ],
+      "branches": [
+        {
+          "id": "cannot_last",
+          "direction": "adverse",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "excessive_height"
+          ],
+          "text": "盈满不可长久，不能由比和推出长久顺遂。",
+          "field": "xiang_classical_text",
+          "quote": "盈不可久也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 2,
+      "position": 2,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "直方大的正直端方语境与无不利相连；不得去掉语境保证万事。",
+      "conditions": [
+        {
+          "id": "upright_behavior",
+          "kind": "prerequisite",
+          "text": "直方大的行为语境。",
+          "field": "yao_classical_text",
+          "quote": "直方大"
+        }
+      ],
+      "branches": [
+        {
+          "id": "upright_scope",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "upright_behavior"
+          ],
+          "text": "在直方大的爻义语境内保留无不利；不是现实成败保证。",
+          "field": "yao_classical_text",
+          "quote": "不習无不利"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 3,
+      "position": 3,
+      "effect": "adverse_warning",
+      "eligible": true,
+      "summary": "无虞而逐鹿、继续前往之吝与见机舍弃必须合读。",
+      "conditions": [
+        {
+          "id": "without_guide",
+          "kind": "prerequisite",
+          "text": "没有虞人引导而追逐的语境。",
+          "field": "yao_classical_text",
+          "quote": "即鹿无虞"
+        }
+      ],
+      "branches": [
+        {
+          "id": "persisting_risk",
+          "direction": "adverse",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "without_guide"
+          ],
+          "text": "继续前往的限制是往吝、穷；原文另有舍弃提醒，不能省略。",
+          "field": "xiang_classical_text",
+          "quote": "君子舍之往吝窮也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 3,
+      "position": 5,
+      "effect": "alternative_scopes",
+      "eligible": true,
+      "summary": "小贞与大贞是不同适用范围，不能合成一条整体吉凶。",
+      "conditions": [
+        {
+          "id": "small_scope",
+          "kind": "scope_selector",
+          "text": "适用于小贞范围。",
+          "field": "yao_classical_text",
+          "quote": "小貞吉"
+        },
+        {
+          "id": "large_scope",
+          "kind": "scope_selector",
+          "text": "适用于大贞范围。",
+          "field": "yao_classical_text",
+          "quote": "大貞凶"
+        }
+      ],
+      "branches": [
+        {
+          "id": "small",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "small_scope"
+          ],
+          "text": "小贞范围记为有利；不推定所问事情属于该范围。",
+          "field": "yao_classical_text",
+          "quote": "小貞吉"
+        },
+        {
+          "id": "large",
+          "direction": "adverse",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "large_scope"
+          ],
+          "text": "大贞范围记为不利；不按用户金额自动划定古义大小。",
+          "field": "yao_classical_text",
+          "quote": "大貞凶"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 6,
+      "position": 4,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "不克讼后的复即命、渝安贞是吉的前提，不是用生体便可继续争讼。",
+      "conditions": [
+        {
+          "id": "return_change_settle",
+          "kind": "prerequisite",
+          "text": "复即命、改变心意而安贞。",
+          "field": "yao_classical_text",
+          "quote": "復即命渝安貞吉"
+        }
+      ],
+      "branches": [
+        {
+          "id": "return_without_loss",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "return_change_settle"
+          ],
+          "text": "有利表述连同回返、改变与安贞一起保留，不推定这些前提已做到。",
+          "field": "xiang_classical_text",
+          "quote": "復即命渝安貞不失也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 7,
+      "position": 1,
+      "effect": "adverse_warning",
+      "eligible": true,
+      "summary": "出师以律、失律之凶是明确约束，体克用不替代纪律。",
+      "conditions": [
+        {
+          "id": "loss_of_discipline",
+          "kind": "risk_condition",
+          "text": "失律的情形；未推定用户失律。",
+          "field": "xiang_classical_text",
+          "quote": "失律凶也"
+        }
+      ],
+      "branches": [
+        {
+          "id": "discipline_warning",
+          "direction": "adverse",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "loss_of_discipline"
+          ],
+          "text": "失律带来的不利警示须保留，不能凭结构有利忽略。",
+          "field": "xiang_classical_text",
+          "quote": "師出以律失律凶也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 8,
+      "position": 2,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "比之自内、贞吉与不自失相连，是用克体之外的条件性有利线索。",
+      "conditions": [
+        {
+          "id": "inner_steadfastness",
+          "kind": "prerequisite",
+          "text": "比之自内且持守贞、不自失。",
+          "field": "xiang_classical_text",
+          "quote": "比之自内不自失也"
+        }
+      ],
+      "branches": [
+        {
+          "id": "steadfast_affiliation",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "inner_steadfastness"
+          ],
+          "text": "在自内而贞、不自失的语境下有贞吉；不能无条件翻转用克体。",
+          "field": "yao_classical_text",
+          "quote": "比之自内貞吉"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 9,
+      "position": 3,
+      "effect": "action_restriction",
+      "eligible": true,
+      "summary": "舆说辐、夫妻反目与不能正室是失和、受阻提醒，不按该爻推定用户婚姻事实。",
+      "conditions": [
+        {
+          "id": "discoordination",
+          "kind": "scope_selector",
+          "text": "该爻描述受阻与不协调的语境，不代表现实已发生。",
+          "field": "yao_classical_text",
+          "quote": "輿説輻夫妻反目"
+        }
+      ],
+      "branches": [
+        {
+          "id": "coordination_limit",
+          "direction": "undetermined",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "discoordination"
+          ],
+          "text": "保留协调与受阻的限制，不扩为具体感情预测。",
+          "field": "xiang_classical_text",
+          "quote": "夫妻反目不能正室也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 10,
+      "position": 4,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "终吉不得脱离履虎尾、愬愬的危惧谨慎前提。",
+      "conditions": [
+        {
+          "id": "fearful_caution",
+          "kind": "prerequisite",
+          "text": "履虎尾而愬愬，保持危惧谨慎。",
+          "field": "yao_classical_text",
+          "quote": "履虎尾愬愬終吉"
+        }
+      ],
+      "branches": [
+        {
+          "id": "caution_supported",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "fearful_caution"
+          ],
+          "text": "终吉只在该爻危惧谨慎的完整语境内保留，不能省去限制。",
+          "field": "xiang_classical_text",
+          "quote": "愬愬終吉志行也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 12,
+      "position": 1,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "拔茅同类关系与贞、志在君的条件相连，不以用生体代替守正。",
+      "conditions": [
+        {
+          "id": "steadfast_loyal_intent",
+          "kind": "prerequisite",
+          "text": "贞及志在君的语境。",
+          "field": "xiang_classical_text",
+          "quote": "拔茅貞吉志在君也"
+        }
+      ],
+      "branches": [
+        {
+          "id": "steadfast_flow",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "steadfast_loyal_intent"
+          ],
+          "text": "原爻贞吉亨的有利表述保留其贞的限定；不改变已确认展示标点。",
+          "field": "yao_classical_text",
+          "quote": "貞吉亨"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 12,
+      "position": 6,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "否终则倾是终极闭塞转变的来源语境，不推定所有闭塞均已到终点。",
+      "conditions": [
+        {
+          "id": "closure_at_end",
+          "kind": "prerequisite",
+          "text": "否已到终的语境，未确定现实处于此阶段。",
+          "field": "xiang_classical_text",
+          "quote": "否終則傾"
+        }
+      ],
+      "branches": [
+        {
+          "id": "reversal_at_end",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "closure_at_end"
+          ],
+          "text": "先否后喜作为终极转变的有利线索，不称为必然未来。",
+          "field": "yao_classical_text",
+          "quote": "傾否先否後喜"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 14,
+      "position": 1,
+      "effect": "action_restriction",
+      "eligible": true,
+      "summary": "艰则无咎是谨慎限制；无咎不延伸为额外获利或整件事的成功结果。",
+      "conditions": [
+        {
+          "id": "difficult_caution",
+          "kind": "prerequisite",
+          "text": "艰的限定。",
+          "field": "yao_classical_text",
+          "quote": "艱則无咎"
+        }
+      ],
+      "branches": [
+        {
+          "id": "avoid_fault_only",
+          "direction": "undetermined",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "difficult_caution"
+          ],
+          "text": "只有免于咎的有限表述，不提升为整体有利结果。",
+          "field": "yao_classical_text",
+          "quote": "无交害匪咎艱則无咎"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 16,
+      "position": 4,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "由豫、大有得、勿疑与志大行构成有利线索，不能用来取消体用不利。",
+      "conditions": [
+        {
+          "id": "by_yu_scope",
+          "kind": "prerequisite",
+          "text": "由豫而勿疑的爻义语境，不推定用户已有所得。",
+          "field": "yao_classical_text",
+          "quote": "由豫大有得勿疑"
+        }
+      ],
+      "branches": [
+        {
+          "id": "intent_proceeds",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "by_yu_scope"
+          ],
+          "text": "大有得、志大行提供有利线索，只与体用关系并列保留。",
+          "field": "xiang_classical_text",
+          "quote": "由豫大有得志大行也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 17,
+      "position": 2,
+      "effect": "tradeoff",
+      "eligible": true,
+      "summary": "系小子、失丈夫与弗兼与明确提示不能兼顾；没有整爻吉凶许可。",
+      "conditions": [
+        {
+          "id": "attachment_choice",
+          "kind": "scope_selector",
+          "text": "选择系小子的语境，不把小子、丈夫指定为现实人物。",
+          "field": "yao_classical_text",
+          "quote": "係小子失丈夫"
+        }
+      ],
+      "branches": [
+        {
+          "id": "cannot_keep_both",
+          "direction": "undetermined",
+          "kind": "behavioral_reminder",
+          "condition_ids": [
+            "attachment_choice"
+          ],
+          "text": "取舍是必须保留的限制；体旺、体克用不支持两边同时保全。",
+          "field": "xiang_classical_text",
+          "quote": "係小子弗兼與也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 17,
+      "position": 4,
+      "effect": "alternative_scopes",
+      "eligible": true,
+      "summary": "固守随之所得的风险与有孚在道以明的免咎条件分支必须分开。",
+      "conditions": [
+        {
+          "id": "cling_to_gains",
+          "kind": "scope_selector",
+          "text": "随有获而贞的风险分支。",
+          "field": "yao_classical_text",
+          "quote": "隨有獲貞凶"
+        },
+        {
+          "id": "faith_path_clarity",
+          "kind": "scope_selector",
+          "text": "有孚在道以明的免咎分支。",
+          "field": "yao_classical_text",
+          "quote": "有孚在道以明何咎"
+        }
+      ],
+      "branches": [
+        {
+          "id": "cling_risk",
+          "direction": "adverse",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "cling_to_gains"
+          ],
+          "text": "在随有获而固守的语境内保留风险，不能据有获直接断有利。",
+          "field": "xiang_classical_text",
+          "quote": "隨有獲其義凶也"
+        },
+        {
+          "id": "qualified_no_fault",
+          "direction": "undetermined",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "faith_path_clarity"
+          ],
+          "text": "何咎只表免咎的有限结果，不自动等于整体成功。",
+          "field": "yao_classical_text",
+          "quote": "有孚在道以明何咎"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 20,
+      "position": 4,
+      "effect": "bounded_opportunity",
+      "eligible": true,
+      "summary": "利用宾于王仅在观国之光、尚宾的参与角色中有利；不越界推断所问事情整体成功。",
+      "conditions": [
+        {
+          "id": "guest_participation_scope",
+          "kind": "scope_selector",
+          "text": "观国之光、以宾参与的限定角色，不推定用户身份。",
+          "field": "xiang_classical_text",
+          "quote": "觀國之光尚賓也"
+        }
+      ],
+      "branches": [
+        {
+          "id": "guest_role_opportunity",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "guest_participation_scope"
+          ],
+          "text": "以宾参与这一特定动作有利，不能与用克体视为同一范围的直接矛盾。",
+          "field": "yao_classical_text",
+          "quote": "利用賔于王"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 22,
+      "position": 3,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "永贞之吉须连同长期持守的前提保留。",
+      "conditions": [
+        {
+          "id": "lasting_steadfastness",
+          "kind": "prerequisite",
+          "text": "永贞，不能只凭外表润泽。",
+          "field": "yao_classical_text",
+          "quote": "賁如濡如永貞吉"
+        }
+      ],
+      "branches": [
+        {
+          "id": "lasting_support",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "lasting_steadfastness"
+          ],
+          "text": "永贞范围内有利，不能确认现实已经满足长期持守。",
+          "field": "xiang_classical_text",
+          "quote": "永貞之吉終莫之陵也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 24,
+      "position": 6,
+      "effect": "adverse_warning",
+      "eligible": true,
+      "summary": "迷复、反君道的风险是明确动爻限制，不把行师、十年扩成现代时间预测。",
+      "conditions": [
+        {
+          "id": "lost_return",
+          "kind": "risk_condition",
+          "text": "迷复而反君道的语境，未推定用户已迷失。",
+          "field": "xiang_classical_text",
+          "quote": "迷復之凶反君道也"
+        }
+      ],
+      "branches": [
+        {
+          "id": "lost_return_risk",
+          "direction": "adverse",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "lost_return"
+          ],
+          "text": "迷复的明确风险与体克用基础有利形成条件性张力；不代替现实成败。",
+          "field": "yao_classical_text",
+          "quote": "迷復凶有災眚"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 25,
+      "position": 1,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "无妄之往的有利表述以不虚妄为语境，不自动评价用户动机。",
+      "conditions": [
+        {
+          "id": "without_falsehood",
+          "kind": "prerequisite",
+          "text": "无妄的行事语境。",
+          "field": "yao_classical_text",
+          "quote": "无妄往吉"
+        }
+      ],
+      "branches": [
+        {
+          "id": "uncontrived_progress",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "without_falsehood"
+          ],
+          "text": "无妄而往的有利线索保留，不能推定所有行动都属无妄。",
+          "field": "xiang_classical_text",
+          "quote": "无妄之往得志也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 28,
+      "position": 4,
+      "effect": "alternative_scopes",
+      "eligible": true,
+      "summary": "栋隆之吉与有它之吝是有无牵累的不同分支，不作加权抵消。",
+      "conditions": [
+        {
+          "id": "support_without_bending",
+          "kind": "scope_selector",
+          "text": "栋隆、不桡乎下的范围。",
+          "field": "xiang_classical_text",
+          "quote": "棟隆之吉不橈乎下也"
+        },
+        {
+          "id": "other_entanglement",
+          "kind": "scope_selector",
+          "text": "另有牵累的范围。",
+          "field": "yao_classical_text",
+          "quote": "有它吝"
+        }
+      ],
+      "branches": [
+        {
+          "id": "support",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "support_without_bending"
+          ],
+          "text": "栋隆范围内有利，但不知道实际是否属于这一范围。",
+          "field": "yao_classical_text",
+          "quote": "棟隆吉"
+        },
+        {
+          "id": "entanglement_limit",
+          "direction": "adverse",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "other_entanglement"
+          ],
+          "text": "有它时保留憾惜限制，不能推定用户已有牵累。",
+          "field": "yao_classical_text",
+          "quote": "有它吝"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 29,
+      "position": 5,
+      "effect": "action_restriction",
+      "eligible": true,
+      "summary": "坎不盈、中未大与既平无咎仅支持有限缓解，不推出危难全面结束。",
+      "conditions": [
+        {
+          "id": "not_full",
+          "kind": "prerequisite",
+          "text": "坎不盈、中未大的语境。",
+          "field": "xiang_classical_text",
+          "quote": "坎不盈中未大也"
+        }
+      ],
+      "branches": [
+        {
+          "id": "limited_relief",
+          "direction": "undetermined",
+          "kind": "outcome_limit",
+          "condition_ids": [
+            "not_full"
+          ],
+          "text": "既平无咎限制在免咎范围，不等于完全脱险或胜利。",
+          "field": "yao_classical_text",
+          "quote": "祗既平无咎"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 47,
+      "position": 6,
+      "effect": "conditional_support",
+      "eligible": true,
+      "summary": "困于葛藟、臲卼背景下的动悔、有悔、征吉，必须保留悔的前提与适用范围。",
+      "conditions": [
+        {
+          "id": "recognize_regret",
+          "kind": "prerequisite",
+          "text": "动悔而有悔的语境；不确认用户已经反省。",
+          "field": "yao_classical_text",
+          "quote": "動悔有悔征吉"
+        }
+      ],
+      "branches": [
+        {
+          "id": "regret_progress",
+          "direction": "favorable",
+          "kind": "traditional_judgement",
+          "condition_ids": [
+            "recognize_regret"
+          ],
+          "text": "原典有条件性前行线索，不用征吉保证现实结果。",
+          "field": "xiang_classical_text",
+          "quote": "動悔有悔吉行也"
+        }
+      ]
+    },
+    {
+      "hexagram_id": 60,
+      "position": 6,
+      "effect": "unresolved_encoding",
+      "eligible": false,
+      "summary": "Frame 的若能因此悔悟是一种条件解释；本轮原文仅明示苦节贞凶、悔亡，悔亡是否以悔悟为条件尚未取得足够支持。",
+      "conditions": [],
+      "branches": [],
+      "unresolved_reason": "approved_frame_condition_not_explicitly_supported_for_new_directional_encoding"
+    }
+  ]
+}
