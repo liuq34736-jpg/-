@@ -1,0 +1,355 @@
+{
+  "version": "traditional_judgement_rulebook_v1",
+  "edition": {
+    "title": "梅花易數",
+    "printed_attribution": "〔宋〕邵雍著（仅记录题署，不据此断言成书年代）",
+    "publisher": "文明書局",
+    "year": 1925,
+    "holding_institution": "国家图书馆",
+    "local_file": "D:/算卦工具/资料源/公开古籍/梅花易数_国图1925.pdf",
+    "catalog_url": "https://commons.wikimedia.org/wiki/File:NLC416-12jh005426-44577_%E6%A2%85%E8%8A%B1%E6%98%93%E6%95%B8.pdf",
+    "review_method": "direct_scan_visual_review",
+    "review_date": "2026-10-09",
+    "verification_note": "Day 5规则审查记录，非现代译注，非生产资料的machine_verified迁移。电子文本仅用于定位，不视为第二套独立版本。",
+    "file_sha256": "af608094ab11ae209eae91a9365565e7c9cff604aac3da5e753e04d1cc4598c0",
+    "excerpt_note": "短摘录按横排阅读加句读，不充当完整source_text_exact；扫描原页与SHA-256供逐字查证。"
+  },
+  "sources": [
+    {
+      "id": "M1-TABLE",
+      "pdf_pages": [
+        60,
+        65
+      ],
+      "volume": "卷二",
+      "printed_pages": [
+        "六",
+        "十一"
+      ],
+      "chapter": "體用總訣、人事占第二",
+      "excerpt": "體尅用諸事吉。用尅體諸事凶。體生用有耗失之患。用生體有進益之喜。體用比和則百事順遂。",
+      "limits": "古籍传统判断表；不等于现实事件确定发生。耗失不自动等于破财，进益不自动等于获利。",
+      "page_artifacts": [
+        {
+          "path": "docs/day5_source_pages/page-60.png",
+          "sha256": "0dea8136f8e17ff1e5964749e9980be8e71d22fc259fe9d23be8d7967df67218"
+        },
+        {
+          "path": "docs/day5_source_pages/page-65.png",
+          "sha256": "28836879fc65af5c9fe6cd5b4a52a2b39086410fb29ac0fe58ea199249cfbaaf"
+        }
+      ]
+    },
+    {
+      "id": "M1-STRENGTH",
+      "pdf_pages": [
+        90
+      ],
+      "volume": "卷二",
+      "printed_pages": [
+        "三六"
+      ],
+      "chapter": "衰旺論",
+      "excerpt": "體衰而有生體之卦則衰稍解。大抵本體之卦宜旺。生體之卦氣亦宜旺。尅體之卦氣宜衰。",
+      "limits": "原书有衰稍解、宜旺、宜衰，没有弱克等于无克，也没有定量补偿公式。",
+      "page_artifacts": [
+        {
+          "path": "docs/day5_source_pages/page-90.png",
+          "sha256": "680d46836195664760d3d726e96ebaabca85f03d421441c464c2d4b4f1c4989b"
+        }
+      ]
+    },
+    {
+      "id": "M1-ROLES",
+      "pdf_pages": [
+        59,
+        60
+      ],
+      "volume": "卷二",
+      "printed_pages": [
+        "五",
+        "六"
+      ],
+      "chapter": "體用總訣",
+      "excerpt": "體卦爲主。用卦爲事。互卦爲事之中間。尅應變卦爲事之終。",
+      "limits": "互、变为辅助过程与方向，不据此确定现实终局或应期。两个辅助三爻卦逐一对原体比较是项目细化。",
+      "page_artifacts": [
+        {
+          "path": "docs/day5_source_pages/page-59.png",
+          "sha256": "a051ec4d5444295f7d380873ff1dfaeaeb2767c421ff95927cf9cd0d97a4cfe2"
+        },
+        {
+          "path": "docs/day5_source_pages/page-60.png",
+          "sha256": "0dea8136f8e17ff1e5964749e9980be8e71d22fc259fe9d23be8d7967df67218"
+        }
+      ]
+    },
+    {
+      "id": "M1-PRIORITY",
+      "pdf_pages": [
+        55,
+        56
+      ],
+      "volume": "卷二",
+      "printed_pages": [
+        "一",
+        "二"
+      ],
+      "chapter": "占卜總訣",
+      "excerpt": "成卦之後先看周易爻辭。以斷吉凶。",
+      "limits": "卷二其他章节与先后天论强调重点不同，不能宣称统一无争议的固定优先级。",
+      "page_artifacts": [
+        {
+          "path": "docs/day5_source_pages/page-55.png",
+          "sha256": "9735c95f4c33724d2efead009df10f87f991af0ee0118703166ed6aff374de90"
+        },
+        {
+          "path": "docs/day5_source_pages/page-56.png",
+          "sha256": "3730febc269bfd2c80c0880eb2a17995dbfad240938a6b0a1c1ffa2c4facf149"
+        }
+      ]
+    },
+    {
+      "id": "M1-NONRIGID",
+      "pdf_pages": [
+        58
+      ],
+      "volume": "卷二",
+      "printed_pages": [
+        "四"
+      ],
+      "chapter": "卦斷遺論",
+      "excerpt": "此理甚盛。不必拘體用也。",
+      "limits": "比和例亦有不同结论；不能把单一体用关系当总论，不把书中示例预测移植到用户问题。",
+      "page_artifacts": [
+        {
+          "path": "docs/day5_source_pages/page-58.png",
+          "sha256": "995cede5f71329da7c949ed70c896c0cbcb9e1ec93fee7c8419b32646c2c30c7"
+        }
+      ]
+    },
+    {
+      "id": "M1-ELEMENTS",
+      "pdf_pages": [
+        13
+      ],
+      "volume": "卷一",
+      "printed_pages": [
+        "一"
+      ],
+      "chapter": "五行生尅、八宮所屬五行、卦氣旺衰",
+      "excerpt": "金生水。水生木。木生火。火生土。土生金。",
+      "limits": "继续引用已冻结五行和月令输出；本轮不实现起卦或旺衰计算。",
+      "page_artifacts": [
+        {
+          "path": "docs/day5_source_pages/page-13.png",
+          "sha256": "a9f2b789fa8b28978b9e5d27d3717172b3185918299600cd63244bbea0c32d42"
+        }
+      ]
+    },
+    {
+      "id": "M1-MUTUAL-EXCEPTION",
+      "pdf_pages": [
+        15
+      ],
+      "volume": "卷一",
+      "printed_pages": [
+        "三"
+      ],
+      "chapter": "互卦",
+      "excerpt": "乾坤無互。互其變卦。",
+      "limits": "与现行统一取互的v1计算存在CONFLICT。保留原卦计算，原型不据此解决冲突。",
+      "page_artifacts": [
+        {
+          "path": "docs/day5_source_pages/page-15.png",
+          "sha256": "08d47807910a791403fdd9e4c74e6f19593587513d77d2b6a42f0b8e5814ecae"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "TJ-REL-YGB",
+      "basis": "DIRECT_SOURCE",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-TABLE"
+      ],
+      "relation": "yong_generates_body",
+      "polarity": "favorable",
+      "summary": "用生体：存在生助、进益的传统有利倾向。"
+    },
+    {
+      "id": "TJ-REL-BGY",
+      "basis": "DIRECT_SOURCE",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-TABLE"
+      ],
+      "relation": "body_generates_yong",
+      "polarity": "adverse",
+      "summary": "体生用：存在主体向外泄气、耗失的传统不利倾向。"
+    },
+    {
+      "id": "TJ-REL-BCY",
+      "basis": "DIRECT_SOURCE",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-TABLE"
+      ],
+      "relation": "body_controls_yong",
+      "polarity": "favorable",
+      "summary": "体克用：存在主体制约所问事情的传统有利倾向。"
+    },
+    {
+      "id": "TJ-REL-YCB",
+      "basis": "DIRECT_SOURCE",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-TABLE"
+      ],
+      "relation": "yong_controls_body",
+      "polarity": "adverse",
+      "summary": "用克体：存在外部制约主体的传统不利倾向。"
+    },
+    {
+      "id": "TJ-REL-SAME",
+      "basis": "DIRECT_SOURCE",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-TABLE"
+      ],
+      "relation": "same_element",
+      "polarity": "favorable",
+      "summary": "体用比和：存在同类相和的传统有利倾向。"
+    },
+    {
+      "id": "TJ-STRENGTH",
+      "basis": "DIRECT_SOURCE",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-STRENGTH"
+      ],
+      "summary": "体宜旺；生体一方宜旺，克体一方宜衰。记录修饰，不改基础生克。"
+    },
+    {
+      "id": "TJ-QUALIFIER",
+      "basis": "PROJECT_CONVENTION",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-STRENGTH"
+      ],
+      "summary": "将旺衰编译成受限/加强/有所缓解等定性标签，不翻转关系，不用平代替五级休囚。"
+    },
+    {
+      "id": "TJ-TRADITIONAL-ROLES",
+      "basis": "DIRECT_SOURCE",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-ROLES",
+        "M1-PRIORITY"
+      ],
+      "summary": "原书体卦为主、用卦为事、互卦为中间、变卦为终，并有先看周易爻辞的条文。"
+    },
+    {
+      "id": "TJ-ROLE-CONTEXT",
+      "basis": "PROJECT_CONVENTION",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-ROLES",
+        "M1-PRIORITY"
+      ],
+      "summary": "将传统体主用事、互中变终与爻辞阅读提示映射成当前背景、核心变化、内部过程、变化方向；这是项目解释角色，不是古籍直接给出的程序标签。"
+    },
+    {
+      "id": "TJ-SEMANTIC-BOUNDARY",
+      "basis": "PROJECT_CONVENTION",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-PRIORITY",
+        "M1-NONRIGID"
+      ],
+      "summary": "只逐项保留已批准Frame及其条件禁忌；没有已审核的爻义倾向字段时不按字词强行归类吉凶。"
+    },
+    {
+      "id": "TJ-AUXILIARY",
+      "basis": "PROJECT_CONVENTION",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-ROLES"
+      ],
+      "summary": "互/变上下卦对原体比较，仅作低优先级旁证；重复三爻结构不另当独立支持，变卦未动的体部分不重复计入。"
+    },
+    {
+      "id": "TJ-CONFLICT",
+      "basis": "PROJECT_CONVENTION",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-NONRIGID",
+        "M1-PRIORITY"
+      ],
+      "summary": "有利与不利并存输出mixed，不加总、不抵消；保留本卦体用的基础倾向和所有相反因素。"
+    },
+    {
+      "id": "TJ-PRIORITY",
+      "basis": "PROJECT_CONVENTION",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-PRIORITY",
+        "M1-ROLES",
+        "M1-NONRIGID"
+      ],
+      "summary": "本卦语义与动爻条件为主要阅读层；本卦体用提供基础传统倾向，旺衰修饰；互/变不覆盖主要层。尚不声称拥有可靠的爻义定向合成。"
+    },
+    {
+      "id": "TJ-DISPLAY",
+      "basis": "MODERN_INTERPRETATION",
+      "status": "EXECUTABLE",
+      "sources": [
+        "M1-TABLE"
+      ],
+      "summary": "将古籍吉凶限定呈现为有利/不利/混合的传统结构倾向，禁止确定现实结果、金额、时间及概率。"
+    },
+    {
+      "id": "TJ-STRENGTH-VARIANT",
+      "basis": "PROJECT_CONVENTION",
+      "status": "CONTEXT_ONLY",
+      "sources": [
+        "M1-ELEMENTS"
+      ],
+      "summary": "沿用meihua_strength_v1精确节气月建与旺/衰/平；节气精确交接和00:00换日仍属现有项目选择。"
+    },
+    {
+      "id": "TJ-BODY-VARIANT",
+      "basis": "PROJECT_CONVENTION",
+      "status": "CONTEXT_ONLY",
+      "sources": [
+        "M1-ROLES"
+      ],
+      "summary": "沿用moving_trigram_is_yong_v1；不由本次体用段落追认其为唯一传统版本。"
+    },
+    {
+      "id": "TJ-QIAN-KUN",
+      "basis": "DISPUTED",
+      "status": "REFERENCE_ONLY",
+      "sources": [
+        "M1-MUTUAL-EXCEPTION"
+      ],
+      "summary": "乾坤无互冲突不解决。保留v1互卦数据，乾坤互卦关系不参与本原型倾向合成。"
+    },
+    {
+      "id": "TJ-PENDING-LINE-POLARITY",
+      "basis": "NOT_YET_SOURCED",
+      "status": "REFERENCE_ONLY",
+      "sources": [],
+      "summary": "尚无经审核的动爻条件极性及其与体用冲突裁决表；不可假装已实现完整圆机综合断卦。"
+    },
+    {
+      "id": "TJ-PENDING-DOMAIN",
+      "basis": "NOT_YET_SOURCED",
+      "status": "REFERENCE_ONLY",
+      "sources": [],
+      "summary": "专业问事分类、克应与应期不执行，不由通用表推定财务、健康、人物和具体事件。"
+    }
+  ]
+}
