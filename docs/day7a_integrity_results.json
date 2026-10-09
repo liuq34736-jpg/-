@@ -23,7 +23,7 @@
   "history_database_bytes_unchanged": true,
   "git_safety": {
     "mode": "candidate",
-    "files_checked": 356,
+    "files_checked": 357,
     "findings": [],
     "passed": true
   },
