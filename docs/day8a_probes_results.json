@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "probes": {
+    "production_write": true,
+    "new_project_write": true,
+    "network": true,
+    "production_sqlite": true
+  },
+  "tampered_original_frame_rejected": true,
+  "other_frames_retained": 3,
+  "calculations_preserved": true,
+  "engine_input_preserved": true,
+  "real_ai_calls": 0,
+  "new_condition_layer_missing_frame_fails_closed": true,
+  "new_condition_layer_calculation_preserved": true
+}

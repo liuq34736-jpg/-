@@ -1,0 +1,37 @@
+{
+  "day7a_commit": "4a6d69e25b8302f5f171ff0cd5c5084b0a7751fe",
+  "day7a_tracked_files": 357,
+  "intentional_transport_or_display_changes": [
+    "backend/app/main.py",
+    "backend/traditional_preview_v1/service.py",
+    "frontend/src/platform/MeihuaPage.tsx",
+    "frontend/src/platform/TraditionalJudgementPreview.tsx",
+    "frontend/src/platform/meihua.css",
+    "frontend/vite.config.ts"
+  ],
+  "unexpected_day7a_changes": [],
+  "frozen_engines_reviews_source_and_frames_unchanged_since_day7a": true,
+  "files_differing_from_older_day5_baseline": [
+    "backend/app/main.py",
+    "frontend/src/platform/MeihuaPage.tsx",
+    "frontend/src/platform/meihua.css",
+    "frontend/vite.config.ts"
+  ],
+  "production_files": 157,
+  "changed_production_files": [],
+  "signed_cache_files": 509,
+  "changed_signed_cache_files": [],
+  "history_rows": 42,
+  "history_schema_unchanged": true,
+  "history_row_hashes_unchanged": true,
+  "history_database_bytes_unchanged": true,
+  "all_384_public_result_hashes_equal_day7a": true,
+  "git_safety": {
+    "mode": "candidate",
+    "files_checked": 416,
+    "findings": [],
+    "passed": true
+  },
+  "real_ai_calls": 0,
+  "passed": true
+}

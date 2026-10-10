@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 import { readFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
+import { attachPreviewCancellation } from './previewCancellation'
 
 const brand = JSON.parse(readFileSync(path.resolve(__dirname, 'src/config/brand.json'), 'utf8'))
 const escapeHtml = (value: string) => value.replace(/[&<>"']/g, char => ({
@@ -16,7 +17,7 @@ export default defineConfig({
     host: '127.0.0.1',
     port: 5173,
     strictPort: true,
-    proxy: { '/api': { target: 'http://127.0.0.1:8765' } },
+    proxy: { '/api': { target: 'http://127.0.0.1:8765', configure: attachPreviewCancellation } },
     headers: { 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'no-referrer', 'X-Frame-Options': 'DENY' },
   },
   preview: { host: '127.0.0.1', port: 5173, strictPort: true, headers: { 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'no-referrer', 'X-Frame-Options': 'DENY' } },

@@ -1,0 +1,282 @@
+{
+  "browser": "Chrome 154.0.8037.99",
+  "desktop": "1600x1100",
+  "mobile": "390x844 / 320x740 Chrome emulation; physical_phone_unverified",
+  "passed": 66,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "guan_http_success",
+      "passed": true
+    },
+    {
+      "name": "guan_fixed_facts",
+      "passed": true
+    },
+    {
+      "name": "guan_bounded_adverse",
+      "passed": true
+    },
+    {
+      "name": "guan_weak_controller_limit_visible",
+      "passed": true
+    },
+    {
+      "name": "preview_five_sections",
+      "passed": true
+    },
+    {
+      "name": "review_sources_default_folded",
+      "passed": true
+    },
+    {
+      "name": "no_automatic_condition_satisfaction",
+      "passed": true
+    },
+    {
+      "name": "desktop_wider_result",
+      "passed": true
+    },
+    {
+      "name": "desktop_no_overflow",
+      "passed": true
+    },
+    {
+      "name": "guan_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "day8a_branch_not_copied_in_summary",
+      "passed": true
+    },
+    {
+      "name": "day8a_branch_single_visible_occurrence",
+      "passed": true
+    },
+    {
+      "name": "day8a_conditions_not_asserted_satisfied",
+      "passed": true
+    },
+    {
+      "name": "day8a_condition_numbers_visible",
+      "passed": true
+    },
+    {
+      "name": "sources_have_quotes_and_public_versions",
+      "passed": true
+    },
+    {
+      "name": "sources_no_internal_receipt_private_paths",
+      "passed": true
+    },
+    {
+      "name": "question_cannot_change_calculation",
+      "passed": true
+    },
+    {
+      "name": "question_cannot_change_judgement",
+      "passed": true
+    },
+    {
+      "name": "sui_real_api_state",
+      "passed": true
+    },
+    {
+      "name": "sui_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "qian-top_real_api_state",
+      "passed": true
+    },
+    {
+      "name": "qian-top_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "qian_primary_conflict_and_mutual_dispute",
+      "passed": true
+    },
+    {
+      "name": "branches_real_api_state",
+      "passed": true
+    },
+    {
+      "name": "branches_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "branches_no_verdict",
+      "passed": true
+    },
+    {
+      "name": "branches_not_selected_and_visible",
+      "passed": true
+    },
+    {
+      "name": "day6b-new_real_api_state",
+      "passed": true
+    },
+    {
+      "name": "day6b-new_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "qian-held_real_api_state",
+      "passed": true
+    },
+    {
+      "name": "qian-held_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "qian-held_no_verdict",
+      "passed": true
+    },
+    {
+      "name": "qian-held_fallback_visible",
+      "passed": true
+    },
+    {
+      "name": "mingyi-held_real_api_state",
+      "passed": true
+    },
+    {
+      "name": "mingyi-held_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "mingyi-held_no_verdict",
+      "passed": true
+    },
+    {
+      "name": "mingyi-held_fallback_visible",
+      "passed": true
+    },
+    {
+      "name": "jie-held_real_api_state",
+      "passed": true
+    },
+    {
+      "name": "jie-held_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "jie-held_no_verdict",
+      "passed": true
+    },
+    {
+      "name": "jie-held_fallback_visible",
+      "passed": true
+    },
+    {
+      "name": "unreviewed_real_api_state",
+      "passed": true
+    },
+    {
+      "name": "unreviewed_safe_ui",
+      "passed": true
+    },
+    {
+      "name": "unreviewed_no_verdict",
+      "passed": true
+    },
+    {
+      "name": "unreviewed_fallback_visible",
+      "passed": true
+    },
+    {
+      "name": "source_fault_fixture_safe_fallback",
+      "passed": true
+    },
+    {
+      "name": "source_fault_keeps_original_structure",
+      "passed": true
+    },
+    {
+      "name": "day8a_repeated_punctuation_removed_only_in_display",
+      "passed": true
+    },
+    {
+      "name": "day8a_original_quotes_unchanged",
+      "passed": true
+    },
+    {
+      "name": "day8a_double_submit_disabled",
+      "passed": true
+    },
+    {
+      "name": "day8a_cancel_chinese_no_stale_result",
+      "passed": true
+    },
+    {
+      "name": "day8a_cancel_no_automatic_retry",
+      "passed": true
+    },
+    {
+      "name": "day8a_504_safe_chinese",
+      "passed": true
+    },
+    {
+      "name": "day8a_504_no_automatic_retry",
+      "passed": true
+    },
+    {
+      "name": "unknown_output_fields_rejected_not_displayed",
+      "passed": true
+    },
+    {
+      "name": "inconsistent_eligibility_rejected",
+      "passed": true
+    },
+    {
+      "name": "worker_error_chinese_no_exception_or_stale_result",
+      "passed": true
+    },
+    {
+      "name": "mobile_result_safe_no_xss",
+      "passed": true
+    },
+    {
+      "name": "mobile_clear_16px_body",
+      "passed": true
+    },
+    {
+      "name": "mobile_no_overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile_branch_unresolved",
+      "passed": true
+    },
+    {
+      "name": "320px_no_overflow",
+      "passed": true
+    },
+    {
+      "name": "local_storage_empty",
+      "passed": true
+    },
+    {
+      "name": "no_page_errors",
+      "passed": true
+    },
+    {
+      "name": "no_external_browser_requests",
+      "passed": true
+    },
+    {
+      "name": "no_client_authentication_headers",
+      "passed": true
+    }
+  ],
+  "external_origins": [],
+  "sensitive_request_count": 0,
+  "page_error_count": 0,
+  "post_route_counts": {
+    "/api/v1/meihua/traditional-preview": 20
+  },
+  "fault_injection": "browser_only_mock_transport; actual_server_fault_cases_in_unit_tests",
+  "paid_ai_calls": 0,
+  "history_written": false
+}

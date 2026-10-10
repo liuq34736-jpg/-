@@ -1,0 +1,15 @@
+{
+  "files_checked": 439,
+  "credential_match_count": 0,
+  "credential_values_printed_or_saved": false,
+  "credential_check_method": "exact_in_memory_comparison",
+  "scope": "new_project_git_candidates_runtime_logs_receipts_frontend_build;_not_windows_system_logs",
+  "git_safety": {
+    "mode": "candidate",
+    "files_checked": 416,
+    "findings": [],
+    "passed": true
+  },
+  "real_ai_calls": 0,
+  "passed": true
+}

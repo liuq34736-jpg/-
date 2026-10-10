@@ -12,6 +12,7 @@ from backend.app.meihua_adapter import MeihuaServiceAdapter, MeihuaUnavailable
 from backend.app.meihua_models import CastingInput, CatalogResult, ReadingResponse
 from backend.traditional_preview_v1.models import PreviewResponse
 from backend.traditional_preview_v1.service import TraditionalPreviewService
+from backend.traditional_preview_v1.execution import PreviewTimedOut, PreviewCancelled, PreviewDisconnectMiddleware, run_cancellable_preview
 
 
 class ModuleInfo(BaseModel):
@@ -137,5 +138,19 @@ def calculate_reading(request: CastingInput):
 
 
 @app.post("/api/v1/meihua/traditional-preview", response_model=PreviewResponse)
-def traditional_preview(request: CastingInput):
-    return traditional_preview_service.calculate(request)
+async def traditional_preview(request: CastingInput, http_request: Request):
+    return await run_cancellable_preview(traditional_preview_service, request, http_request)
+
+
+@app.exception_handler(PreviewTimedOut)
+async def preview_timeout(_request, _error):
+    return JSONResponse(status_code=504, content={"detail": "预览计算已超时并停止，请稍后手动重试。"})
+
+
+@app.exception_handler(PreviewCancelled)
+async def preview_cancelled(_request, _error):
+    return JSONResponse(status_code=499, content={"detail": "本次预览计算已取消。"})
+
+
+# Added last so it observes transport events outside the BaseHTTP boundary.
+app.add_middleware(PreviewDisconnectMiddleware)

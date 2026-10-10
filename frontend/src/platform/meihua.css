@@ -64,6 +64,7 @@
 .judgement-factors p { margin: 7px 0; }
 .strength-reminders, .judgement-uncertainties { margin: 24px 0; }
 .condition-list li { padding: 0 0 12px; }
+.traditional-preview ol.condition-list { list-style: decimal; padding-left: 24px; }
 .condition-list p { margin-bottom: 3px; }
 .condition-state { font-size: 12px; color: var(--brand-accent); }
 .branch-list { display: grid; gap: 14px; }
@@ -72,6 +73,7 @@
 .condition-evidence blockquote { margin: 12px 0; padding-left: 14px; border-left: 2px solid #e2ded4; font-size: 14px; line-height: 1.9; }
 .condition-evidence cite { display: block; font-size: 12px; font-style: normal; color: #77766d; }
 .traditional-preview a { color: var(--brand-accent); }
+.cancel-casting { margin: 12px 0 0 12px; padding: 8px 14px; background: transparent; color: #253934; border: 1px solid #e2ded4; border-radius: 5px; }
 .traditional-preview .section-description { font-size: 13px; }
 @media (max-width: 650px) {
   .casting-form { padding: 20px 16px; }

@@ -1,0 +1,21 @@
+{
+  "version": "application_scope_hold_v1",
+  "allows_approval": false,
+  "holds": [
+    {
+      "case_id": "Q14",
+      "core_claims_sha256": "2136a44ad8a8c859df4913738dc17c5b946ee8e5c591d2c160d78906e9cdbb8e",
+      "source_fingerprint_at_audit": "3604360086a9dea3489757d463a6c06aef2b21afef164f6fa74920505811844c",
+      "source_evidence_ids": [
+        "runtime_ws_benyi:卷2:44:judgment.classical_text",
+        "runtime_ws_benyi:卷2:44:tuan.classical_text",
+        "runtime_ws_benyi:卷2:44:xiang.classical_text"
+      ],
+      "state": "needs_application_constraint_review",
+      "source_excerpt": "姤女壯勿用取女",
+      "reason": "既有短Frame只概述相遇，旧独立源核对确认原文限制未保留；在新应用层审查完整约束前不得扩展为磨合或错过联系机会。",
+      "audit_basis": "question_interpretation_v2_final_source_spotcheck.md:Q14 / final_issues.md:W-02",
+      "original_audit_sha256": "ceea4908995012f846755a139c5285215f1a4f687bdf711beb746230f67bed48"
+    }
+  ]
+}

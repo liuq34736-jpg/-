@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "name": "direct_asgi_disconnect",
+      "passed": true
+    },
+    {
+      "name": "shared_vite_proxy_disconnect",
+      "passed": true
+    },
+    {
+      "name": "server_deadline_504_reaped_no_retry",
+      "passed": true
+    },
+    {
+      "name": "isolated_server_stopped",
+      "passed": true
+    }
+  ],
+  "passed": 4,
+  "failed": 0,
+  "observations": [
+    {
+      "case": "direct_asgi_disconnect",
+      "owned_child_reaped": true,
+      "two_slots_released": true,
+      "child_starts": 1,
+      "cancel_to_release_seconds": 0.082
+    },
+    {
+      "case": "shared_vite_proxy_disconnect",
+      "owned_child_reaped": true,
+      "two_slots_released": true,
+      "child_starts": 1,
+      "cancel_to_release_seconds": 0.061
+    },
+    {
+      "case": "compressed_deadline_test_only",
+      "http_status": 504,
+      "elapsed_seconds": 0.276,
+      "child_starts": 1
+    }
+  ],
+  "transport": "real_loopback_HTTP_ASGI_and_shared_Vite_cancellation_helper",
+  "frozen_worker_substitute": "test_sleeper_only; no_calculations_or_corpus_modified",
+  "live_ports_changed": false,
+  "real_ai_calls": 0
+}

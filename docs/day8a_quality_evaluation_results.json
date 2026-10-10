@@ -1,0 +1,420 @@
+{
+  "method": "offline_known_failure_replay_and_hand_authored_test_substitutes;_not_live_AI_quality_acceptance",
+  "passed": 30,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Q07_old_failure_rejected",
+      "passed": true
+    },
+    {
+      "name": "Q10_old_failure_rejected",
+      "passed": true
+    },
+    {
+      "name": "Q12_old_failure_rejected",
+      "passed": true
+    },
+    {
+      "name": "Q13_old_failure_rejected",
+      "passed": true
+    },
+    {
+      "name": "Q14_actual_source_scope_hold",
+      "passed": true
+    },
+    {
+      "name": "Q19_old_failure_rejected",
+      "passed": true
+    },
+    {
+      "name": "Q28_old_failure_rejected",
+      "passed": true
+    },
+    {
+      "name": "negative_guarantee",
+      "passed": true
+    },
+    {
+      "name": "negative_prevention",
+      "passed": true
+    },
+    {
+      "name": "zero_width",
+      "passed": true
+    },
+    {
+      "name": "chinese_spaces",
+      "passed": true
+    },
+    {
+      "name": "newline",
+      "passed": true
+    },
+    {
+      "name": "traditional",
+      "passed": true
+    },
+    {
+      "name": "time_window",
+      "passed": true
+    },
+    {
+      "name": "invented_fact",
+      "passed": true
+    },
+    {
+      "name": "condition_expansion",
+      "passed": true
+    },
+    {
+      "name": "direction_override",
+      "passed": true
+    },
+    {
+      "name": "qualification_override",
+      "passed": true
+    },
+    {
+      "name": "season_as_ability",
+      "passed": true
+    },
+    {
+      "name": "business_mock_controlled_four_roles",
+      "passed": true
+    },
+    {
+      "name": "relationship_mock_controlled_four_roles",
+      "passed": true
+    },
+    {
+      "name": "same_frozen_calculation",
+      "passed": true
+    },
+    {
+      "name": "same_approved_frames",
+      "passed": true
+    },
+    {
+      "name": "different_mock_applications",
+      "passed": true
+    },
+    {
+      "name": "Q04_provided_window_cannot_be_missing",
+      "passed": true
+    },
+    {
+      "name": "Q07_provided_window_cannot_be_missing",
+      "passed": true
+    },
+    {
+      "name": "Q22_provided_window_cannot_be_missing",
+      "passed": true
+    },
+    {
+      "name": "duplicate_punctuation",
+      "passed": true
+    },
+    {
+      "name": "repeated_prose",
+      "passed": true
+    },
+    {
+      "name": "independent_false_receipt_fallback",
+      "passed": true
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "Q07",
+      "phase": "old_real_failure_offline_replay",
+      "result": "REJECTED",
+      "reasons": [
+        "implicit_or_absolute_prediction"
+      ]
+    },
+    {
+      "case_id": "Q10",
+      "phase": "old_real_failure_offline_replay",
+      "result": "REJECTED",
+      "reasons": [
+        "unprovided_reality:备货",
+        "unprovided_reality:推广",
+        "unprovided_reality:租金"
+      ]
+    },
+    {
+      "case_id": "Q12",
+      "phase": "old_real_failure_offline_replay",
+      "result": "REJECTED",
+      "reasons": [
+        "unprovided_reality:备货",
+        "unprovided_reality:已付出",
+        "unprovided_reality:收回的款项"
+      ]
+    },
+    {
+      "case_id": "Q13",
+      "phase": "old_real_failure_offline_replay",
+      "result": "REJECTED",
+      "reasons": [
+        "unprovided_reality:对方的过失"
+      ]
+    },
+    {
+      "case_id": "Q14",
+      "phase": "old_real_failure_offline_replay",
+      "result": "REJECTED",
+      "reasons": [
+        "known_source_scope_hold"
+      ]
+    },
+    {
+      "case_id": "Q19",
+      "phase": "old_real_failure_offline_replay",
+      "result": "REJECTED",
+      "reasons": [
+        "source_condition_determination"
+      ]
+    },
+    {
+      "case_id": "Q28",
+      "phase": "old_real_failure_offline_replay",
+      "result": "REJECTED",
+      "reasons": [
+        "implicit_or_absolute_prediction"
+      ]
+    },
+    {
+      "case_id": "negative_guarantee",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "implicit_or_absolute_prediction"
+      ]
+    },
+    {
+      "case_id": "negative_prevention",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "implicit_or_absolute_prediction"
+      ]
+    },
+    {
+      "case_id": "zero_width",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "implicit_or_absolute_prediction"
+      ]
+    },
+    {
+      "case_id": "chinese_spaces",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "implicit_or_absolute_prediction"
+      ]
+    },
+    {
+      "case_id": "newline",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "implicit_or_absolute_prediction"
+      ]
+    },
+    {
+      "case_id": "traditional",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "implicit_or_absolute_prediction"
+      ]
+    },
+    {
+      "case_id": "time_window",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "time_prediction"
+      ]
+    },
+    {
+      "case_id": "invented_fact",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "unprovided_reality:库存"
+      ]
+    },
+    {
+      "case_id": "condition_expansion",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "source_condition_determination"
+      ]
+    },
+    {
+      "case_id": "direction_override",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "locked_fact_declaration"
+      ]
+    },
+    {
+      "case_id": "qualification_override",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "locked_fact_declaration"
+      ]
+    },
+    {
+      "case_id": "season_as_ability",
+      "phase": "new_adversarial_pattern",
+      "result": "REJECTED",
+      "reasons": [
+        "unprovided_reality_assertion"
+      ]
+    },
+    {
+      "case_id": "duplicate_punctuation",
+      "phase": "application_contract",
+      "result": "REJECTED",
+      "reasons": [
+        "duplicated_punctuation"
+      ]
+    },
+    {
+      "case_id": "repeated_prose",
+      "phase": "application_contract",
+      "result": "REJECTED",
+      "reasons": [
+        "repetitive_application"
+      ]
+    }
+  ],
+  "mock_samples": [
+    {
+      "category": "business",
+      "question": "我现在重新做女装生意，近期应该怎么推进？",
+      "offline_status": "OFFLINE_ACCEPTED",
+      "sections": {
+        "original_hexagram": "传统卦义：这段内容讲的是文饰与治理；既要观察自然变化，也要用文明教化天下\n现实应用类比（未认定现实条件）：可先区分女装生意的外在呈现和实际做法，了解你希望怎样推进，再考虑怎样安排，不推定已有经营成果。\n可以核对：可先核对自己已提供的信息，不把没有说明的情况当成事实。",
+        "moving_line": "传统卦义：装饰自己的脚趾，舍弃车子而徒步走；这是因为道义上不该乘坐\n现实应用类比（未认定现实条件）：可先想清楚推进女装生意时哪些做法符合自己的原则，再决定怎样开始，不把外在形式当成必须依赖的东西。\n可以核对：可先核对自己已提供的信息，不把没有说明的情况当成事实。",
+        "mutual_hexagram": "传统卦义：困难正在解除，行动可以脱离险境；该停就停、该做就趁早做，同时以宽容态度对待他人的过失\n现实应用类比（未认定现实条件）：如果推进中有需要调整的环节，可先了解具体情况再决定何时做，不推定困难已经解除。\n可以核对：可先核对自己已提供的信息，不把没有说明的情况当成事实。\n仅作内部过程的辅助观察。",
+        "changed_hexagram": "传统卦义：该停就停、该做就做；行动和安静都不错过时机\n现实应用类比（未认定现实条件）：可先观察实际准备情况再决定推进或停下，不把行动节奏理解为生意确定会取得某个结果。\n可以核对：可先核对自己已提供的信息，不把没有说明的情况当成事实。\n这是变化后的结构方向，不是事情必然发生的结果。"
+      },
+      "evidence": [
+        {
+          "role": "original_hexagram",
+          "frame_id": "6541dcb7618e3f0ad5b7bbbb12ffd8f0c7fbae03742e5ab6f18d560a6325020e",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:22:judgment.classical_text",
+            "runtime_ws_benyi:卷1:22:tuan.classical_text",
+            "runtime_ws_benyi:卷1:22:xiang.classical_text"
+          ],
+          "preserved_limit_ids": []
+        },
+        {
+          "role": "moving_line",
+          "frame_id": "c2cf061d80528163db577e24ab9cc7419915817c15a15747bac26f4aff499e6b",
+          "source_evidence_ids": [
+            "ctext_wuyingdian:bi1:22:xiang_classical_text:1",
+            "ctext_wuyingdian:bi1:22:yao_classical_text:1",
+            "runtime_ws_benyi:卷1:22:xiang_classical_text:1",
+            "runtime_ws_benyi:卷1:22:yao_classical_text:1"
+          ],
+          "preserved_limit_ids": []
+        },
+        {
+          "role": "mutual_hexagram",
+          "frame_id": "c61a127e9abbbcc5a84da3632997b782619cf854cb6fadcda246b1e567f842fc",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷2:40:judgment.classical_text",
+            "runtime_ws_benyi:卷2:40:tuan.classical_text",
+            "runtime_ws_benyi:卷2:40:xiang.classical_text"
+          ],
+          "preserved_limit_ids": []
+        },
+        {
+          "role": "changed_hexagram",
+          "frame_id": "8665a6fe7c543efc7ef5056cbd712022fc48be41537d5a17f7d5cf866579cf84",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷2:52:judgment.classical_text",
+            "runtime_ws_benyi:卷2:52:tuan.classical_text",
+            "runtime_ws_benyi:卷2:52:xiang.classical_text"
+          ],
+          "preserved_limit_ids": []
+        }
+      ]
+    },
+    {
+      "category": "relationship",
+      "question": "我和这个人的关系，接下来应该注意什么？",
+      "offline_status": "OFFLINE_ACCEPTED",
+      "sections": {
+        "original_hexagram": "传统卦义：这段内容讲的是文饰与治理；既要观察自然变化，也要用文明教化天下\n现实应用类比（未认定现实条件）：可把外在表达与实际相处区分开，先了解你说的这段关系，再考虑怎样交流，不替对方认定想法。\n可以核对：可先核对自己已提供的信息，不把没有说明的情况当成事实。",
+        "moving_line": "传统卦义：装饰自己的脚趾，舍弃车子而徒步走；这是因为道义上不该乘坐\n现实应用类比（未认定现实条件）：可先想清楚联系时哪些做法符合自己的原则，再决定怎样表达，不因为外在形式就勉强继续。\n可以核对：可先核对自己已提供的信息，不把没有说明的情况当成事实。",
+        "mutual_hexagram": "传统卦义：困难正在解除，行动可以脱离险境；该停就停、该做就趁早做，同时以宽容态度对待他人的过失\n现实应用类比（未认定现实条件）：如果互动中有需要澄清的事，可先了解具体情况再决定何时联系，不预设过失归属于谁。\n可以核对：可先核对自己已提供的信息，不把没有说明的情况当成事实。\n仅作内部过程的辅助观察。",
+        "changed_hexagram": "传统卦义：该停就停、该做就做；行动和安静都不错过时机\n现实应用类比（未认定现实条件）：可先观察实际互动是否适合继续交流，再决定停或做，不把下一步理解为关系确定会怎样。\n可以核对：可先核对自己已提供的信息，不把没有说明的情况当成事实。\n这是变化后的结构方向，不是事情必然发生的结果。"
+      },
+      "evidence": [
+        {
+          "role": "original_hexagram",
+          "frame_id": "6541dcb7618e3f0ad5b7bbbb12ffd8f0c7fbae03742e5ab6f18d560a6325020e",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷1:22:judgment.classical_text",
+            "runtime_ws_benyi:卷1:22:tuan.classical_text",
+            "runtime_ws_benyi:卷1:22:xiang.classical_text"
+          ],
+          "preserved_limit_ids": []
+        },
+        {
+          "role": "moving_line",
+          "frame_id": "c2cf061d80528163db577e24ab9cc7419915817c15a15747bac26f4aff499e6b",
+          "source_evidence_ids": [
+            "ctext_wuyingdian:bi1:22:xiang_classical_text:1",
+            "ctext_wuyingdian:bi1:22:yao_classical_text:1",
+            "runtime_ws_benyi:卷1:22:xiang_classical_text:1",
+            "runtime_ws_benyi:卷1:22:yao_classical_text:1"
+          ],
+          "preserved_limit_ids": []
+        },
+        {
+          "role": "mutual_hexagram",
+          "frame_id": "c61a127e9abbbcc5a84da3632997b782619cf854cb6fadcda246b1e567f842fc",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷2:40:judgment.classical_text",
+            "runtime_ws_benyi:卷2:40:tuan.classical_text",
+            "runtime_ws_benyi:卷2:40:xiang.classical_text"
+          ],
+          "preserved_limit_ids": []
+        },
+        {
+          "role": "changed_hexagram",
+          "frame_id": "8665a6fe7c543efc7ef5056cbd712022fc48be41537d5a17f7d5cf866579cf84",
+          "source_evidence_ids": [
+            "runtime_ws_benyi:卷2:52:judgment.classical_text",
+            "runtime_ws_benyi:卷2:52:tuan.classical_text",
+            "runtime_ws_benyi:卷2:52:xiang.classical_text"
+          ],
+          "preserved_limit_ids": []
+        }
+      ]
+    }
+  ],
+  "real_ai_calls": 0,
+  "production_approval_issued": 0,
+  "history_written": false,
+  "original_source_or_Frame_changes": false,
+  "limitations": [
+    "known_patterns_do_not_prove_open_language_correctness",
+    "mock_receipts_do_not_prove_real_independent_model_quality",
+    "new_contract_not_registered_in_web_routes"
+  ]
+}

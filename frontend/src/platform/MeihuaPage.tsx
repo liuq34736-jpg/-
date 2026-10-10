@@ -103,7 +103,7 @@ export default function MeihuaPage() {
       if (!response.ok) throw new Error('unavailable')
       return catalogSchema.parse(await response.json())
     }).then(setCatalog).catch(() => { if (!abort.signal.aborted) setCatalogFailed(true) })
-    return () => { abort.abort(); controller.current?.abort() }
+    return () => { abort.abort(); controller.current?.abort('unmount'); controller.current = null }
   }, [])
 
   async function submit(event: FormEvent<HTMLFormElement>) {
@@ -113,7 +113,7 @@ export default function MeihuaPage() {
     setBusy(true); setError(''); setResult(null); setTraditional(null)
     const abort = new AbortController()
     controller.current = abort
-    const timeout = window.setTimeout(() => abort.abort(), 25000)
+    const timeout = window.setTimeout(() => abort.abort('timeout'), 25000)
     try {
       const payload = { input_mode: mode, question_text: question, cast_at: `${castAt.length === 16 ? castAt + ':00' : castAt}+08:00`,
         ...(mode === 'manual_hexagram' ? { hexagram_id: hexagramId, moving_line: position } : {}) }
@@ -121,7 +121,7 @@ export default function MeihuaPage() {
         body: JSON.stringify(payload), signal: abort.signal })
       if (!response.ok) {
         setError(response.status === 422 ? '输入格式不正确，请检查卦象、爻位及中国起卦时间（2000–2099 年）。' :
-          response.status === 413 ? '问题过长，请缩短后重新提交。' : '冻结计算服务暂不可用，请稍后重试。')
+          response.status === 413 ? '问题过长，请缩短后重新提交。' : response.status === 504 ? '计算已超时并停止，请稍后手动重试。' : '冻结计算服务暂不可用，请稍后重试。')
         return
       }
       const raw: unknown = await response.json()
@@ -145,7 +145,8 @@ export default function MeihuaPage() {
         }
       } else setResult(resultSchema.parse(raw))
     } catch {
-      if (controller.current === abort) setError('计算未完成，请检查本地服务后重试。')
+      if (controller.current === abort) setError(abort.signal.reason === 'user' ? '本次计算已取消。' :
+        abort.signal.reason === 'timeout' ? '本次等待已超时，请稍后手动重试。' : '计算未完成，请检查本地服务后重试。')
     } finally {
       window.clearTimeout(timeout)
       locked.current = false
@@ -183,6 +184,7 @@ export default function MeihuaPage() {
       <button className="start-casting" type="submit" disabled={busy || (mode === 'manual_hexagram' && !catalog)}>
         {busy ? <><LoaderCircle size={17} />正在计算…</> : <>开始起卦 <ArrowRight size={17} /></>}
       </button>
+      {busy && <button className="cancel-casting" type="button" onClick={() => controller.current?.abort('user')}>取消本次计算</button>}
     </form>
     {result && <ReadingResult value={result} traditional={traditional} />}
   </section>
