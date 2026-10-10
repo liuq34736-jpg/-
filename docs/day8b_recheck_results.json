@@ -1,0 +1,41 @@
+{
+  "base_commit": "16d2809",
+  "baseline_files": 416,
+  "changed_baseline_files": [],
+  "unit": {
+    "collected": 458,
+    "passed": 458,
+    "failed": 0,
+    "skipped": 0,
+    "failed_test_ids": [],
+    "external_network_allowed": false,
+    "live_app_ports_allowed": false,
+    "loopback_event_loop_plumbing_allowed": true,
+    "production_writes_allowed": false,
+    "real_ai_calls": 0
+  },
+  "failure_replay": {
+    "passed": 30,
+    "failed": 0,
+    "real_ai_calls": 0,
+    "production_approval_issued": 0
+  },
+  "production_files": 157,
+  "changed_production_files": [],
+  "signed_cache_files": 509,
+  "changed_signed_cache_files": [],
+  "history_rows": 42,
+  "history_schema_unchanged": true,
+  "history_row_hashes_unchanged": true,
+  "history_database_bytes_unchanged": true,
+  "git_safety": {
+    "mode": "candidate",
+    "files_checked": 427,
+    "findings": [],
+    "passed": true
+  },
+  "real_ai_calls": 0,
+  "new_unit_tests": 0,
+  "scope": "all_existing_offline_unit_tests_and_old_failure_replay; no_Chrome_or_real_AI_quality_claim",
+  "passed": true
+}

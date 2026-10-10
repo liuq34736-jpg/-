@@ -1,0 +1,27 @@
+{
+  "old_tracked_files": 416,
+  "modified_existing_files": [],
+  "git_safety": {
+    "mode": "candidate",
+    "files_checked": 426,
+    "findings": [],
+    "passed": true,
+    "scope_note": "checked_before_staging; runtime_tokenizer_and_private_files_excluded"
+  },
+  "production_files": 157,
+  "changed_production_files": [],
+  "signed_cache_files": 509,
+  "changed_signed_cache_files": [],
+  "history_rows": 42,
+  "history_schema_unchanged": true,
+  "history_row_hashes_unchanged": true,
+  "history_database_bytes_unchanged": true,
+  "deliverables": {
+    "day8b_test_plan.md": "37f86c3df96c3b0f6c846efca772874af91754041cced8a507ce36052534067a",
+    "day8b_quality_rubric.md": "1ff53004a44a9d176c6040557266e64adbafaf3facacb019ab10bc23a8d278c9",
+    "day8b_api_budget.md": "70392659917aeb055c09c6699a00ebd1f1d353f44c604a632ae358dc6650fe8a",
+    "day8b_readiness_report.md": "401d39b1de64ae23b046015e1be7c999f4bd43b62e79e8826f3735d5e09baa1b"
+  },
+  "real_ai_calls": 0,
+  "passed": true
+}
