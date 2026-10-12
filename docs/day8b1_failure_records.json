@@ -1,0 +1,42 @@
+{
+  "stage": "day8b1_mock_only",
+  "observed_date": "2026-10-12",
+  "exact_initial_failure_times": null,
+  "real_ai_calls": 0,
+  "records": [
+    {
+      "command": "git ls-tree -r --name-only 0944d7d then PowerShell SHA256 baseline collection",
+      "failure": "Git quoted a Chinese filename; Get-FileHash rejected the quoted path",
+      "impact": "one temporary baseline entry missing; no tracked or protected file modified",
+      "fix": "core.quotepath=false; recollected all 427 hashes before edits",
+      "status": "resolved"
+    },
+    {
+      "command": ".venv/Scripts/python.exe -B -X utf8 -m unittest tests.test_day8b1_budget -q",
+      "collected": 66,
+      "framework_errors": 53,
+      "exit_code": 1,
+      "failure": "SQLite connection context manager did not close handles; Windows temporary DB cleanup WinError32",
+      "fix": "explicit contextlib.closing for new ledger and test connections",
+      "rerun": "66 tests, exit0, no errors",
+      "status": "resolved"
+    },
+    {
+      "command": ".venv/Scripts/python.exe -B -X utf8 -m unittest tests.test_day8b1_executor -q",
+      "collected": null,
+      "exit_code": 1,
+      "failure": "test helper named run overrode unittest.TestCase.run before setup",
+      "fix": "renamed test helper evaluate; production code unaffected",
+      "status": "resolved"
+    },
+    {
+      "command": ".venv/Scripts/python.exe -B -X utf8 -m unittest tests.test_day8b1_executor -q",
+      "collected": 40,
+      "framework_failures": 3,
+      "exit_code": 1,
+      "failure": "Mock clauses containing a negative you-already expression were conservatively rejected; B06 reported thought also rejected by old goal/fact regex",
+      "fix": "removed misleading negative fixture phrasing; retained B06 rejection and changed expected outcome to honest fallback, no gate change",
+      "status": "tests_corrected; B06_gate_limitation_retained"
+    }
+  ]
+}

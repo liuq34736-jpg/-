@@ -1,0 +1,275 @@
+{
+  "batch": 1,
+  "mode": "mock",
+  "cases": [
+    {
+      "case_id": "B01",
+      "status": "MOCK_CONTRACT_ACCEPTED",
+      "errors": [],
+      "sections": [
+        [
+          "original_hexagram",
+          "传统卦义：这段内容讲的是随顺时势；天下万物都跟着时机变化，所以顺应时机的意义很大\n现实应用类比（未认定现实条件）：可先观察你准备重新经营时有哪些可核对的时机，再比较线上与小店，不从顺应时机推出经营成果。\n可以核对：可先核对已提供的信息与适用范围，再考虑下一步安排。"
+        ],
+        [
+          "moving_line",
+          "传统卦义：顾着小的，就顾不上大的；亲近这一边，另一边便失去，两者不能同时兼顾\n现实应用类比（未认定现实条件）：如果两种经营方式需要取舍，可先辨别各自牵涉的选择，不把两边同时兼顾当成已满足的情形。\n可以核对：可先核对已提供的信息与适用范围，再考虑下一步安排。\n适用前提与限制（现实是否满足未核实）：选择系小子的语境，不把小子、丈夫指定为现实人物。"
+        ],
+        [
+          "mutual_hexagram",
+          "传统卦义：事情要一步一步来，像女子出嫁按礼慢慢进行才顺利；前进时位置得当、走正道，就能有成效，也能带动周围变好\n现实应用类比（未认定现实条件）：可把逐步推进作为核对经营准备的线索，先看下一步适不适合，再安排后续，不由此确定经营结果。\n可以核对：可先核对已提供的信息与适用范围，再考虑下一步安排。\n仅作内部过程的辅助观察。"
+        ],
+        [
+          "changed_hexagram",
+          "传统卦义：内心刚正而外表柔和；以使人喜悦的方式行事\n现实应用类比（未认定现实条件）：可核对表达方式是否既坚持原则又便于沟通，不把柔和表达理解成已经获得合作。\n可以核对：可先核对已提供的信息与适用范围，再考虑下一步安排。\n这是变化后的结构方向，不是事情必然发生的结果。"
+        ]
+      ],
+      "checks": {
+        "local_gate": "passed",
+        "independent_review": "passed",
+        "facts_unchanged": true,
+        "source_quality": "requires_separate_source_review",
+        "real_model_quality": "unverified",
+        "binding_evidence": [
+          {
+            "role": "original_hexagram",
+            "frame_id": "3da2885b42a7e5ecf1c8186f4f75a98368e06bc9e9cfae36bd7d288da63d2ded",
+            "source_evidence_ids": [
+              "runtime_ws_benyi:卷1:17:judgment.classical_text",
+              "runtime_ws_benyi:卷1:17:tuan.classical_text",
+              "runtime_ws_benyi:卷1:17:xiang.classical_text"
+            ],
+            "limit_ids": [],
+            "six_checks_true": true,
+            "score": 3
+          },
+          {
+            "role": "moving_line",
+            "frame_id": "d649c7f98a2aa36212e36f5d2d7987509791063592d1030f2559256a8a834d51",
+            "source_evidence_ids": [
+              "runtime_ws_benyi:卷1:17:xiang_classical_text:2",
+              "runtime_ws_benyi:卷1:17:yao_classical_text:2",
+              "runtime_ws_sibu:卷二:17:xiang_classical_text:2",
+              "runtime_ws_sibu:卷二:17:yao_classical_text:2"
+            ],
+            "limit_ids": [
+              "attachment_choice"
+            ],
+            "six_checks_true": true,
+            "score": 3
+          },
+          {
+            "role": "mutual_hexagram",
+            "frame_id": "40f0903e39df195f33a8d0dca0ab1576451e83cab95b14b14411ae62bf3121f7",
+            "source_evidence_ids": [
+              "runtime_ws_benyi:卷2:53:judgment.classical_text",
+              "runtime_ws_benyi:卷2:53:tuan.classical_text",
+              "runtime_ws_benyi:卷2:53:xiang.classical_text"
+            ],
+            "limit_ids": [],
+            "six_checks_true": true,
+            "score": 3
+          },
+          {
+            "role": "changed_hexagram",
+            "frame_id": "9564795539366b57b0f8ef2983f5ed38df3d13147049924711df5ea080c2b40d",
+            "source_evidence_ids": [
+              "runtime_ws_benyi:卷2:58:judgment.classical_text",
+              "runtime_ws_benyi:卷2:58:tuan.classical_text",
+              "runtime_ws_benyi:卷2:58:xiang.classical_text",
+              "runtime_ws_sibu:卷六:58:judgment.classical_text",
+              "runtime_ws_sibu:卷六:58:tuan.classical_text",
+              "runtime_ws_sibu:卷六:58:xiang.classical_text"
+            ],
+            "limit_ids": [],
+            "six_checks_true": true,
+            "score": 3
+          }
+        ]
+      },
+      "calls": [
+        {
+          "phase": "candidate",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "http_status": 200,
+          "code": "ok",
+          "latency_seconds": 0.106,
+          "retries": 0,
+          "usage": {
+            "input_miss": 100,
+            "input_hit": 50,
+            "output": 50,
+            "tokens": 200,
+            "fee_nano_usd": 90300
+          },
+          "worker_reaped": true
+        },
+        {
+          "phase": "reviewer",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "http_status": 200,
+          "code": "ok",
+          "latency_seconds": 0.1042,
+          "retries": 0,
+          "usage": {
+            "input_miss": 100,
+            "input_hit": 50,
+            "output": 50,
+            "tokens": 200,
+            "fee_nano_usd": 90300
+          },
+          "worker_reaped": true
+        }
+      ],
+      "production_approved": false,
+      "history_written": false
+    },
+    {
+      "case_id": "B02",
+      "status": "MOCK_CONTRACT_ACCEPTED",
+      "errors": [],
+      "sections": [
+        [
+          "original_hexagram",
+          "传统卦义：居上者以庄重诚信示范感化下民，并巡视各方、观察民情以设教化\n现实应用类比（未认定现实条件）：可先观察工作环境与实际情况，再考虑如何推进换工作的想法，不替未获得的岗位补写条件。\n可以核对：可先核对已提供的信息与适用范围，再考虑下一步安排。"
+        ],
+        [
+          "moving_line",
+          "传统卦义：看到国家的光彩景象，适合做宾客去辅佐君王；这说明看重的是以宾客身份参与\n现实应用类比（未认定现实条件）：如果有以参与者身份了解工作的机会，可先核对这种身份的限制，不将参与的提醒扩成全部换工作都有利。\n可以核对：可先核对已提供的信息与适用范围，再考虑下一步安排。\n适用前提与限制（现实是否满足未核实）：观国之光、以宾参与的限定角色，不推定用户身份。"
+        ],
+        [
+          "mutual_hexagram",
+          "传统卦义：当前形势不利于有所行动，因为不良势力正在增长，应当顺应形势停下来观察；上位者应厚待下位者，以安定大家的居所\n现实应用类比（未认定现实条件）：可把先停下观察作为辅助提醒，核对外部情况再行动，不认定现在的工作环境已有不良变化。\n可以核对：可先核对已提供的信息与适用范围，再考虑下一步安排。\n仅作内部过程的辅助观察。"
+        ],
+        [
+          "changed_hexagram",
+          "传统卦义：当前局面上下不通、彼此隔绝，整体闭塞难行，不利于坚持正道，强势的一方在退去，弱势的一方在进来；此时应节俭收敛、避开祸难，不要把俸禄荣华当作追求\n现实应用类比（未认定现实条件）：若参与渠道不畅，可核对是否需要收敛对外在待遇的追求，不断言这种阻隔已在你的工作中发生。\n可以核对：可先核对已提供的信息与适用范围，再考虑下一步安排。\n这是变化后的结构方向，不是事情必然发生的结果。"
+        ]
+      ],
+      "checks": {
+        "local_gate": "passed",
+        "independent_review": "passed",
+        "facts_unchanged": true,
+        "source_quality": "requires_separate_source_review",
+        "real_model_quality": "unverified",
+        "binding_evidence": [
+          {
+            "role": "original_hexagram",
+            "frame_id": "7ed6367022b96f5334c6f1d7200fa287b7fc9ba223a68a82448d8ed51b1e8376",
+            "source_evidence_ids": [
+              "runtime_ws_benyi:卷1:20:judgment.classical_text",
+              "runtime_ws_benyi:卷1:20:tuan.classical_text",
+              "runtime_ws_benyi:卷1:20:xiang.classical_text",
+              "runtime_ws_sibu:卷二:20:judgment.classical_text",
+              "runtime_ws_sibu:卷二:20:tuan.classical_text",
+              "runtime_ws_sibu:卷二:20:xiang.classical_text"
+            ],
+            "limit_ids": [],
+            "six_checks_true": true,
+            "score": 3
+          },
+          {
+            "role": "moving_line",
+            "frame_id": "cddf110a973e4f69b79d6ee1661724394fb29c298fa2d0b685d060320fb7d068",
+            "source_evidence_ids": [
+              "runtime_ws_benyi:卷1:20:xiang_classical_text:4",
+              "runtime_ws_benyi:卷1:20:yao_classical_text:4",
+              "runtime_ws_sibu:卷二:20:xiang_classical_text:4",
+              "runtime_ws_sibu:卷二:20:yao_classical_text:4"
+            ],
+            "limit_ids": [
+              "guest_participation_scope"
+            ],
+            "six_checks_true": true,
+            "score": 3
+          },
+          {
+            "role": "mutual_hexagram",
+            "frame_id": "2b26977ce33a8fd1c9a17ef2b4279baad7c717cd4e7de39cc0ac3967e9457d39",
+            "source_evidence_ids": [
+              "runtime_ws_benyi:卷1:23:judgment.classical_text",
+              "runtime_ws_benyi:卷1:23:tuan.classical_text",
+              "runtime_ws_benyi:卷1:23:xiang.classical_text"
+            ],
+            "limit_ids": [],
+            "six_checks_true": true,
+            "score": 3
+          },
+          {
+            "role": "changed_hexagram",
+            "frame_id": "94d3fa3e8db0d09b426a681eda61db504ddb75a0b8591752a5ba9727141d969a",
+            "source_evidence_ids": [
+              "runtime_ws_benyi:卷1:12:judgment.classical_text",
+              "runtime_ws_benyi:卷1:12:tuan.classical_text",
+              "runtime_ws_benyi:卷1:12:xiang.classical_text"
+            ],
+            "limit_ids": [],
+            "six_checks_true": true,
+            "score": 3
+          }
+        ]
+      },
+      "calls": [
+        {
+          "phase": "candidate",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "http_status": 200,
+          "code": "ok",
+          "latency_seconds": 0.1029,
+          "retries": 0,
+          "usage": {
+            "input_miss": 100,
+            "input_hit": 50,
+            "output": 50,
+            "tokens": 200,
+            "fee_nano_usd": 90300
+          },
+          "worker_reaped": true
+        },
+        {
+          "phase": "reviewer",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "http_status": 200,
+          "code": "ok",
+          "latency_seconds": 0.1045,
+          "retries": 0,
+          "usage": {
+            "input_miss": 100,
+            "input_hit": 50,
+            "output": 50,
+            "tokens": 200,
+            "fee_nano_usd": 90300
+          },
+          "worker_reaped": true
+        }
+      ],
+      "production_approved": false,
+      "history_written": false
+    }
+  ],
+  "budget": {
+    "requests": 4,
+    "questions": 2,
+    "tokens_committed": 800,
+    "fee_committed_nano_usd": 361200,
+    "measured_usage": {
+      "input_miss": 400,
+      "input_hit": 200,
+      "output": 200
+    },
+    "active": [],
+    "stopped": false,
+    "authorized_batches": [
+      1
+    ],
+    "reports": {},
+    "usage_unknown_requests": 0
+  },
+  "real_ai_calls": 0,
+  "mock_results_are_real_quality_acceptance": false,
+  "production_application_enabled": false
+}
