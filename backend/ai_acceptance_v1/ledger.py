@@ -149,17 +149,49 @@ class BudgetLedger:
             fees += f["charged_fee"] if f else r["reserved_fee"]
             if f and f["usage"]:
                 for k in usage: usage[k] += f["usage"][k]
+        closed = {e['batch'] for e in events if e['type'] == 'close_batch'}
+        batch_usage = {}
+        for batch in BATCHES:
+            selected = [r for r in reserves.values() if r['batch'] == batch]
+            batch_usage[batch] = {
+                'requests': len(selected), 'questions': len({r['case_id'] for r in selected}),
+                'tokens': sum(finishes[r['number']]['charged_tokens'] if r['number'] in finishes else r['reserved_tokens'] for r in selected),
+                'fee_nano_usd': sum(finishes[r['number']]['charged_fee'] if r['number'] in finishes else r['reserved_fee'] for r in selected)}
         return {"requests": len(reserves), "questions": len({e["case_id"] for e in reserves.values()}),
                 "tokens_committed": tokens, "fee_committed_nano_usd": fees,
                 "measured_usage": usage, "active": sorted(set(reserves) - set(finishes)),
                 "stopped": any(e["type"] == "stop" for e in events),
-                "authorized_batches": [e["batch"] for e in events if e["type"] == "authorize"],
+                "authorized_batches": [e["batch"] for e in events if e["type"] == "authorize" and e['batch'] not in closed],
+                'closed_batches': sorted(closed), 'batch_usage': batch_usage,
+                'batch_limits': {e['batch']: e['limits'] for e in events if e['type'] == 'batch_limits'},
                 "reports": {e["batch"]: e["report_sha256"] for e in events if e["type"] == "report"},
                 "usage_unknown_requests": sum(e["usage"] is None for e in finishes.values())}
 
     def snapshot(self):
         with self._transaction() as (_, events):
             return self._state(events)
+
+    def restrict_first_batch(self):
+        """Append the new authorization cap; never rewrite the original policy/events."""
+        limits = {'questions': 2, 'requests': 4, 'tokens': 80_000, 'fee_nano_usd': 60_000_000}
+        with self._transaction() as (_, events):
+            state = self._state(events)
+            existing = state['batch_limits'].get(1)
+            if existing is not None:
+                if existing != limits: raise AcceptanceDenied('batch_policy_changed')
+                return
+            used = state['batch_usage'][1]
+            if any(used[k] > v for k, v in limits.items()):
+                raise AcceptanceDenied('existing_batch_budget_exceeded')
+            events.append({'type': 'batch_limits', 'batch': 1, 'limits': limits})
+
+    def close_batch(self, batch):
+        """Revoke dispatch authority persistently, without refunding any reservation."""
+        if type(batch) is not int or batch not in BATCHES:
+            raise AcceptanceDenied('invalid_batch')
+        with self._transaction() as (_, events):
+            if batch not in self._state(events)['closed_batches']:
+                events.append({'type': 'close_batch', 'batch': batch})
 
     def confirm_unchanged_prices(self, checked_on, peak, off_peak, reference_hash):
         """Private operator records a fresh official lookup, without budget reset.
@@ -191,6 +223,10 @@ class BudgetLedger:
             raise AcceptanceDenied("explicit_batch_approval_required")
         with self._transaction() as (_, events):
             s = self._state(events)
+            if batch in s['closed_batches']:
+                raise AcceptanceDenied('batch_closed')
+            if self.mode == 'live' and batch == 1 and batch not in s['batch_limits']:
+                raise AcceptanceDenied('batch_limits_required')
             if batch in s["authorized_batches"]:
                 raise AcceptanceDenied("batch_already_authorized")
             if s["stopped"] or (batch == 2 and 1 not in s["reports"]):
@@ -207,7 +243,10 @@ class BudgetLedger:
         with self._transaction() as (_, events):
             s = self._state(events)
             if s["stopped"]: raise AcceptanceDenied("run_stopped")
+            if batch in s['closed_batches']: raise AcceptanceDenied('batch_closed')
             if batch not in s["authorized_batches"]: raise AcceptanceDenied("batch_not_authorized")
+            if self.mode == 'live' and batch == 1 and batch not in s['batch_limits']:
+                raise AcceptanceDenied('batch_limits_required')
             if s["active"]: raise AcceptanceDenied("request_in_progress")
             previous = [e for e in events if e["type"] == "reserve"]
             if any(e["case_id"] == case_id and e["phase"] == phase for e in previous):
@@ -223,6 +262,14 @@ class BudgetLedger:
                 raise AcceptanceDenied("token_budget_exceeded")
             if s["fee_committed_nano_usd"] + fee > MAX_FEE_NANO_USD:
                 raise AcceptanceDenied("fee_budget_exceeded")
+            if batch in s['batch_limits']:
+                used, cap = s['batch_usage'][batch], s['batch_limits'][batch]
+                if used['requests'] + 1 > cap['requests'] or len({e['case_id'] for e in previous if e['batch'] == batch} | {case_id}) > cap['questions']:
+                    raise AcceptanceDenied('request_budget_exceeded')
+                if used['tokens'] + reserved_tokens > cap['tokens']:
+                    raise AcceptanceDenied('token_budget_exceeded')
+                if used['fee_nano_usd'] + fee > cap['fee_nano_usd']:
+                    raise AcceptanceDenied('fee_budget_exceeded')
             number = s["requests"] + 1
             events.append({"type": "reserve", "number": number, "case_id": case_id, "batch": batch,
                            "phase": phase, "input": input_tokens, "output": output, "wire_hash": wire_hash,
@@ -243,6 +290,7 @@ class BudgetLedger:
     def claim_dispatch(self, permit, wire_hash):
         self.check_permit(permit, wire_hash)
         with self._transaction() as (_, events):
+            self._check_send_authority(events, permit)
             if any(e["type"] == "dispatch" and e["number"] == permit.number for e in events):
                 raise AcceptanceDenied("duplicate_dispatch_no_retry")
             events.append({"type": "dispatch", "number": permit.number})
@@ -250,11 +298,20 @@ class BudgetLedger:
     def claim_worker(self, permit, wire_hash):
         self.check_permit(permit, wire_hash)
         with self._transaction() as (_, events):
+            self._check_send_authority(events, permit)
             if not any(e["type"] == "dispatch" and e["number"] == permit.number for e in events):
                 raise AcceptanceDenied("dispatch_required")
             if any(e["type"] == "worker" and e["number"] == permit.number for e in events):
                 raise AcceptanceDenied("duplicate_worker_no_retry")
             events.append({"type": "worker", "number": permit.number})
+
+    def _check_send_authority(self, events, permit):
+        state = self._state(events)
+        batch = 1 if permit.case_id in BATCHES[1] else 2
+        if state['stopped'] or batch not in state['authorized_batches']:
+            raise AcceptanceDenied('batch_not_authorized')
+        if self.mode == 'live' and batch == 1 and batch not in state['batch_limits']:
+            raise AcceptanceDenied('batch_limits_required')
 
     def finish(self, permit, usage, result_code, http_status=None, latency=0):
         self.check_permit(permit, permit.wire_hash)
